@@ -9,13 +9,14 @@
 	color: #EDEDED; /*Muted TextColor*/
 	font-family: Open Sans;
 	font-size: 0.6875rem;
-	text-align: center;
+	text-align: left;
 	line-height: 1.4; /*Espaçamento entre linhas*/
 	margin-top: 1rem; /*Espaçamento de paragrafo BEFORE*/
 	margin-bottom: 0.5rem; /*Espaçamento de paragrafo AFTER*/
 
 	/*Layout Padrão*/
-	margin: auto;
+	max-width: ;
+	box-sizing: border-box; /*As propriedades Height and Width include the content, padding, and border as the value. But do not include the margin*/
 }
 
 body{
@@ -69,9 +70,25 @@ h4{
 	margin-bottom: 0.5rem; /*Espaçamento de paragrafo AFTER*/
 }
 
+ul{
+
+}
+
 /* ────────────────────────────────────────────────────────────────────────── */
 /* ████████████████████████████  LAYOUT  ████████████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
+
+.container-body{
+	/*Largura*/
+	max-width: 1200; /*Tamanho máximo da largura*/
+	width: 100%;
+
+	/*Layout*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: space-between;
+}
 
 .container-header{
 	/*Layout*/
