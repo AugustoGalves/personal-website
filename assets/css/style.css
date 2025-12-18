@@ -106,6 +106,15 @@ a{
 
 nav ul{
 	list-style: none;
+	display: flex;
+	flex-direction: row; /*Container pai: linha ou coluna*/
+	justify-content: flex-end; /*Children horizontal distribuition if flex is row*/
+	align-items: center; /*Children vertical distribuition if flex is row*/
+}
+
+footer section ul{
+	list-style: none;
+	display: flex;
 	flex-direction: row; /*Container pai: linha ou coluna*/
 	justify-content: flex-end; /*Children horizontal distribuition if flex is row*/
 	align-items: center; /*Children vertical distribuition if flex is row*/
@@ -120,6 +129,10 @@ nav ul{
 	flex-direction: column; /*Container pai: linha ou coluna*/
 	justify-content: flex-start; /*Children horizontal distribuition if flex is row*/
 	align-items: center; /*Children vertical distribuition if flex is row*/
+}
+
+.widthmax{
+	width: 100%; /*!!!!!!!!!Gambiarra no codigo, remover dps*/
 }
 
 .container-header{
@@ -207,7 +220,7 @@ nav ul{
 	border-radius: 12px;
 
 	width: 280px; /* ???ajustar */
-	height: 30px; /* ???ajustar */
+	height: 80px; /* ???ajustar */
 	padding: 1rem; /* ??? */
 	
 	/*Layout*/
@@ -249,14 +262,15 @@ nav ul{
 /* ────────────────────────────────────────────────────────────────────────── */
 
 .btn-primary{
+	/*Decoration*/
 	background-color: #1E3A8A; /*CTA Color*/
-	
+	border-radius: 8px;
 	/*Layout*/
 	height: 48 px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1.5rem;
+	padding: 1em; /*Usar rem ou em?*/
 	/*Configurações das animações do botão*/
 	transition:
 		transform 0.15s ease,
@@ -280,13 +294,15 @@ nav ul{
 }
 
 .btn-secundary{
+	/*Decoration*/
 	background-color: #202430; /*TESTING!!! Secundary Color */
+	border-radius: 8px;
 	/*Layout*/
 	height: 48 px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1.5rem;
+	padding: 1em;
 	/*Configurações das animações do botão*/
 	transition:
 		transform 0.15s ease,
@@ -309,15 +325,14 @@ nav ul{
 /* ██████████████████████████  ELEMENTOS (BEM)  █████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
 
-.icon {
-	/*Estilizando Icones SVG*/
-	width: 2em;
-	height: 2em;
-	vertical-align: -0.125em;
+.svgicon-small{
+	/*Size 16px*/
+	width: 1em;
+	height: 1em;
 }
 
 .logo-header{
-	height: 50px;
+	height: 80px;
 	width: auto
 }
 
@@ -327,13 +342,6 @@ nav ul{
 
   display: block; /*???*/
 }
-
-.svgicon-small{
-	/*Size 16px*/
-	width: 1em; /*Fix size? maybe it is bigger than the text around*/
-	height: 1em; /*Fix size? maybe it is bigger than the text around*/
-}
-
 
 .divider-horizontal{
 	width: 100%;
