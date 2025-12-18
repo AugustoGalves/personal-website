@@ -15,8 +15,12 @@
 	margin-bottom: 0.5rem; /*Espaçamento de paragrafo AFTER*/
 
 	/*Layout Padrão*/
-	max-width: ;
+	max-width: 1200px;
 	box-sizing: border-box; /*As propriedades Height and Width include the content, padding, and border as the value. But do not include the margin*/
+}
+
+img{
+	margin: 0;
 }
 
 body{
@@ -70,7 +74,11 @@ h4{
 	margin-bottom: 0.5rem; /*Espaçamento de paragrafo AFTER*/
 }
 
-ul{
+nav ul{
+	list-style: none;
+}
+
+nav li{
 
 }
 
@@ -78,95 +86,117 @@ ul{
 /* ████████████████████████████  LAYOUT  ████████████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
 
-.container-body{
+.container{
 	/*Largura*/
 	max-width: 1200; /*Tamanho máximo da largura*/
 	width: 100%;
 
 	/*Layout*/
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: space-between;
+	flex-direction: column; /*Container pai: linha ou coluna*/
+	justify-content: flex-start; /*Children horizontal distribuition if flex is row*/
+	align-items: center; /*Children vertical distribuition if flex is row*/
 }
 
 .container-header{
 	/*Layout*/
 	display: flex;
 	flex-direction: row; /*Container pai é linha ou coluna*/
-	justify-content: space-between; /*Children distribuition on horizontal*/
-	align-items: center; /*Children distribuition on vertical*/
+	justify-content: space-between; /*Children distribuition on horizontal if flex is row*/
+	align-items: center; /*Children distribuition on vertical if flex is row*/
 }
 
 .container-nav{
+	/*Layout*/
 	display: flex;
 	flex-direction: row; /*Container pai: linha ou coluna*/
-	justify-content: flex-end; /*Children horizontal distribuition*/
-	align-items: center; /*Children vertical distribuition*/
+	justify-content: flex-end; /*Children horizontal distribuition if flex is row*/
+	align-items: center; /*Children vertical distribuition if flex is row*/
 }
 
 .container-hero{
+	width: 100%;
+	/*Layout*/
 	display: flex;
 	flex-direction: row; /*Container pai: linha ou coluna*/
-	justify-content: space-between; /*Children horizontal distribuition*/
-	align-items: center; /*Children vertical distribuition*/
+	justify-content: space-between; /*Children horizontal distribuition if flex is row*/
+	align-items: center; /*Children vertical distribuition if flex is row*/
 }
 
 .hero-left{
+	/*Layout*/
 	display: flex;
 	flex-direction: column; /*Container pai: linha ou coluna*/
-	justify-content: flex-start; /*Children horizontal distribuition*/
-	align-items: center; /*Children vertical distribuition*/
+	justify-content: flex-start; /*Children horizontal distribuition if flex is row*/
+	align-items: center; /*Children vertical distribuition if flex is row*/
 }
 
 .hero-full-line{
+	/*Layout*/
 	display: flex;
 	flex-direction: row; /*Container pai: linha ou coluna*/
-	justify-content: flex-start; /*Children horizontal distribuition*/
-	align-items: center; /*Children vertical distribuition*/
+	justify-content: flex-start; /*Children horizontal distribuition if flex is row*/
+	align-items: center; /*Children vertical distribuition if flex is row*/
 }
 
 .container-highlights{
+	/*Layout*/
 	display: flex;
 	flex-direction: row; /*Container pai: linha ou coluna*/
-	justify-content: flex-start; /*Children horizontal distribuition*/
-	align-items: center; /*Children vertical distribuition*/
+	justify-content: space-between; /*Children horizontal distribuition if flex is row*/
+	align-items: center; /*Children vertical distribuition if flex is row*/
+}
+
+.container-full-line{
+	/*Layout*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .carousel-wrapper{
+	/*Layout*/
 	display: flex;
 	flex-direction: row; /*Container pai: linha ou coluna*/
-	justify-content: space-between; /*Children horizontal distribuition*/
-	align-items: center; /*Children vertical distribuition*/
-	
+	justify-content: space-between; /*Children horizontal distribuition if flex is row*/
+	align-items: center; /*Children vertical distribuition if flex is row*/
+
+	/*SEI LA*/	
 	gap: 1.5rem; /*???*/
 	overflow: hidden; /* ??? */
 }
 
+.container-footer-footer{
+	/*Layout*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .card{
-	background-color: #9CA3AF; /*TESTING!!! Secundary Color */
+	background-color: #303645; /*TESTING!!! Secundary Color */
 
 	border-radius: 12px;
 
 	width: 280px; /* ???ajustar */
 	height: 360px; /* ???ajustar */
 	padding: 1rem; /* ??? */
+	
+	/*Layout*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 .card-image{
-	height: 80%; /* ??? */
-	width: 100%; /* ??? */
+	width: 100%;
+	height: auto;
 
+	margin: 0;
 	object-fit: contain; /* ??? */
 	display: block; /* ??? */
-}
-
-.container-section{
-	display: flex;
-	flex-direction: row; /*Container pai: linha ou coluna*/
-	justify-content: space-between; /*Children horizontal distribuition*/
-	align-items: center; /*Children vertical distribuition*/
-
 }
 
 
@@ -227,7 +257,7 @@ ul{
 }
 
 .hero-image{
-  width: 100%; /*???*/
+  width: 50%; /*???*/
   height: auto; /*???*/
 
   display: block; /*???*/
