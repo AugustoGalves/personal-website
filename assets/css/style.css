@@ -8,13 +8,16 @@
 	/*Texto Padrão*/
 	color: #EDEDED; /*Muted TextColor*/
 	font-family: Open Sans;
-	font-size: 0.6875rem;
+	font-size: 1rem; /*16px*/
 	text-align: left;
 	line-height: 1.4; /*Espaçamento entre linhas*/
 
 	/*Layout Padrão*/
 	max-width: 1200px;
 	box-sizing: border-box; /*As propriedades Height and Width include the content, padding, and border as the value. But do not include the margin*/
+
+	/*Reset CSS*/
+	text-decoration: none;
 }
 
 img{
@@ -23,8 +26,12 @@ img{
 
 body{
 	background-color: #101215;
-	
 }
+
+a:hover{
+	opacity: 0.8;
+}
+
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /* ████████████████████████████  TIPOGRAFIA  ████████████████████████████████ */
@@ -33,7 +40,7 @@ body{
 h1{
 	/*Texto*/
 	color: #FFFFFF; /*Primary TextColor*/
-	font-size: 1rem;
+	font-size: 3.052rem; /*48px*/
 	font-weight: bold;
 	letter-spacing: -0.02em;
 	line-height: 1.1; /*Espaçamento entre linhas*/
@@ -44,7 +51,7 @@ h1{
 h2{
 	/*Texto*/
 	color: #EDEDED; /*Muted TextColor*/
-	font-size: 0.875rem;
+	font-size: 2.5rem;/*40px*/
 	font-weight: bold;
 	letter-spacing: -0.01em;
 	line-height: 1.1; /*Espaçamento entre linhas*/
@@ -56,7 +63,7 @@ h2{
 h3{
 	/*Texto*/
 	color: #EDEDED; /*Muted TextColor*/
-	font-size: 0.75rem;
+	font-size: 2rem;/*32px*/
 	font-weight: bold;
 	line-height: 1.1; /*Espaçamento entre linhas*/
 	margin-top: 1rem; /*Espaçamento de paragrafo BEFORE*/
@@ -66,30 +73,48 @@ h3{
 h4{
 	/*Texto*/
 	color: #EDEDED; /*Muted TextColor*/
-	font-size: 0.6875rem;
+	font-size: 1.5rem;/*24px*/
 	font-weight: bold;
 	line-height: 1.1; /*Espaçamento entre linhas*/
 	margin-top: 1rem; /*Espaçamento de paragrafo BEFORE*/
 	margin-bottom: 0.5rem; /*Espaçamento de paragrafo AFTER*/
 }
 
-nav ul{
-	list-style: none;
+p{
+	color: #EDEDED; /*Muted TextColor*/
+	font-size: 1rem;/*16px*/
+	font-weight: normal;
+	line-height: 1.4; /*Espaçamento entre linhas*/
+	margin-top: 1rem; /*Espaçamento de paragrafo BEFORE*/
+	margin-bottom: 0.5rem; /*Espaçamento de paragrafo AFTER*/
 }
 
-nav li{
+a{
+	color: #FFFFFF; /*Primary TextColor*/
+	font-size: 1rem;/*16px*/
+	font-weight: normal;
+	line-height: 1.4; /*Espaçamento entre linhas*/
+}
 
+.subtext{
+	color: rgba(255, 255, 255, 0.6);
 }
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /* ████████████████████████████  LAYOUT  ████████████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
 
+nav ul{
+	list-style: none;
+	flex-direction: row; /*Container pai: linha ou coluna*/
+	justify-content: flex-end; /*Children horizontal distribuition if flex is row*/
+	align-items: center; /*Children vertical distribuition if flex is row*/
+}
+
 .container{
-	/*Largura*/
+	/*Sizing*/
 	max-width: 1200; /*Tamanho máximo da largura*/
 	width: 100%;
-
 	/*Layout*/
 	display: flex;
 	flex-direction: column; /*Container pai: linha ou coluna*/
@@ -98,7 +123,7 @@ nav li{
 }
 
 .container-header{
-	/*Sizes*/
+	/*Sizing*/
 	width: 100%;
 	/*Layout*/
 	display: flex;
@@ -129,7 +154,7 @@ nav li{
 	display: flex;
 	flex-direction: column; /*Container pai: linha ou coluna*/
 	justify-content: flex-start; /*Children horizontal distribuition if flex is row*/
-	align-items: center; /*Children vertical distribuition if flex is row*/
+	align-items: start; /*Children vertical distribuition if flex is row*/
 }
 
 .hero-full-line{
@@ -188,8 +213,7 @@ nav li{
 	/*Layout*/
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: center;
 }
 
 .card{
@@ -197,24 +221,26 @@ nav li{
 
 	border-radius: 12px;
 
-	width: 280px; /* ???ajustar */
-	height: 360px; /* ???ajustar */
-	padding: 1rem; /* ??? */
-	
+	/*sizing*/
+	width: 280px;
+	height: 260px;
+	padding: 1rem;
 	/*Layout*/
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: flex-start;
 }
 
 .card-image{
+	/*Sizing*/
 	width: 100%;
 	height: auto;
+	margin: -1rem; /* Remover o padding do container pai */
+	/*Decoration*/
 	border-top-left-radius: 12px; /* Arredondamento da borda superior esq. da imagem */
 	border-top-right-radius: 12px; /* Arredondamento da borda superior dir. da imagem */
 
-	margin: -1rem; /* Remover o padding do container pai */
+
 }
 
 
@@ -283,13 +309,20 @@ nav li{
 /* ██████████████████████████  ELEMENTOS (BEM)  █████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
 
+.icon {
+	/*Estilizando Icones SVG*/
+	width: 2em;
+	height: 2em;
+	vertical-align: -0.125em;
+}
+
 .logo-header{
-	height: 36px;
+	height: 50px;
 	width: auto
 }
 
 .hero-image{
-  width: 50%; /*???*/
+  width: 40%; /*???*/
   height: auto; /*???*/
 
   display: block; /*???*/
@@ -307,6 +340,6 @@ nav li{
 	height: 1px;
 
 	display: block; /*???*/
-	background-color: rgba(255, 255, 255, 0.15); /*???*/
+	background-color: rgba(255, 255, 255, 0.6); /*???*/
 	margin: 2rem 0; /*???*/
 }

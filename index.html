@@ -36,15 +36,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/43dff1e8fb.js" crossorigin="anonymous"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-    <!-- Styling Icons SVG -->
-    <style>
-      .icon {
-        width: 2em;
-        height: 2em;
-        vertical-align: -0.125em;
-      }
-    </style>
 </head>
 
 <body>
@@ -98,15 +91,15 @@
         </section>
         <!-- HIGHLIGHTS -->
         <section class="container-highlights">
-            <div class="card">
+            <div class="card-highlight">
                 <strong>Projetista HVAC</strong>
                 <span>Certificado + 2 anos de experiência</span>
             </div>
-            <div class="card">
+            <div class="card-highlight">
                 <strong>Projetos internacionais</strong>
                 <span>Gerenciamento no setor de reparos navais (EN)</span>
             </div>
-            <div class="card">
+            <div class="card-highlight">
                 <strong>Perfil multidisciplinar</strong>
                 <span>Programação, automação, IoT e elétrica </span>
             </div>
@@ -116,23 +109,23 @@
         <section class="container">
             <h2> Portfólio</h2>
             <div class="container-full-line">
-                <span> Projetos em destaque</span>
+                <span class="subtext"> Projetos em destaque</span>
                 <span class="divider horizontal"></span>
             </div>
             <!-- CARROSSEL - JAVASCRIPT PENDENTE -->
             <div class="carousel-wrapper">
                 <!-- Card Projetos HVAC -->
                 <a href="/portfolio.html"><div class="card">
-                    <img src="/assets/img/portfolio/HVAC Clean Room.jpeg" alt="Sala de máquinas HVAC">
+                    <img class="card-image" src="/assets/img/portfolio/HVAC Clean Room.jpeg" alt="Sala de máquinas HVAC">
                     <strong> Projetos de HVAC</strong>
                 </div></a>
                 <!-- Card Planta Elétrica -->
-                <a href="/portfolio.html"><div class="card">
+                <a class="card-image" href="/portfolio.html"><div class="card">
                     <img src="/assets/img/portfolio/Planta Elétrica.png" alt="Planta Elétrica sobre a mesa na obra">
                     <strong> Projetos de Elétrica Residencial</strong>
                 </div></a>
                 <!-- Card Excel Correias -->
-                <a href="/portfolio.html"><div class="card">
+                <a class="card-image" href="/portfolio.html"><div class="card">
                     <img src="/assets/img/portfolio/Notebook on the table.png" alt="Notebook com o Software na tela">
                     <strong> Software - Ultimate Belt Design and Analysis</strong>
                     <span>Programado por mim - Patente Pendente </span>
@@ -174,16 +167,16 @@
         </section>
         
         <section class="container-footer-footer">
-            <span>© 2026 Pedro Augusto. Todos os direitos reservados</span>
+            <span class="subtext">© 2026 Pedro Augusto. Todos os direitos reservados</span>
             
             <!-- Icones minúsculos -->
-            <div>
-                <a href="">Whatsapp</a>
-                <a href="">Email</a>
-                <a href="">Linkedin</a>
-                <a href="">Github</a>
-                <a href="">Instagram</a>
-            </div>
+            <ul>
+                <li><a href="">Whatsapp</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Instagram</a></li>
+            </ul>
         </section>                
     </footer>
 </div>
