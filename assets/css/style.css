@@ -192,10 +192,12 @@ footer section ul{
 	flex-direction: row; /*Container pai: linha ou coluna*/
 	justify-content: space-between; /*Children horizontal distribuition if flex is row*/
 	align-items: center; /*Children vertical distribuition if flex is row*/
+	overflow: hidden; /* Cortar o overflow da imagem que esta fora do container*/
 }
 
 .hero-left{
 	/*Layout*/
+	padding-right: 25%; /*Ocupar menos espaço do container*/
 	display: flex;
 	flex-direction: column; /*Container pai: linha ou coluna*/
 	justify-content: flex-start; /*Children horizontal distribuition if flex is row*/
@@ -223,6 +225,8 @@ footer section ul{
 }
 
 .container-full-line{
+	/*Sizing*/
+	width: 100%;
 	/*Layout*/
 	display: flex;
 	flex-direction: row;
@@ -258,28 +262,48 @@ footer section ul{
 
 	/* Sizing */
 	width: 30%;
-	height: 100px;
+	min-height: 100px;
 	padding: 1rem;
 	
 	/* Layout */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	/* Decoration */ /* ESTUDAR */
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.25);
+  /* Animação */ /* ESTUDAR */
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .card{
 	background-color: var(--color-secundary); /* Secundary Color */
-
 	border-radius: 8px;
-
 	/* Sizing */
 	width: 30%;
-	height: 260px;
+	min-height: 260px;
 	padding: 1rem;
+	gap: 1rem; /* Margin entre texto e imagem */
 	/* Layout */
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	overflow: hidden; /* Esconde oq sair do container */
+
+	/* Decoration */ /* ESTUDAR */
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.25);
+  /* Animação */ /* ESTUDAR */
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .card-image{
@@ -391,9 +415,24 @@ footer section ul{
 }
 
 .hero-image{
+ 	/*Sizing*/
   width: 40%;
   height: auto;
+	/*Layout*/
+  margin-right: -120px; /* Cortar a foto fora do container */
 }
+
+.hero-image::before{
+  content: ""; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+  position: absolute; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+  inset: -20px -40px; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+  background: radial-gradient( /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+    circle at center, /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+    rgba(2,91,176,0.15), /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+    transparent 70% /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+  );
+  z-index: -1; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+} /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
 
 .divider-horizontal{
 	width: 100%;
