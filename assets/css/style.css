@@ -35,7 +35,6 @@
 	line-height: 1.4; /*Espaçamento entre linhas*/
 
 	/*Layout Padrão*/
-	max-width: 1200px;
 	box-sizing: border-box; /*As propriedades Height and Width include the content, padding, and border as the value. But do not include the margin*/
 }
 
@@ -124,11 +123,6 @@ a{
 /* ████████████████████████████  LAYOUT  ████████████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
 
-section{
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-}
-
 .section{
 	padding-top: 4rem;
 	padding-bottom: 4rem;
@@ -161,7 +155,6 @@ footer section ul{
 	display: flex;
 	flex-direction: column; /*Container pai: linha ou coluna*/
 	justify-content: flex-start; /*Children horizontal distribuition if flex is row*/
-	align-items: center; /*Children vertical distribuition if flex is row*/
 }
 
 .container{
@@ -172,10 +165,6 @@ footer section ul{
 	flex-direction: column; /*Container pai: linha ou coluna*/
 	justify-content: flex-start; /*Children horizontal distribuition if flex is row*/
 	align-items: center; /*Children vertical distribuition if flex is row*/
-}
-
-.widthmax{
-	width: 100%; /*!!!!!!!!!Gambiarra no codigo, remover dps*/
 }
 
 .container-header{
@@ -252,10 +241,10 @@ footer section ul{
 	overflow: hidden; /* ??? */
 }
 
-.container-footer-footer{
+.container-footer-bottom{
 	width: 100%;
 	/* Layout */
-	margin-bottom: 0;
+	padding-bottom: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -318,7 +307,7 @@ footer section ul{
 	background-color: var(--color-accent1); /*CTA Color*/
 	border-radius: 8px;
 	/*Layout*/
-	height: 48 px;
+	height: 48px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -335,8 +324,8 @@ footer section ul{
 .btn-primary:hover{
 	background-color: var(--color-accent1-hover); /*Hover Elevated CTA Color*/
 	/*Fix size? maybe it is bigger than the text around*/
-	transform: translateY(-1px) /*Leve movimentação para baixo, muito melhor que animação com scale*/
-	box-shadow: 0 6px 16px rgba(0,0,0,0.15) /*Deslocamento X, Deslocamento Y, Blur, Cor da sombra RGBA*/
+	transform: translateY(-1px); /*Leve movimentação para baixo, muito melhor que animação com scale*/
+	box-shadow: 0 6px 16px rgba(0,0,0,0.15); /*Deslocamento X, Deslocamento Y, Blur, Cor da sombra RGBA*/
 }
 
 .btn-primary:active {
@@ -352,7 +341,7 @@ footer section ul{
 	background-color: rgba(0, 0, 0, 0.15); /* Transparent Color */
 	border-radius: 8px;
 	/*Layout*/
-	height: 48 px;
+	height: 48px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -375,6 +364,17 @@ footer section ul{
 	transform: translateX(0px);
 }
 
+/* ────────────────────────────────────────────────────────────────────────── */
+/* ██████████████████████████  SMALL FIXES (BEM)  █████████████████████████████ */
+/* ────────────────────────────────────────────────────────────────────────── */
+
+.margintop-small{
+	margin-top: 1em;
+}
+
+.widthmax{
+	width: 100%; /*!!!!!!!!!Gambiarra no codigo, remover dps*/
+}
 /* ────────────────────────────────────────────────────────────────────────── */
 /* ██████████████████████████  ELEMENTOS (BEM)  █████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
@@ -399,5 +399,5 @@ footer section ul{
 	width: 100%;
 	height: 1px;
 	background-color: rgba(255, 255, 255, 0.3);
-	margin: 0 1em;
+	margin: 0.5em 0em 0.5em 0em;
 }
