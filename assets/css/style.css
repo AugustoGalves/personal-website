@@ -76,7 +76,6 @@ body.light{
 	color: var(--color-text-primary-muted); /*Muted TextColor*/
 	font-family: Open Sans;
 	font-size: 1rem; /*16px*/
-	text-align: left;
 	line-height: 1.4; /*Espaçamento entre linhas*/
 }
 
@@ -447,7 +446,6 @@ footer section ul{
 }
 
 .center-x{
-  display: flex;
   justify-content: center;
 }
 
@@ -472,8 +470,9 @@ footer section ul{
 
 .hero-image{
  	/*Sizing*/
+  position: relative;
   width: 40%;
-  height: auto;
+  display: inline-block;
 }
 
 .hero-image img{

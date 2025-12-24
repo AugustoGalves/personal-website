@@ -38,15 +38,6 @@
     <script src="https://kit.fontawesome.com/43dff1e8fb.js" crossorigin="anonymous"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-    <!-- JS THEME TOGGLE -->
-    <script>
-      const toggle = document.getElementById('theme-toggle');
-    
-      toggle.addEventListener('click', () => {
-        document.body.classList.toggle('light');
-      });
-    </script>
-
 </head>
 
 <body>
@@ -197,5 +188,14 @@
         </section>                
     </footer>
 </div>
+
+    <!-- Scripts ao fim do carregamento -->
+    <script>
+      const toggle = document.getElementById('theme-toggle');
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('light');
+      });
+    </script>
+
 </body>
 </html>
