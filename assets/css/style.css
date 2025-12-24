@@ -451,6 +451,10 @@ footer section ul{
   justify-content: center;
 }
 
+.text-align-center{
+	text-align: center;
+}
+
 /* ────────────────────────────────────────────────────────────────────────── */
 /* ██████████████████████████  ELEMENTOS (BEM)  █████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
@@ -470,8 +474,13 @@ footer section ul{
  	/*Sizing*/
   width: 40%;
   height: auto;
+}
+
+.hero-image img{
 	/*Layout*/
   margin-right: -80px; /* Cortar a foto fora do container */
+  position: relative;
+  z-index: 1;
 }
 
 .hero-image::before{
@@ -483,7 +492,8 @@ footer section ul{
     rgba(2,91,176,0.15), /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
     transparent 70% /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
   );
-  z-index: -1; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+  z-index: 0; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+  pointer-events: none;
 } /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
 
 .divider-horizontal{
