@@ -475,6 +475,7 @@ footer section ul{
  	/*Sizing*/
   position: relative;
   width: 40%;
+  /*Layout*/
   display: flex;
 }
 
