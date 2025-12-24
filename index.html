@@ -38,6 +38,15 @@
     <script src="https://kit.fontawesome.com/43dff1e8fb.js" crossorigin="anonymous"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
+    <!-- JS THEME TOGGLE -->
+    <script>
+      const toggle = document.getElementById('theme-toggle');
+    
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('light');
+      });
+    </script>
+
 </head>
 
 <body>
@@ -55,6 +64,7 @@
                     <li><a href="/curriculo.html" class="btn-secundary">Currículo</a></li>
                     <li><a href="/blog.html" class="btn-secundary">Blog</a></li>
                     <li><a href="/contato.html" class="btn-primary">Contato</a></li>
+                    <li><button class="btn-primary" id="theme-toggle">🌙</button></li>
                 </ul>
             </nav>
 
@@ -94,7 +104,7 @@
             </div>
             <!-- CODE END OF HERO LEFT DIV-->
             <!-- CODE START OF HERO RIGHT DIV -->
-            <div class="hero-image">
+            <div class="container hero-image">
                 <img src="/assets/img/HeroMainImage.png" alt="Pedro Augusto Selfie Photo">
             </div>
         </section>
@@ -163,7 +173,7 @@
     <Footer class="container">
         <span class="divider-horizontal"></span>
         <!-- Seção Call to Action -->
-        <section class="section container center-x text-align-center">
+        <section class="section container center-x text-centralizer">
             <h2>Entre em contato</h2>
             <span class="subtext">Vamos trabalhar juntos em seu próximo projeto?</span>
 

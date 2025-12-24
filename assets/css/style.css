@@ -44,7 +44,7 @@ body.light{
 	/* Typography Colors */
 	--color-text-primary: oklch(0.15 0.03 265);   /* White */
 	--color-text-primary-muted: oklch(0.4 0.03 265);     /* Off white */
-	--color-subtext: rgba(255, 255, 255, 0.6); /* Subtext */
+	--color-subtext: rgba(255, 255, 255, 0.4); /* Subtext */
 
 	/* Brand Colors */
 	--color-bg-dark: oklch(0.92 0.015 265);   /* Plano de fundo */
@@ -451,7 +451,7 @@ footer section ul{
   justify-content: center;
 }
 
-.text-align-center{
+.text-centralizer{ 
 	text-align: center;
 }
 
@@ -486,7 +486,7 @@ footer section ul{
 .hero-image::before{
   content: ""; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
   position: absolute; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
-  inset: -20px -40px; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
+  inset: -30% -40%; /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
   background: radial-gradient( /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
     circle at center, /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
     rgba(2,91,176,0.15), /* NÃO FAÇO IDEIA DO QUE TA ACONTECENDO AQUI */
