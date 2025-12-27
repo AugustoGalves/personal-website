@@ -8,14 +8,14 @@
 
 :root{
 	/* Typography Colors */
-	--color-text-primary: oklch(0.96 0.03 265);   /* White */
-	--color-text-primary-muted: oklch(0.76 0.03 265);     /* Off white */
+	--color-text-primary: oklch(0.96 0.03 265); /* White */
+	--color-text-primary-muted: oklch(0.76 0.03 265); /* Off white */
 	--color-subtext: oklch(0.72 0.02 265); /* Subtext */
 
 	/* Brand Colors */
-	--color-bg-dark: oklch(0.1 0.015 265);   /* Plano de fundo */
-	--color-bg: oklch(0.15 0.015 265);   /* Plano de fundo */
-	--color-bg-light: oklch(0.2 0.015 265);
+	--color-bg-dark: oklch(0.2 0.015 265); /* Plano de fundo */ /* old color oklch(0.1 0.015 265)*/
+	--color-bg: oklch(0.25 0.015 265); /* Plano de fundo */ /* old color oklch(0.15 0.015 265)*/
+	--color-bg-light: oklch(0.3 0.015 265); /* old color oklch(0.2 0.015 265)*/
 	--color-accent1: #025bb0; /* CTA Button ou oklch(0.76 0.1 265)*/
 	--color-accent1-hover: #0372db; /* CTA Button brighter*/
 	--color-accent2: oklch(0.76 0.1 85); /* Hover amarelo */
@@ -32,12 +32,14 @@
 	--color-info: oklch(0.7 0.05 260);
 
 	/* Gradients */
-	--gradient: linear-gradient(0deg, var(--color-bg) 95%, var(--color-bg-light));
-	--gradient-hover: linear-gradient(0deg, var(--color-bg), var(--color-bg-light));
+	--gradient-bg: linear-gradient(0deg, var(--color-bg) 95%, var(--color-bg-light));
+	--gradient-bg-hover: linear-gradient(0deg, var(--color-bg), var(--color-bg-light));
 
+	/* Properties and Values */
 	--shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 4px 4px hsla(0, 0%, 0%, 0.15); /*Deslocamento X, Deslocamento Y, Blur, Cor da sombra RGBA*/
 	--shadow-hover: 0px 3px 3px hsla(0, 0%, 0%, 0.07), 0px 3px 3px hsla(0, 0%, 0%, 0.15);
 	--shadow-active: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 2px 2px hsla(0, 0%, 0%, 0.15);
+	--border: solid 1px var(--color-border); /* Borda com cor de borda */
 }
 
 body.light{
@@ -64,6 +66,16 @@ body.light{
 	--color-border: oklch(0.6 0.03 265);
 	--color-border-muted: oklch(0.7 0.03 265);
 	--color-info: oklch(0.5 0.05 260);
+
+	/* Gradients */
+	--bg-gradient: linear-gradient(0deg, var(--color-bg) 95%, var(--color-bg-light));
+	--bg-gradient-hover: linear-gradient(0deg, var(--color-bg), var(--color-bg-light));
+
+	/* Properties and Values*/
+	--shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 4px 4px hsla(0, 0%, 0%, 0.15); /*Deslocamento X, Deslocamento Y, Blur, Cor da sombra RGBA*/
+	--shadow-hover: 0px 3px 3px hsla(0, 0%, 0%, 0.07), 0px 3px 3px hsla(0, 0%, 0%, 0.15);
+	--shadow-active: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 2px 2px hsla(0, 0%, 0%, 0.15);
+	--border: solid 1px var(--color-bg); /* Borda na cor do bg */
 }
 
 
@@ -301,9 +313,9 @@ footer section ul{
 
 .card-highlight{
 	/* Decoration */
-  background-color: var(--color-bg); /* Secundary Color */
+  background-color: var(--gradient-bg); /* Secundary Color */
   border-radius: 0.5rem;
-  border: solid 1px var(--color-border);
+  border: var(--border);
 	border-top: solid 1px var(--color-highlight);
   box-shadow: var(--shadow);
 	/* Sizing */
@@ -322,11 +334,16 @@ footer section ul{
     border-color 0.25s ease;
 }
 
+.card-highlight:hover{
+	/* Decoration */
+  background-color: var(--gradient-bg-hover); /* Secundary Color */
+}
+
 .card{
 	/* Decoration */
-  background-color: var(--color-bg); /* Secundary Color */
+  background-color: var(--gradient-bg); /* Secundary Color */
   border-radius: 0.5rem;
-  border: solid 1px var(--color-border);
+  border: var(--border);
 	border-top: solid 1px var(--color-highlight);
   box-shadow: var(--shadow);
 	/* Sizing */
@@ -345,6 +362,11 @@ footer section ul{
     transform 0.25s ease,
     box-shadow 0.25s ease,
     border-color 0.25s ease;
+}
+
+.card:hover{
+	/* Decoration */
+  background-color: var(--gradient-bg-hover); /* Secundary Color */
 }
 
 .card-image{
@@ -502,6 +524,6 @@ footer section ul{
 .divider-horizontal{
 	width: 100%;
 	height: 1px;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: var(--color-border-muted);
 	margin: 0.5em 0em 0.5em 0em;
 }
