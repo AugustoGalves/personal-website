@@ -46,7 +46,7 @@
     <header class="widthmax">
         <div class="container-header">
             
-            <a href="/"><img class="logo-header" alt="Pedro AGA Silva, engenheiro mecânico"></a>
+            <a href="/"><img class="logo-header" src="/assets/img/LogoDark_Pedro AGA Silva Engenheiro Mecânico.png" alt="Pedro AGA Silva, engenheiro mecânico"></a>
 
             <!-- HAMBURGUER MENU -->
             <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
@@ -223,19 +223,16 @@
 
     <!-- Toggle hamburguer menu -->
     <script>
-        const menu = document.querySelector(".offscreen-menu");
-        const toggle = document.querySelector(".menu-toggle");
-        
-        toggle.addEventListener("click", () => {
-            menu.classList.toggle("active");
-        });
-    </script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const offscreenMenu = document.querySelector(".offscreen-menu");
 
-    <!-- Travar scroll quando menu abre -->
-    <script>
-    toggle.addEventListener("click", () => {
-        menu.classList.toggle("active");
-        document.body.classList.toggle("menu-open");
+        menuToggle.addEventListener("click", () => {
+            offscreenMenu.classList.toggle("active");
+            document.body.classList.toggle("menu-open");
+            menuToggle.setAttribute(
+                "aria-expanded",
+                offscreenMenu.classList.contains("active")
+    );
     });
     </script>
 </body>
