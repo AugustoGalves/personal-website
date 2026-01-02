@@ -52,7 +52,7 @@ body.light{
 	--color-bg-dark: oklch(0.92 0.015 265);   /* Plano de fundo */
 	--color-bg: oklch(0.96 0.015 265);   /* Plano de fundo */
 	--color-bg-light: oklch(1 0.015 265);
-	--color-accent1: oklch(0.76 0.1 265); /* CTA Button, find #025bb0 for light mode later */
+	--color-accent1: oklch(0.66 0.1 265); /* CTA Button, find #025bb0 for light mode later */
 	--color-accent1-hover: #0372db; /* CTA Button brighter*/
 	--color-accent2: oklch(0.4 0.1 85); /* Hover amarelo */
 
@@ -404,7 +404,7 @@ footer section ul{
 	justify-content: center;
 	align-items: center;
 	padding: 0.5em 1.0em; /* vertical | horizontal */
-	min-height: 1.5rem; /* tamanho confortável */
+	min-height: 2rem; /* tamanho confortável */
 	white-space: nowrap;
 	/*Configurações das animações do botão*/
 	transition:
@@ -441,7 +441,7 @@ footer section ul{
 	justify-content: center;
 	align-items: center;
 	padding: 0.5em 1.0em; /* vertical | horizontal */
-	min-height: 1.5rem; /* tamanho confortável */
+	min-height: 2rem; /* tamanho confortável */
 	white-space: nowrap;
 	/*Configurações das animações do botão*/
 	transition:
@@ -577,7 +577,7 @@ body.menu-open {
 
 .menu-toggle {
   display: none;
-  margin-right: 60 px;
+  margin-right: 60px;
 }
 
 .offscreen-menu {
