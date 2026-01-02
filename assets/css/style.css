@@ -40,6 +40,9 @@
 	--shadow-hover: 0px 3px 3px hsla(0, 0%, 0%, 0.07), 0px 3px 3px hsla(0, 0%, 0%, 0.15);
 	--shadow-active: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 2px 2px hsla(0, 0%, 0%, 0.15);
 	--border: solid 1px var(--color-border); /* Borda com cor de borda */
+
+	/* Assets */
+	--logo-image: url("/assets/img/LogoLight - Pedro AGA Silva Engenheiro Mecânico.png");
 }
 
 body.light{
@@ -76,6 +79,9 @@ body.light{
 	--shadow-hover: 0px 3px 3px hsla(0, 0%, 0%, 0.07), 0px 3px 3px hsla(0, 0%, 0%, 0.15);
 	--shadow-active: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 2px 2px hsla(0, 0%, 0%, 0.15);
 	--border: solid 1px var(--color-bg); /* Borda na cor do bg */
+
+		/* Assets */
+	--logo-image: url("/assets/img/LogoDark - Pedro AGA Silva Engenheiro Mecânico.png");
 }
 
 
@@ -486,9 +492,11 @@ footer section ul{
 	/*Size 32px*/
 	width: 2em;
 	height: 2em;
+	color: var(color-text-primary-muted);
 }
 
 .logo-header{
+	content: var(--logo-image);
 	height: 80px;
 	width: auto
 }
@@ -526,4 +534,63 @@ footer section ul{
 	height: 1px;
 	background-color: var(--color-border-muted);
 	margin: 0.5em 0em 0.5em 0em;
+}
+
+
+/* ────────────────────────────────────────────────────────────────────────── */
+/* ██████████████████████████  hamburguer menu - NÃO SEI OQ TA ACONTECENDO  █████████████████████████████ */
+/* ────────────────────────────────────────────────────────────────────────── */
+
+
+.offscreen-menu{
+	background-color: var(--color-bg-light);
+	/*Sizing*/
+	height: 100vh;
+	width: 100%;
+	max-width: 450px;
+	/*Position*/
+	position: fixed;
+	top: 0;
+	right: -450px;
+	/*Layout*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	/*Decoration*/
+	transition: .3s ease;
+}
+
+.offscreen-menu.active{
+	/*Layout*/
+	right: 0px;
+}
+
+body.menu-open {
+	overflow: hidden;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.offscreen-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .offscreen-menu {
+    display: flex;
+  }
 }
