@@ -42,7 +42,7 @@
 	--border: solid 1px var(--color-border); /* Borda com cor de borda */
 
 	/* Assets */
-	--logo-image: url("/assets/img/LogoLight - Pedro AGA Silva Engenheiro Mecânico.png");
+	--logo-image: url("/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png");
 }
 
 body.light{
@@ -81,7 +81,7 @@ body.light{
 	--border: solid 1px var(--color-bg); /* Borda na cor do bg */
 
 		/* Assets */
-	--logo-image: url("/assets/img/LogoDark - Pedro AGA Silva Engenheiro Mecânico.png");
+	--logo-image: url("/assets/img/LogoDark_Pedro AGA Silva Engenheiro Mecânico.png");
 }
 
 
@@ -543,21 +543,6 @@ footer section ul{
 
 
 .offscreen-menu{
-	background-color: var(--color-bg-light);
-	/*Sizing*/
-	height: 100vh;
-	width: 100%;
-	max-width: 450px;
-	/*Position*/
-	position: fixed;
-	top: 0;
-	right: -450px;
-	/*Layout*/
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	text-align: center;
 	/*Decoration*/
 	transition: .3s ease;
 }
@@ -591,6 +576,20 @@ body.menu-open {
   }
 
   .offscreen-menu {
-    display: flex;
+  	background-color: var(--color-bg-light);
+		/*Sizing*/
+		height: 100vh;
+		width: 100%;
+		max-width: 450px;
+		/*Position*/
+		position: fixed;
+		top: 0;
+		right: -450px;
+		/*Layout*/
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
   }
 }
