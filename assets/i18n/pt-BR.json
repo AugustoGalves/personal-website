@@ -41,7 +41,7 @@
         "cta1": "Ver projetos",
         "cta2": "Entrar em contato"
       },
-      "highlights": {
+      "cardgroup1": {
         "card1": {
           "title": "HVAC Corporativo",
           "desc": "Projetos para BMW, TIM e Rede D’Or seguindo normas NBR e ANVISA"
@@ -162,7 +162,21 @@
       },
       "hero": {
         "title": "Vamos conversar?",
-        "subtitle": "Adoraria ouvir sobre seu projeto ou desafio técnico. Minha equipe (eu mesmo) está pronta para ajudar."
+        "subtitle": "Adoraria ouvir sobre seu projeto ou desafio técnico. Minha equipe está pronta para ajudar."
+      },
+      "cardgroup1": {
+        "card1": {
+          "title": "E-mail",
+          "desc": "augusto@augustogalves.com"
+        },
+        "card2": {
+          "title": "WhatsApp",
+          "desc": "+55 (21) 98409-5043"
+        }
+        "card3": {
+          "title": "Localização",
+          "desc": "Ilha do Governador, Rio de Janeiro"
+        },
       },
       "form": {
         "name": "Nome",
