@@ -1,113 +1,154 @@
-<!DOCTYPE html>
+<!-- ──────────────────────────────────────────────────────────────────────────-->
+<!-- ██████████████████████████████  HEAD START  ██████████████████████████████-->
+<!-- ──────────────────────────────────────────────────────────────────────────-->
+
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em manutenção</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #1d3557; /* Seu azul marinho padrão */
-            --accent: #025bb0;  /* Cor de destaque dos botões */
-            --text: #333;
-            --bg: #f8f9fa;
-        }
-
-        /* Suporte ao Dark Mode do sistema */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg: #0f172a;
-                --text: #e3e3e3;
-            }
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container { max-width: 600px; }
-
-        /* Animação de Engrenagem (Engineering Coded) */
-        .icon-wrapper {
-            margin-bottom: 30px;
-            animation: rotate 8s linear infinite;
-            display: inline-block;
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: var(--accent);
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 8px 16px;
-            border: 1px solid var(--accent);
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--accent);
-        }
-
-        .contact-links {
-            margin-top: 40px;
-            font-size: 0.9rem;
-        }
-
-        .contact-links a {
-            color: var(--accent);
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-    </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- CUSTOMIZING -->
+    <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <meta name="theme-color" content="#222A35">
+    <!-- PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- SEO SETTINGS -->
+    <title data-i18n="pages.index.meta.title">Contato | Augusto Galves</title>
+    <meta data-i18n="pages.index.meta.description" name="description" content="Entre em contato com Augusto Galves para projetos de Engenharia Mecânica, Automação e Desenvolvimento Web."/>
+    <meta name="author" content="Augusto Galves"/>
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.augustogalves.com/contato" />
+    <!-- OG TAGS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://augustogalves.com/">
+    <meta property="og:title" content="Contato | Augusto Galves">
+    <meta property="og:description" content="Entre em contato com Augusto Galves para projetos de Engenharia Mecânica, Automação e Desenvolvimento Web.">
+    <meta property="og:image" content="https://augustogalves.com/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png">
+    <!-- SEI LAAAAAAAAAAAA OQ  EH ISSO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Augusto Galves",
+      "url": "https://augustogalves.com/",
+      "jobTitle": "Mechanical Engineer",
+      "knowsAbout": ["IoT", "Mechanical Engineering", "Web Development", "Automation"],
+      "image": "https://augustogalves.com/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/augustogalves/",
+        "https://github.com/AugustoGalves"
+      ]
+    }
+    </script>    
+    <!-- DOWNLOADS INTERNOS (Cuidado com a ordem de download) -->
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <script src="/assets/js/config.js"></script>
+    <script src="/assets/js/components/Header.js"></script>
+    <script src="/assets/js/components/Hero.js"></script>
+    <script src="/assets/js/components/FeaturesSection.js"></script>
+    <script src="/assets/js/components/CardMedia.js"></script>
+    <script src="/assets/js/components/CardCarousel.js"></script>
+    <script src="/assets/js/components/CTA.js"></script>
+    <script src="/assets/js/components/Footer.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- DOWNLOADS EXTERNOS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
+
+
+
+
 <body>
 
-    <div class="container">
-        <div class="icon-wrapper">
-            <svg width="80" height="80" viewBox="0 -960 960 960" fill="currentColor" style="color: var(--accent);">
-                <path d="M150-103v-128h144l-93-317q-45-14-71.5-47.5T103-684q0-56 41-97.5t97-41.5q53 0 89 29t49 80h109v-59q0-17 12-29t29-12q10 0 17.5 7t8.5 17l68-65q11-10 26.5-13.5T681-865l158 76q14 7 19 21t-3 29q-7 13-21 17t-27-4l-147-72-89 90v42l89 95 147-71q15-7 27.5-4t20.5 16q8 15 3 30t-20 22l-150 71q-19 10-35.5 9T623-512l-68-65q-1 14-8 19t-18 5q-17 0-29-12t-12-29v-60H377q-2 17-12.5 38.5T342-586l183 355h184v128H150Zm91-525q24 0 40-16t16-40q0-24-16-40t-40-16q-24 0-40 16t-16 40q0 24 16 40t40 16Zm120 397h97L289-562q-5 3-12.5 5.5T265-553l96 322Zm97 0Z"/>
-            </svg>
-        </div>
+<t-header
+    link_navbutton1 = "/"
+    link_navbutton2 = "/portfolio.html"
+    link_navbutton3 = "/curriculo.html"
+    link_navbutton4 = "/blog.html"
+    link_navbutton5 = "/contato.html"
+    link_headerlogo_darktheme = "/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png"
+></t-header>
 
-        <div class="badge">Ajuste Técnico</div>
-        
-        <h1>Calibrando Sistemas</h1>
-        
-        <p>Estamos realizando uma manutenção no site para atualização do portfólio. Voltamos em breve com novidades.</p>
 
-        <div class="contact-links">
-            <a href="mailto:AugustoGalves.eng@gmail.com">E-mail</a> | 
-            <a href="https://linkedin.com/in/AugustoGalves">LinkedIn</a>
-        </div>
+<main>
+    <div class="container py-10">
+        <section class="flex flex-row justify-spacebetween gap9 flex-col-mobile gap6-mobile">
+            
+            <div class="flex flex-col gap5 w-full">
+                <div class="flex flex-col gap2">
+                    <h1 data-i18n="pages.contact.hero.title">Vamos conversar?</h1>
+                    <p class="subtext" data-i18n="pages.contact.hero.subtitle">Adoraria ouvir sobre seu projeto ou desafio técnico. Minha equipe (eu mesmo) está pronta para ajudar.</p>
+                </div>
+
+                <div class="flex flex-col gap3 mt-4">
+                    <div class="card card--emote w-full">
+                        <svg class="svgicon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
+                        <div class="flex flex-col">
+                            <span class="card-title">E-mail</span>
+                            <a href="mailto:augusto@augustogalves.com" class="card-content">augusto@augustogalves.com</a>
+                        </div>
+                    </div>
+
+                    <div class="card card--emote w-full">
+                        <svg class="svgicon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M320 32c-96 0-174 78-174 174 0 112 174 340 174 340s174-228 174-340c0-96-78-174-174-174zm0 240c-36 0-66-30-66-66s30-66 66-66 66 30 66 66-30 66-66 66z"/></svg>
+                        <div class="flex flex-col">
+                            <span class="card-title">Localização</span>
+                            <span class="card-content">Ilha do Governador, Rio de Janeiro</span>
+                        </div>
+                    </div>
+
+                    <div class="card card--emote w-full">
+                        <svg class="svgicon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1z"/></svg>
+                        <div class="flex flex-col">
+                            <span class="card-title">WhatsApp</span>
+                            <a href="https://wa.me/5521984095043" class="card-content">+55 (21) 98409-5043</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <form class="contact-form card p-6 flex flex-col gap4">
+                    <div class="form-group">
+                        <label for="name" class="card-title" data-i18n="pages.contact.form.name">Nome</label>
+                        <input type="text" id="name" class="form-input" placeholder="Seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="card-title" data-i18n="pages.contact.form.email">E-mail</label>
+                        <input type="email" id="email" class="form-input" placeholder="exemplo@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="card-title" data-i18n="pages.contact.form.message">Mensagem</label>
+                        <textarea id="message" class="form-input form-textarea" placeholder="Como posso ajudar?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary self-start mt-2 w-full-mobile">
+                        <span data-i18n="pages.contact.form.submit">Enviar Mensagem</span>
+                        <svg class="svgicon-xsmall ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </section>
     </div>
+</main>
 
+
+
+<t-footer
+    link_whatsappbutton = "https://api.whatsapp.com/send/?phone=5521984095043"
+    link_emailbutton = "augusto@augustogalves.com"
+    link_linkedinbutton = "https://www.linkedin.com/in/augustogalves/"
+    link_githubbutton = "https://github.com/AugustoGalves"
+    link_instagrambutton = "https://www.instagram.com/augusto_galves/"
+></t-footer>
+
+<!-- ──────────────────────────────────────────────────────────────────────────-->
+<!-- ███████████████████████████████  SCRIPTS  ████████████████████████████████-->
+<!-- ──────────────────────────────────────────────────────────────────────────-->
 </body>
 </html>
