@@ -1011,6 +1011,42 @@ footer section ul{
 .badge--international{ background:#7c3aed; }
 
 
+/* ─── CARDS ─────────────────────────────────────────────────────────────────────────────────────────── ✣ ─ */
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing2);
+}
+
+.form-input {
+	width: 100%;
+	padding: var(--spacing3) var(--spacing4);
+	background-color: var(--color-bg-dark); /* Reflete o contraste inverso do card */
+	border: var(--border);
+	border-color: var(--color-border-muted);
+	border-radius: var(--spacing2);
+	color: var(--color-text-primary);
+	font-family: var(--font-body);
+	font-size: var(--textsize-3);
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input::placeholder {
+	color: var(--color-text-terciary);
+	opacity: 0.6;
+}
+
+.form-input:focus {
+	outline: none;
+	border-color: var(--color-accent1);
+	box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent1), transparent 80%);
+}
+
+.form-textarea {
+	min-height: 150px;
+	resize: vertical;
+}
+
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /* ████████████████████████ 📄 PAGE SECTIONS  ██████████████████████████████ */
@@ -1773,6 +1809,10 @@ body.menu-open::before {
 
 
   /* ─── Utilities mobile ──────────────────────────────────────────────────────── ✣ ─ */
+  /* ─── GENÉRICAS  ──────────────────────────────────────────────────────── ✣ ─ */
+  .w-full-mobile {width: 100%; }
+
+
   /* ─── GAP  ──────────────────────────────────────────────────────── ✣ ─ */
 	.gap0-mobile{gap: var(--spacing0); }
 	.gap1-mobile{gap: var(--spacing1); }
@@ -1780,6 +1820,7 @@ body.menu-open::before {
 	.gap3-mobile{gap: var(--spacing3); }
 	.gap4-mobile{gap: var(--spacing4); }
 	.gap5-mobile{gap: var(--spacing5); }
+	.gap6-mobile{gap: var(--spacing6); }
 	.gap7-mobile{gap: var(--spacing7); }
 	.gap8-mobile{gap: var(--spacing8); }
 	.gap9-mobile{gap: var(--spacing9); }
