@@ -59,7 +59,7 @@ class THero extends HTMLElement {
             </div>
         </div>
         <!-- CODE START OF HERO RIGHT DIV -->
-        <div class="flex hero-image">
+        <div class="flex hero-image image-glow">
             <img decoding="async" fetchpriority="high" src="${links.heroimage}" alt="Augusto Galves Selfie Photo">
         </div>
     </section>

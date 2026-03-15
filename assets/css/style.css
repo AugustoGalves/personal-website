@@ -1304,13 +1304,16 @@ footer{
   /* Sizing */
   width: 35%;
 }
-
 .hero-image img{
 	/* Layout */
   position: relative;
   z-index: 1;
   /*Sizing*/
   width: 110%;
+}
+
+
+.image-glow img{
   /* Effects */
 	-webkit-mask-image: 
     linear-gradient(to bottom, black 65%, rgba(0,0,0,0.5) 85%, transparent 100%), 
@@ -1322,7 +1325,7 @@ footer{
   mask-composite: intersect;
 }
 
-.hero-image::before{
+.image-glow::before{
   /* Layout */
   content: "";
   position: absolute;
@@ -1984,7 +1987,7 @@ body.menu-open::before {
     min-width: 180px;
   }
 
-  .hero-image::before {
+  .image-glow::before {
     /* Layout */
     display: none;
   }
