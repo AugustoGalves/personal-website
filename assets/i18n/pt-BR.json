@@ -81,7 +81,7 @@
 
 
 
-    "portfolio": {
+    "projects": {
       "meta": {
         "title": "Portfólio | Augusto Galves",
         "description": "Portfólio técnico detalhado: HVAC, Elétrica, Automação, Programação de Software e Gestão Internacional."
@@ -155,7 +155,7 @@
 
 
 
-    "contato": {
+    "contact": {
       "meta": {
         "title": "Contato | Augusto Galves",
         "description": "Entre em contato com Augusto Galves para projetos de Engenharia Mecânica, Automação e Desenvolvimento Web."
@@ -187,7 +187,7 @@
     },
 
 
-    "curriculo": {
+    "cv": {
       "meta": {
         "title": "Currículo | Augusto Galves",
         "description": "Currículo do Engenheiro Mecânico e Desenvolvedor Augusto Galves. Especialista em HVAC, Automação e Projetos Internacionais."

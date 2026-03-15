@@ -8,8 +8,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <!-- CUSTOMIZING -->
-    <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
     <meta name="theme-color" content="#222A35">
     <!-- PRECONNECT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +19,13 @@
     <meta data-i18n="pages.index.meta.description" name="description" content="Engenheiro mecânico com experiência em HVAC, manutenção industrial, transmissão de potência e projetos técnicos. Atuação nacional e internacional, coordenação técnica e engenharia aplicada."/>
     <meta name="author" content="Augusto Galves"/>
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://www.augustogalves.com/" />
+    <link rel="canonical" href="https://augustogalves.com/" />
     <!-- OG TAGS -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://augustogalves.com/">
     <meta property="og:title" content="Augusto Galves | Engenharia & Code">
     <meta property="og:description" content="Engenheiro Mecânico e Desenvolvedor. Confira meus projetos em IoT e Automação.">
-    <meta property="og:image" content="https://augustogalves.com/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png">
+    <meta property="og:image" content="https://augustogalves.com/assets/images/logo-light.png">
     <!-- SEI LAAAAAAAAAAAA OQ  EH ISSO -->
     <script type="application/ld+json">
     {
@@ -35,7 +35,7 @@
       "url": "https://augustogalves.com/",
       "jobTitle": "Mechanical Engineer",
       "knowsAbout": ["IoT", "Mechanical Engineering", "Web Development", "Automation"],
-      "image": "https://augustogalves.com/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png",
+      "image": "https://augustogalves.com/assets/images/logo-light.png",
       "sameAs": [
         "https://www.linkedin.com/in/augustogalves/",
         "https://github.com/AugustoGalves"
@@ -68,21 +68,23 @@
 
 <t-header
     link_navbutton1 = "/"
-    link_navbutton2 = "/portfolio.html"
-    link_navbutton3 = "/curriculo.html"
-    link_navbutton4 = "/blog.html"
-    link_navbutton5 = "/contato.html"
-    link_headerlogo_darktheme = "/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png"
+    link_navbutton2 = "/projects/"
+    link_navbutton3 = "/cv/"
+    link_navbutton4 = "/blog/"
+    link_navbutton5 = "/contact/"
+    link_headerlogo_darktheme = "/assets/images/logo-light.png"
 ></t-header>
 
 
 <main>
     <t-hero
-        link-herobutton1 = "/portfolio.html"
+        link-herobutton1 = "/projects/"
+        extraAttributes-herobutton1 = ''
         icon-svg1 = '<svg class="svgicon-xsmall mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Z"/></svg>'
-        link-herobutton2 = "/contato.html"
+        link-herobutton2 = "/contact/"
+        extraAttributes-herobutton2 = ''
         icon-svg2 = '<svg class="svgicon-xsmall mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>'
-        link-heroimage = "/assets/img/HeroMainImage.png"
+        link-heroimage = "/assets/images/hero-image-1.png"
     ></t-hero>
         
     <t-card-row card-group-id = "1">
@@ -113,8 +115,8 @@
         <t-card-media
             carousel-id = "1"
             card-id = "1"
-            link_image = "/assets/img/portfolio/HVAC Clean Room.jpeg"
-            link_click = "/portfolio.html"
+            link_image = "/assets/images/projects/HVAC-clean-room.jpeg"
+            link_click = "/projects/"
             badge-name1 = "AutoCAD"
             badge_class1 = "badge--autocad"
             badge-name2 = "HAP"
@@ -123,8 +125,8 @@
         <t-card-media
             carousel-id = "1"
             card-id = "2"
-            link_image = "/assets/img/portfolio/Planta Elétrica.png"
-            link_click = "/portfolio.html"
+            link_image = "/assets/images/projects/planta-elétrica.png"
+            link_click = "/projects/"
             badge-name1 = "AutoCAD"
             badge_class1 = "badge--autocad"
             badge-name2 = "Revit"
@@ -133,7 +135,7 @@
         <t-card-media
             carousel-id = "1"
             card-id = "3"
-            link_image = "/assets/img/portfolio/Notebook on the table.png"
+            link_image = "/assets/images/projects/notebook-on-the-table.png"
             link_click = "/portfolio.html"
             badge-name1 = "Excel"
             badge_class1 = "badge--excel"
@@ -146,7 +148,7 @@
 
 
 <t-cta
-    link_ctabutton1 = "/contato.html"
+    link_ctabutton1 = "/contact/"
 ></t-cta>
 
 <t-footer

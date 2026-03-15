@@ -20,6 +20,10 @@ class THeroReverse extends HTMLElement {
         const PAGINA_ATUAL = window.location.pathname.split("/").pop().replace(".html", "") || "index";
         const icon_svg1 = this.getAttribute("icon-svg1")
         const icon_svg2 = this.getAttribute("icon-svg2")
+        const extraAttributes = {
+            herobutton1: this.getAttribute("extraAttributes-herobutton1")
+            herobutton2: this.getAttribute("extraAttributes-herobutton2")
+        }
         const links = {
             herobutton1: this.getAttribute("link-herobutton1"),
             herobutton2: this.getAttribute("link-herobutton2"),
@@ -39,11 +43,11 @@ class THeroReverse extends HTMLElement {
                 <h3 data-i18n="pages.${PAGINA_ATUAL}.hero.specialty" class="subtext"></h3>
             </div>
             <div class="flex flex-row gap3 py-6 justify-center-mobile">
-                <a class="btn btn--primary" target="_blank" href="${links.herobutton1}">
+                <a class="btn btn--primary" href="${links.herobutton1}" ${extraAttributes.herobutton1}>
                     ${icon_svg1}
                     <span data-i18n="pages.${PAGINA_ATUAL}.hero.cta1"></span>
                 </a>
-                <a class="btn btn--secondary" href="${links.herobutton2}" >
+                <a class="btn btn--secondary" href="${links.herobutton2}" ${extraAttributes.herobutton2}>
                     ${icon_svg2}
                     <span data-i18n="pages.${PAGINA_ATUAL}.hero.cta2"></span>
                 </a>

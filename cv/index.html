@@ -4,24 +4,24 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <!-- CUSTOMIZING -->
-    <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
     <meta name="theme-color" content="#222A35">
     <!-- PRECONNECT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- SEO SETTINGS -->
-    <title data-i18n="pages.curriculo.meta.title">Currículo | Augusto Galves</title>
-    <meta data-i18n="pages.curriculo.meta.description" name="description" content="Currículo técnico detalhado do Engenheiro Mecânico Augusto Galves. Especialista em HVAC, Automação e Projetos Internacionais."/>
+    <title data-i18n="pages.cv.meta.title">Currículo | Augusto Galves</title>
+    <meta data-i18n="pages.cv.meta.description" name="description" content="Currículo técnico detalhado do Engenheiro Mecânico Augusto Galves. Especialista em HVAC, Automação e Projetos Internacionais."/>
     <meta name="author" content="Augusto Galves"/>
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://www.augustogalves.com/curriculo" />
+    <link rel="canonical" href="https://augustogalves.com/cv/" />
     <!-- OG TAGS -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://augustogalves.com/curriculo.html">
+    <meta property="og:url" content="https://augustogalves.com/cv/">
     <meta property="og:title" content="Currículo | Augusto Galves">
     <meta property="og:description" content="Currículo do Engenheiro Mecânico e Desenvolvedor Augusto Galves. Especialista em HVAC, Automação e Projetos Internacionais.">
-    <meta property="og:image" content="https://augustogalves.com/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png">
+    <meta property="og:image" content="https://augustogalves.com/assets/images/logo-light.png">
     <!-- SEI LAAAAAAAAAAAA OQ  EH ISSO -->
     <script type="application/ld+json">
     {
@@ -31,7 +31,7 @@
       "url": "https://augustogalves.com/",
       "jobTitle": "Mechanical Engineer",
       "knowsAbout": ["IoT", "Mechanical Engineering", "Web Development", "Automation"],
-      "image": "https://augustogalves.com/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png",
+      "image": "https://augustogalves.com/assets/images/logo-light.png",
       "sameAs": [
         "https://www.linkedin.com/in/augustogalves/",
         "https://github.com/AugustoGalves"
@@ -64,11 +64,11 @@
 
 <t-header
     link_navbutton1 = "/"
-    link_navbutton2 = "/portfolio.html"
-    link_navbutton3 = "/curriculo.html"
-    link_navbutton4 = "/blog.html"
-    link_navbutton5 = "/contato.html"
-    link_headerlogo_darktheme = "/assets/img/LogoLight_Pedro AGA Silva Engenheiro Mecânico.png"
+    link_navbutton2 = "/projects/"
+    link_navbutton3 = "/cv/"
+    link_navbutton4 = "/blog/"
+    link_navbutton5 = "/contact/"
+    link_headerlogo_darktheme = "/assets/images/logo-light.png"
 ></t-header>
 
 <main>
@@ -84,11 +84,13 @@
 
     <!-- ─── HERO ─────────────────────────────────────────────────────────────────────────────── ✣ ─ -->        
     <t-hero-reverse
-        link-herobutton1 = "/files/curriculo/Currículo Augusto Galves - 2026.pdf"
+        link-herobutton1 = "cv/pt/Augusto-Galves-CV-2026.pdf"
+        extraAttributes-herobutton1 = 'download="Augusto Galves - CV 2026.pdf"'
         icon-svg1 = '<svg class="svgicon-xsmall mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="currentColor" d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>'
         link-herobutton2 = "/contato.html"
+        extraAttributes-herobutton2 = ''
         icon-svg2 = '<svg class="svgicon-xsmall mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="currentColor" d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>'
-      link-heroimage = "/assets/img/HeroMainImage.png"
+        link-heroimage = "/assets/images/hero-image-2.png"
     ></t-hero-reverse>
 
 
@@ -254,12 +256,12 @@
                     <span class="divider-horizontal100"></span>
 
                     <div class="flex flex-col gap3">
-                        <a href="/assets/Currículo Augusto Galves - 2026.pdf" target="_blank" class="btn btn--primary w-full">
-                            <svg class="svgicon-xsmall mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="currentColor" d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                        <a href="cv/pt/Augusto-Galves-CV-2026.pdf" class="btn btn--primary w-full" download="Augusto Galves - CV 2026.pdf">
+                            <svg class="svgicon-xsmall mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                             <span>Download PDF</span>
                         </a>
-                        <a href="/contato.html" class="btn btn--secondary w-full">
-                            <svg class="svgicon-xsmall mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="currentColor" d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                        <a href="/contact/" class="btn btn--secondary w-full">
+                            <svg class="svgicon-xsmall mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
                             <span>Entre em Contato</span>
                         </a>
                     </div>
@@ -272,7 +274,7 @@
 </main>
 
 <t-cta 
-    link_ctabutton1="/contato.html"
+    link_ctabutton1="/contact/"
 ></t-cta>
 
 <t-footer

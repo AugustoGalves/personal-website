@@ -128,7 +128,7 @@
 /* ███████████████████████  🖼️ ICONS CHANGES   █████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
 
-:root[data-theme="light"] .logo-header{content: url("/assets/img/LogoDark_Pedro AGA Silva Engenheiro Mecânico.png"); }
+:root[data-theme="light"] .logo-header{content: url("/assets/images/logo-dark.png"); }
 
 :root[data-theme="dark"] .icon-moon {display: block; }
 :root[data-theme="dark"] .icon-sun {display: none; }
