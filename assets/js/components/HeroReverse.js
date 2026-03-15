@@ -2,7 +2,7 @@
 
 //Criando Custom HTML Components ─────────────────────────────────────────────────────────────────────────────── ✣ ──
 
-class THero extends HTMLElement {
+class THeroReverse extends HTMLElement {
     // =======================================
     // Função principal main()
     // =======================================
@@ -30,7 +30,7 @@ class THero extends HTMLElement {
         this.innerHTML = `
 <!-- ─── HERO ─────────────────────────────────────────────────────────────────────────────── ✣ ─ -->
 <div class="container">
-    <section class="flex flex-row justify-spacebetween flex-col-mobile">
+    <section class="flex flex-rowreverse justify-spacebetween flex-col-mobile">
         <!-- CODE START OF HERO LEFT DIV-->
         <div class="section flex flex-col hero-left">
             <h1 data-i18n="pages.${PAGINA_ATUAL}.hero.name"></h1>
@@ -51,7 +51,7 @@ class THero extends HTMLElement {
         </div>
         <!-- CODE START OF HERO RIGHT DIV -->
         <div class="flex hero-image">
-            <img decoding="async" fetchpriority="high" src="${links.heroimage}" alt="Augusto Galves Selfie Photo">
+            <img class="hero-image2" decoding="async" fetchpriority="high" src="${links.heroimage}" alt="Augusto Galves Selfie Photo">
         </div>
     </section>
 </div>
@@ -60,4 +60,4 @@ class THero extends HTMLElement {
     }
 }
 
-customElements.define('t-hero', THero);
+customElements.define('t-hero-reverse', THeroReverse);

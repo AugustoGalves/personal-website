@@ -1342,6 +1342,19 @@ footer{
     100% { opacity: 1; transform: scale(1.05); }
 }
 
+/* ─── HERO MOD ───────────────────────────────────────────────────────────────────────────────────────── ✣ ─ */
+
+/* Utilizada para a foto sem herdar o radial-gradient da capa padrão */
+.hero-image2 {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: var(--spacing5);
+    box-shadow: var(--shadow);
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
 /* ─── CONTACT FORM ─────────────────────────────────────────────────────────────────────────────────────────── ✣ ─ */
 .contact-form {
 	backdrop-filter: blur(12px);
@@ -1467,18 +1480,6 @@ button span:hover{
     align-items: flex-start;
 }
 
-/* ─── Imagem do Hero no Currículo ────────────────────────────────────── ✣ ─ */
-/* Utilizada para a foto sem herdar o radial-gradient da capa padrão */
-.resume-hero-img {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    border-radius: var(--spacing5);
-    box-shadow: var(--shadow);
-    object-fit: cover;
-    aspect-ratio: 1/1;
-}
-
 /* ─── Sidebar Fixa ───────────────────────────────────────────────────── ✣ ─ */
 .sticky-sidebar {
     position: sticky;
@@ -1596,6 +1597,7 @@ button span:hover{
 .gap3{gap: var(--spacing3); }
 .gap4{gap: var(--spacing4); }
 .gap5{gap: var(--spacing5); }
+.gap6{gap: var(--spacing6); }
 .gap7{gap: var(--spacing7); }
 .gap8{gap: var(--spacing8); }
 .gap9{gap: var(--spacing9); }
