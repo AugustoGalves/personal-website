@@ -985,11 +985,13 @@ t-card-icon {
 
 /* ─── BADGES ───────────────────────────────────────────────────────────────────────────────────────── ✣ ─ */
 .badge{
-	/* Visuals */
+	/* Layout */
+  display: inline-flex;
+  white-space: nowrap;
   padding: 2px 4px;
 	/* Typograph */
   font-size: var(--spacing3);
-  font-weight: 600;
+  font-weight: 500;
 	/* Visuals */
   color: white;
   opacity:.9;
@@ -1470,14 +1472,18 @@ button span:hover{
 /* ────────────────────────────────────────────────────────────────────────── */
 /* ████████████████  📄 LAYOUT: PÁGINA DE CURRÍCULO  ████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
+/* ────────────────────────────────────────────────────────────────────────── */
+/* ████████████████  📄 RENOMEAR ESSAS CLASSES ABAIXO E REORGANIZAR  ████████████████████████ */
+/* ────────────────────────────────────────────────────────────────────────── */
 
 /* ─── Grid Principal (2 Colunas) ─────────────────────────────────────── ✣ ─ */
 /* Layout assíncrono para separar a Timeline principal da Sidebar Fixa */
 .resume-grid {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    /* minmax previne que o conteúdo interno force o contêiner a estourar a tela */
+    grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr); 
     gap: var(--spacing8);
-    align-items: flex-start;
+    align-items: start;
 }
 
 /* ─── Sidebar Fixa ───────────────────────────────────────────────────── ✣ ─ */
@@ -1542,6 +1548,7 @@ button span:hover{
     box-shadow: 0 0 0 6px var(--color-bg-dark); 
 }
 
+
 /* ─── Listas dentro dos Cards de Experiência ─────────────────────────── ✣ ─ */
 .resume-list {
     list-style-type: disc;
@@ -1566,6 +1573,7 @@ button span:hover{
     .sticky-sidebar {
         position: relative;
         top: 0;
+        order: -1;
     }
     .resume-timeline .timeline-dot {
         top: 16px; /* Ajuste visual em telas pequenas devido à quebra de linha do h3 */

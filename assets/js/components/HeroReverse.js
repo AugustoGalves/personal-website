@@ -38,8 +38,8 @@ class THeroReverse extends HTMLElement {
             <div class="hero-full-line my-1">
                 <h3 data-i18n="pages.${PAGINA_ATUAL}.hero.specialty" class="subtext"></h3>
             </div>
-            <div class="flex flex-row gap3 py-6 center-align-mobile">
-                <a class="btn btn--primary" target="_blank" data-i18n="pages.${PAGINA_ATUAL}.hero.cta1">
+            <div class="flex flex-row gap3 py-6 justify-center-mobile">
+                <a class="btn btn--primary" target="_blank" href="${links.herobutton1}">
                     ${icon_svg1}
                     <span data-i18n="pages.${PAGINA_ATUAL}.hero.cta1"></span>
                 </a>

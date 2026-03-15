@@ -72,23 +72,24 @@
 ></t-header>
 
 <main>
+    <!-- ─── INDEX BAR ─────────────────────────────────────────────────────────────────────────────── ✣ ─ -->
+    <div class="container">
+        <div class="flex items-center gap2 text-small mb-4 subtext">
+            <a href="/" class="subtext">Início</a>
+            <svg class="svgicon-xsmall" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+            <span class="card-title">Currículo</span>
+        </div>
+    </div>
 
-<!-- ─── INDEX BAR ─────────────────────────────────────────────────────────────────────────────── ✣ ─ -->
-<div class="flex items-center gap2 text-small mb-4 subtext">
-    <a href="/" class="subtext">Início</a>
-    <svg class="svgicon-xsmall" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
-    <span class="card-title">Currículo</span>
-</div>
 
-
-<!-- ─── HERO ─────────────────────────────────────────────────────────────────────────────── ✣ ─ -->        
-<t-hero-reverse
-    link-herobutton1 = "/files/curriculo/Currículo Augusto Galves - 2026.pdf"
-    icon-svg1 = '<svg class="svgicon-xsmall mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="currentColor" d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>'
-    link-herobutton2 = "/contato.html"
-    icon-svg2 = '<svg class="svgicon-xsmall mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="currentColor" d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>'
-    link-heroimage = "/assets/img/HeroMainImage.png"
-></t-hero-reverse>
+    <!-- ─── HERO ─────────────────────────────────────────────────────────────────────────────── ✣ ─ -->        
+    <t-hero-reverse
+        link-herobutton1 = "/files/curriculo/Currículo Augusto Galves - 2026.pdf"
+        icon-svg1 = '<svg class="svgicon-xsmall mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="currentColor" d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>'
+        link-herobutton2 = "/contato.html"
+        icon-svg2 = '<svg class="svgicon-xsmall mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="currentColor" d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>'
+      link-heroimage = "/assets/img/HeroMainImage.png"
+    ></t-hero-reverse>
 
 
 
@@ -135,9 +136,29 @@
                     <p>Engenheiro Mecânico (CREA-RJ) com inglês Fluente C2 e experiência em coordenação técnica de operações navais internacionais, liderando reparos e a comunicação com clientes globais. Participação em projetos HVAC para empresas como BMW, TIM e Rede D'Or. Experiência no desenvolvimento de ferramentas de engenharia, incluindo planilha VBA para dimensionamento de correias (patente pendente) e dashboards em ambiente web.</p>
                 </section>
 
+
+                <section id="formacao" class="flex flex-col gap4">
+                    <h2>Formação</h2>
+                    <div class="card p-5 w-full">
+                        <div class="flex flex-row justify-spacebetween items-start flex-col-mobile gap2-mobile">
+                            <div class="flex flex-col">
+                                <h3 class="card-title">Bacharelado em Engenharia Mecânica</h3>
+                                <span class="card-subtitle mt-1">CEFET-RJ, Rio de Janeiro</span>
+                            </div>
+                            <span class="badge badge--engineering">Concluído</span>
+                        </div>
+                        <ul class="resume-list subtext text-small mt-4">
+                            <li>Engenheiro Mecânico com registro ativo no CREA-RJ | Registro nº 2025102465.</li>
+                            <li>Aptidão para emissão de ARTs e demais documentos técnicos.</li>
+                        </ul>
+                    </div>
+                </section>
+
+
                 <section id="experiencia" class="flex flex-col gap4">
                     <h2>Experiência</h2>
-                    
+            
+
                     <div class="resume-timeline">
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
@@ -147,7 +168,7 @@
                                         <h3 class="card-title">Engenheiro Mecânico - Operações Navais Internacionais</h3>
                                         <span class="card-subtitle mt-1">Buena Vista Shipping (Dubai) / Electra M/T</span>
                                     </div>
-                                    <span class="badge badge--international">02/2025 - 05/2025</span>
+                                    <span class="badge badge--python">02/2025 - 05/2025</span>
                                 </div>
                                 <ul class="resume-list subtext text-small mt-4">
                                     <li>Contrato inicialmente previsto para 3 dias de operação, estendido para 3 meses, elevando em aproximadamente 300% a receita projetada da operação.</li>
@@ -183,7 +204,7 @@
                                         <h3 class="card-title">Estagiário de Projetos HVAC</h3>
                                         <span class="card-subtitle mt-1">Axem Engenharia e Arquitetura</span>
                                     </div>
-                                    <span class="badge badge--hvac">11/2023 - 07/2024</span>
+                                    <span class="badge badge--python">11/2023 - 07/2024</span>
                                 </div>
                                 <ul class="resume-list subtext text-small mt-4">
                                     <li>Desenvolvimento de projetos completos de climatização (HVAC) para clientes corporativos e industriais, utilizando AutoCAD, Excel e Word diariamente.</li>
@@ -195,36 +216,19 @@
                     </div>
                 </section>
 
-                <section id="formacao" class="flex flex-col gap4">
-                    <h2>Formação</h2>
-                    <div class="card p-5 w-full">
-                        <div class="flex flex-row justify-spacebetween items-start flex-col-mobile gap2-mobile">
-                            <div class="flex flex-col">
-                                <h3 class="card-title">Bacharelado em Engenharia Mecânica</h3>
-                                <span class="card-subtitle mt-1">CEFET-RJ, Rio de Janeiro</span>
-                            </div>
-                            <span class="badge badge--engineering">Concluído</span>
-                        </div>
-                        <ul class="resume-list subtext text-small mt-4">
-                            <li>Engenheiro Mecânico com registro ativo no CREA-RJ | Registro nº 2025102465.</li>
-                            <li>Aptidão para emissão de ARTs e demais documentos técnicos.</li>
-                        </ul>
-                    </div>
-                </section>
-
                 <section id="habilidades" class="flex flex-col gap4">
                     <h2>Habilidades Técnicas</h2>
                     <div class="flex resume-flex-wrap gap2">
-                        <span class="badge badge--hvac">Projetos HVAC</span>
-                        <span class="badge badge--autocad">AutoCAD 2D/3D</span>
-                        <span class="badge badge--revit">Revit</span>
-                        <span class="badge badge--solidworks">SolidWorks</span>
-                        <span class="badge badge--excel">Excel Avançado</span>
-                        <span class="badge badge--vba">VBA / Macros</span>
+                        <span class="badge badge--autocad">Inglês C2 (Fluente)</span>
+                        <span class="badge badge--autocad">Projetos HVAC</span>
+                        <span class="badge badge--python">AutoCAD 2D/3D</span>
+                        <span class="badge badge--python">Revit</span>
+                        <span class="badge badge--python">SolidWorks</span>
+                        <span class="badge badge--python">Excel Avançado</span>
+                        <span class="badge badge--python">VBA / Macros</span>
                         <span class="badge badge--python">Python</span>
-                        <span class="badge badge--cpp">C / C++</span>
-                        <span class="badge badge--esp32">ESP32 & IoT</span>
-                        <span class="badge badge--international">Inglês C2 (Fluente)</span>
+                        <span class="badge badge--python">C / C++</span>
+                        <span class="badge badge--autocad">ESP32 & IoT</span>
                     </div>
                 </section>
             </div>
