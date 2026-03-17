@@ -1576,7 +1576,6 @@ button span:hover{
     .sticky-sidebar {
         position: relative;
         top: 0;
-        order: -1;
     }
     .resume-timeline .timeline-dot {
         top: 16px; /* Ajuste visual em telas pequenas devido à quebra de linha do h3 */

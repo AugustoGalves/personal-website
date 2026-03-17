@@ -25,6 +25,7 @@ class TCardMedia extends HTMLElement {
             ?.replace(".html", "") || "index";
         const carousel_id = this.getAttribute("carousel-id");
         const card_id = this.getAttribute("card-id");
+        const alt_text = this.getAttribute("alt-text")
         const badge = {
             class1: this.getAttribute("badge_class1") || "",
             class2: this.getAttribute("badge_class2") || "",
@@ -41,7 +42,7 @@ class TCardMedia extends HTMLElement {
 <div class="card card--carousel"> 
     <!-- CARD TOP -->
     <div class="card__media">
-        <img class="card__image" src="${links.image}" loading="lazy" decoding="async" alt="Projeto de HVAC AutoCAD e Revit">
+        <img class="card__image" src="${links.image}" loading="lazy" decoding="async" alt="${alt_text}">
         <!-- BADGES -->
         <div class="card__badges">
             <span class="badge ${badge.class1}">${badge.text1}</span>

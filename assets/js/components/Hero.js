@@ -63,7 +63,7 @@ class THero extends HTMLElement {
         </div>
         <!-- CODE START OF HERO RIGHT DIV -->
         <div class="flex hero-image ${extraClasses.heroimage}">
-            <img decoding="async" fetchpriority="high" src="${links.heroimage}" alt="Augusto Galves Selfie Photo">
+            <img class="hero-image2" decoding="async" fetchpriority="high" src="${links.heroimage}" alt="Augusto Galves Selfie Photo">
         </div>
     </section>
 </div>

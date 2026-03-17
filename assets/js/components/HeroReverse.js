@@ -25,12 +25,12 @@ class THeroReverse extends HTMLElement {
             ?.replace(".html", "") || "index";
         const icon_svg1 = this.getAttribute("icon-svg1") || "";
         const icon_svg2 = this.getAttribute("icon-svg2") || "";
+        const extraClasses = {
+            heroimage: this.getAttribute("extraclasses-heroimage") || ""
+        };
         const extraAttributes = {
             herobutton1: this.getAttribute("extraattributes-herobutton1") || "",
             herobutton2: this.getAttribute("extraattributes-herobutton2") || ""
-        };
-        const extraClasses = {
-            heroimage: this.getAttribute("extraclasses-heroimage") || ""
         };
         const links = {
             herobutton1: this.getAttribute("link-herobutton1") || "",

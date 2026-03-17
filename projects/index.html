@@ -2,11 +2,11 @@
 <!-- ██████████████████████████████  HEAD START  ██████████████████████████████-->
 <!-- ──────────────────────────────────────────────────────────────────────────-->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CUSTOMIZING -->
     <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
@@ -15,16 +15,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- SEO SETTINGS -->
-    <title data-i18n="pages.projects.meta.title">Augusto Galves | Engenheiro Mecânico</title>
-    <meta data-i18n="pages.projects.meta.description" name="description" content="Engenheiro mecânico com experiência em HVAC, manutenção industrial, transmissão de potência e projetos técnicos. Atuação nacional e internacional, coordenação técnica e engenharia aplicada."/>
-    <meta name="author" content="Pedro Augusto Gomes Alves Silva"/>
+    <title data-i18n="pages.index.meta.title">Projetos | Augusto Galves</title>
+    <meta data-i18n="pages.index.meta.description" name="description" content="Portfólio técnico detalhado: HVAC, Elétrica, Automação, Programação de Software e Gestão Internacional."/>
+    <meta name="author" content="Augusto Galves"/>
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://https://augustogalves.com/" />
+    <link rel="canonical" href="https://augustogalves.com/projects/" />
     <!-- OG TAGS -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://augustogalves.com/">
-    <meta property="og:title" content="Projetos | Augusto Galves ">
-    <meta property="og:description" content="Engenheiro Mecânico e Desenvolvedor. Confira meus projetos em IoT e Automação.">
+    <meta property="og:url" content="https://augustogalves.com/projects/">
+    <meta property="og:title" content="Projetos | Augusto Galves">
+    <meta property="og:description" content="Portfólio técnico detalhado: HVAC, Elétrica, Automação, Programação de Software e Gestão Internacional.">
     <meta property="og:image" content="https://augustogalves.com/assets/images/logo-light.png">
     <!-- SEI LAAAAAAAAAAAA OQ  EH ISSO -->
     <script type="application/ld+json">
@@ -75,8 +75,8 @@
     link_headerlogo_darktheme = "/assets/images/logo-light.png"
 ></t-header>
 
-
 <main>
+
     <t-hero
         link-herobutton1 = "/projects/"
         extraattributes-herobutton1 = ''
@@ -84,9 +84,144 @@
         link-herobutton2 = "/contact/"
         extraattributes-herobutton2 = ''
         icon-svg2 = '<svg class="svgicon-xsmall mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>'
-        link-heroimage = "/assets/images/hero-image-1.png"
+        link-heroimage = "/assets/images/hero-image-3.jpeg"
         extraclasses-heroimage = ""
     ></t-hero>
+
+
+<section class="container featured-projects">
+    <h2>Projetos de Destaque</h2>
+    <t-card-carousel carousel-id="1">
+        <t-card-media
+            carousel-id = "1"
+            card-id = "1"
+            link_image = "/projects/hvac-bmw/cover.webp"
+            link_click = "/projects/hvac-bmw/"
+            alt-text = "Projeto Executivo HVAC - BMW"
+            badge-name1 = "AutoCAD"
+            badge_class1 = "badge--autocad"
+            badge-name2 = "HAP"
+            badge_class2 = "badge--hap"
+        ></t-card-media>  
+        <t-card-media card-id="feat-2" ...></t-card-media>
+        <t-card-media card-id="feat-3" ...></t-card-media>
+    </t-card-carousel>
+</section>
+
+
+<section class="container gallery-section">
+    <h2>Galeria com todos os projetos</h2>
+        
+    <t-card-carousel carousel-id="2">
+        <t-card-media
+            carousel-id = "2"
+            card-id = "1"
+            link_image = "/projects/hvac-bmw/cover.webp"
+            link_click = "/projects/hvac-bmw/"
+            alt-text = "Projeto Executivo HVAC - BMW"
+            badge-name1 = "AutoCAD"
+            badge_class1 = "badge--autocad"
+            badge-name2 = "HAP"
+            badge_class2 = "badge--hap"
+        ></t-card-media>        
+        <t-card-media
+            carousel-id = "2"
+            card-id = "2"
+            link_image = "/projects/hvac-agco/cover.webp"
+            link_click = "/projects/hvac-agco/"
+            alt-text = "Projeto Executivo HVAC - AGCO"
+            badge-name1 = "AutoCAD"
+            badge_class1 = "badge--autocad"
+            badge-name2 = "HAP"
+            badge_class2 = "badge--hap"
+        ></t-card-media>              
+        <t-card-media
+            carousel-id = "2"
+            card-id = "3"
+            link_image = "/projects/hvac-neogas/cover.webp"
+            link_click = "/projects/hvac-neogas/"
+            alt-text = "Projeto Executivo HVAC - NEOgás"
+            badge-name1 = "AutoCAD"
+            badge_class1 = "badge--autocad"
+            badge-name2 = "HAP"
+            badge_class2 = "badge--hap"
+        ></t-card-media>
+    </t-card-carousel>
+
+    <t-card-carousel carousel-id="3">
+        <t-card-media
+            carousel-id = "3"
+            card-id = "1"
+            link_image = "/projects/HVAC-clean-room.jpeg"
+            link_click = "/projects/"
+            alt-text = "Projeto de MEP Residencial - São Pedro da Aldeia - RJ"
+            badge-name1 = "AutoCAD"
+            badge_class1 = "badge--autocad"
+            badge-name2 = "Excel"
+            badge_class2 = "badge--excel"
+        ></t-card-media>        
+        <t-card-media
+            carousel-id = "3"
+            card-id = "2"
+            link_image = "/projects/planta-elétrica.png"
+            link_click = "/projects/"
+            alt-text = "Projeto de geração de energia fotovoltaica"
+            badge-name1 = "AutoCAD"
+            badge_class1 = "badge--autocad"
+            badge-name2 = "Excel"
+            badge_class2 = "badge--excel"
+        ></t-card-media>              
+        <t-card-media
+            carousel-id = "3"
+            card-id = "3"
+            link_image = "/projects/notebook-on-the-table.png"
+            link_click = "/projects/"
+            alt-text = "Notebook na mesa"
+            badge-name1 = "Excel"
+            badge_class1 = "badge--excel"
+            badge-name2 = "VBA"
+            badge_class2 = "badge--VBA"
+        ></t-card-media>
+    </t-card-carousel>
+
+    <t-card-carousel carousel-id="4">
+        <t-card-media
+            carousel-id = "4"
+            card-id = "1"
+            link_image = "/projects/notebook-on-the-table.png"
+            link_click = "/projects/"
+            alt-text = "Planilha excel VBA Patenteada"
+            badge-name1 = "Excel"
+            badge_class1 = "badge--excel"
+            badge-name2 = "VBA"
+            badge_class2 = "badge--VBA"
+        ></t-card-media>        
+        <t-card-media
+            carousel-id = "4"
+            card-id = "2"
+            link_image = "/projects/planta-elétrica.png"
+            link_click = "/projects/"
+            alt-text = "Site"
+            badge-name1 = "HTML/CSS"
+            badge_class1 = "badge--autocad"
+            badge-name2 = "JS"
+            badge_class2 = "badge--revit"
+        ></t-card-media>              
+        <t-card-media
+            carousel-id = "4"
+            card-id = "3"
+            link_image = "/projects/notebook-on-the-table.png"
+            link_click = "/projects/"
+            badge-name1 = "Python"
+            badge_class1 = "badge--python"
+            badge-name2 = "C++"
+            badge_class2 = "badge--VBA"
+        ></t-card-media>
+    </t-card-carousel>
+
+</section>
+
+
 </main>
 
 
@@ -97,7 +232,7 @@
 
 <t-footer
     link_whatsappbutton = "https://api.whatsapp.com/send/?phone=5521984095043"
-    link_emailbutton = "AugustoGalves.eng@gmail.com"
+    link_emailbutton = "augusto@augustogalves.com"
     link_linkedinbutton = "https://www.linkedin.com/in/augustogalves/"
     link_githubbutton = "https://github.com/AugustoGalves"
     link_instagrambutton = "https://www.instagram.com/augusto_galves/"
@@ -106,9 +241,5 @@
 <!-- ──────────────────────────────────────────────────────────────────────────-->
 <!-- ███████████████████████████████  SCRIPTS  ████████████████████████████████-->
 <!-- ──────────────────────────────────────────────────────────────────────────-->
-<!-- Rolagem com mouse do carrossel -->
-<script>
-</script>
-
 </body>
 </html>

@@ -87,66 +87,82 @@
     "_pagedivider2_": "—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————",
     "projects": {
       "meta": {
-        "title": "Portfólio | Augusto Galves",
+        "title": "Projetos | Augusto Galves",
         "description": "Portfólio técnico detalhado: HVAC, Elétrica, Automação, Programação de Software e Gestão Internacional."
       },
       
       "hero": {
-        "name": "Portfolio",
+        "name": "Meus Projetos",
         "role": "Coleção de todos os projetos desenvolvidos por mim",
-        "specialty": "Aplicações práticas de engenharia e tecnologia",
+        "specialty": "ㅤㅤㅤ",
         "cta1": "Entrar em contato",
-        "cta2": ""
+        "cta2": "Ver currículo"
       },
       
       "carousel1": {
-        "title": "Projetos de HVAC",
-        "subtitle": "Projetos de climatização para o setor corporativo e hospitalar",
+        "title": "Projetos de Destaque",
+        "subtitle": "Atuações internacionais e inovações em engenharia",
         "card1": {
-          "title": "BMW",
-          "desc": "Split asdasda 2025"
+          "title": "BMW - Projeto de climatização e exaustão (HVAC)",
+          "desc": "Exaustão de gases veiculares, ventilação de galpão e resfriamento com VRV LG"
         },
         "card2": {
-          "title": "Ternium",
-          "desc": "VRV 2024"
+          "title": "MEP Residencial",
+          "desc": "Projeto completo para cliente em São Pedro da Aldeia - RJ"
         },
         "card3": {
-          "title": "Software Patenteado",
+          "title": "Planilha VBA Patenteada",
           "desc": "Ultimate Belt Design and Analysis 2026"
         }
       },
       
       "carousel2": {
-        "title": "Projetos de HVAC",
-        "subtitle": "Projetos em destaque",
+        "title": "Engenharia de Climatização (HVAC)",
+        "subtitle": "Projetos para o setor corporativo, hospitalar e industrial",
         "card1": {
-          "title": "Projetos de HVAC",
-          "desc": "Especialista em VRV, split e água gelada"
+          "title": "Projeto Executivo - BMW - R0",
+          "desc": "Exaustão de gases veiculares, ventilação de galpão e resfriamento com VRV LG"
         },
         "card2": {
-          "title": "Projetos de Elétrica",
-          "desc": "Baixa tensão | NBR 5410"
+          "title": "Projeto Executivo - AGCO - R1",
+          "desc": "Climatização com sistema split, exaustão mecânica e renovação de ar exterior"
         },
         "card3": {
-          "title": "Software Patenteado",
-          "desc": "Ultimate Belt Design and Analysis 2026"
+          "title": "Projeto Executivo - NEOgás - R1",
+          "desc": "Climatização com sistema split, exaustão mecânica e renovação de ar exterior"
         }
       },
       
       "carousel3": {
-        "title": "Projetos de HVAC",
-        "subtitle": "Projetos em destaque",
+        "title": "MEP Residencial",
+        "subtitle": "Instalações elétricas, hidráulicas e base de arquitetura",
         "card1": {
-          "title": "Projetos de HVAC",
-          "desc": "Especialista em VRV, split e água gelada"
+          "title": "MEP Residencial",
+          "desc": "Residência em São Pedro da Aldeia - RJ"
         },
         "card2": {
-          "title": "Projetos de Elétrica",
-          "desc": "Baixa tensão | NBR 5410"
+          "title": "Dimensionamento de sistema de geração fotovoltaica (Painel solar)",
+          "desc": "Residência na Ilha do Governador - RJ"
         },
         "card3": {
-          "title": "Software Patenteado",
+          "title": "ㅤㅤㅤ",
+          "desc": "ㅤㅤㅤ"
+        }
+      },
+      "carousel4": {
+        "title": "Automação & Programação",
+        "subtitle": "Desenvolvimento Web, Python, C++ e Assembly",
+        "card1": {
+          "title": "Planilha VBA Patenteada",
           "desc": "Ultimate Belt Design and Analysis 2026"
+        },
+        "card2": {
+          "title": "Portfolio website handcoded",
+          "desc": "HTML/CSS/JS vanilla para frontend e backend"
+        },
+        "card3": {
+          "title": "Reconhecimento visual para Piano Tiles",
+          "desc": "Bot programado para reconhecimento visual jogando Piano Tiles. Recorde de 15 teclas por segundo."
         }
       },
       
@@ -166,7 +182,7 @@
       },
       "hero": {
         "name": "Augusto Galves",
-        "role": "Engenheiro Mecânico · Projetos Internacionais · HVAC Corporativo",
+        "role": "ㅤㅤㅤ",
         "specialty": "Engenheiro Mecânico (CREA-RJ) com inglês Fluente C2. Especialista em HVAC, transmissão de potência, automação e operações internacionais.",
         "cta1": "Baixar Currículo (PDF)",
         "cta2": "Entre em Contato"
