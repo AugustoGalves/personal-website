@@ -141,8 +141,8 @@
           "desc": "Residência em São Pedro da Aldeia - RJ"
         },
         "card2": {
-          "title": "Dimensionamento de sistema de geração fotovoltaica (Painel solar)",
-          "desc": "Residência na Ilha do Governador - RJ"
+          "title": "Projeto de geração fotovoltaica",
+          "desc": "Painel solar em Residência na Ilha do Governador - RJ"
         },
         "card3": {
           "title": "ㅤㅤㅤ",
@@ -161,8 +161,8 @@
           "desc": "HTML/CSS/JS vanilla para frontend e backend"
         },
         "card3": {
-          "title": "Reconhecimento visual para Piano Tiles",
-          "desc": "Bot programado para reconhecimento visual jogando Piano Tiles. Recorde de 15 teclas por segundo."
+          "title": "Bot de reconhecimento visual (Piano Tiles)",
+          "desc": "Reconhecimento visual e autoclick. Executa até 15 teclas por segundo"
         }
       },
       

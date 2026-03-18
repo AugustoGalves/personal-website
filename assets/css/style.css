@@ -128,7 +128,7 @@
 /* ███████████████████████  🖼️ ICONS CHANGES   █████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
 
-:root[data-theme="light"] .logo-header{content: url("/assets/images/logo-dark.png"); }
+:root[data-theme="light"] .logo-header{content: url("/assets/images/logo-dark.svg"); }
 
 :root[data-theme="dark"] .icon-moon {display: block; }
 :root[data-theme="dark"] .icon-sun {display: none; }
@@ -1301,6 +1301,8 @@ footer{
 .hero-image{
  	/* Layout */
   position: relative;
+  margin-top: var(--spacing3);
+  margin-bottom: var(--spacing3);
   /* Sizing */
   width: 35%;
 }
