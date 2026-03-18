@@ -129,7 +129,7 @@
         },
         "card3": {
           "title": "Em breve",
-          "desc": "Em breve novidades"
+          "desc": "Projeto em andamento"
         }
       },
       "carousel4": {
@@ -256,7 +256,22 @@
         "message": "Mensagem",
         "submit": "Enviar Mensagem"
       }
+    },
+    
+
+
+    "_sectiondivider2_": "███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+    "hvac-bmw": {
+      "meta": {
+        "title": "Projeto HVAC BMW | Augusto Galves",
+        "description": "Detalhes técnicos do projeto de exaustão e climatização para a BMW."
+      },
+      "title":"BMW - Projeto de climatização e exaustão",
+      "description":"Exaustão de gases veiculares, ventilação de galpão e resfriamento com VRV LG",
+      "category": "HVAC & Engenharia Mecânica",
+      "tech": "AutoCAD, Carrier HAP, Excel, Word"
     }
+
 
 
   }

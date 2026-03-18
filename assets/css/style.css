@@ -1475,9 +1475,6 @@ button span:hover{
 
 
 /* ────────────────────────────────────────────────────────────────────────── */
-/* ████████████████  📄 LAYOUT: PÁGINA DE CURRÍCULO  ████████████████████████ */
-/* ────────────────────────────────────────────────────────────────────────── */
-/* ────────────────────────────────────────────────────────────────────────── */
 /* ████████████████  📄 RENOMEAR ESSAS CLASSES ABAIXO E REORGANIZAR  ████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
 
@@ -1581,6 +1578,60 @@ button span:hover{
     }
     .resume-timeline .timeline-dot {
         top: 16px; /* Ajuste visual em telas pequenas devido à quebra de linha do h3 */
+    }
+}
+
+
+
+/* =========================================
+   Galeria de Imagens do Projeto
+========================================= */
+
+.project-gallery {
+    display: flex;
+    gap: 1.5rem; /* Equivalente à sua classe gap3 */
+    overflow-x: auto;
+    padding-bottom: 1rem; /* Espaço para a barra de rolagem */
+    margin-bottom: 2rem;
+    
+    /* Scroll Snap para criar o efeito de "deslizar e encaixar" */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    /* Estilo da barra de rolagem (Firefox) */
+    scrollbar-width: thin;
+    scrollbar-color: #555 transparent; /* Pode usar as suas variáveis CSS, ex: var(--primary) */
+}
+
+/* Estilo da barra de rolagem (Chrome, Safari, Edge) */
+.project-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+.project-gallery::-webkit-scrollbar-track {
+    background: transparent;
+}
+.project-gallery::-webkit-scrollbar-thumb {
+    background-color: #555; /* Cor da barra */
+    border-radius: 4px;
+}
+
+/* Imagens dentro da galeria */
+.project-gallery img {
+    height: 400px; /* Mantém todas as imagens com a mesma altura */
+    width: auto;
+    max-width: 90vw; /* Evita que uma imagem ocupe mais do que a largura do ecrã */
+    object-fit: cover;
+    flex-shrink: 0; /* Impede que o flexbox esmague as imagens */
+    border-radius: 8px; /* Equivalente à sua classe border-radius-small */
+    
+    /* Ponto de paragem do scroll */
+    scroll-snap-align: start;
+}
+
+/* Responsividade para telemóveis e tablets pequenos */
+@media (max-width: 768px) {
+    .project-gallery img {
+        height: 250px; /* Reduz a altura das imagens para não ocupar o ecrã todo */
     }
 }
 
