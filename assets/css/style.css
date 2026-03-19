@@ -1491,8 +1491,20 @@ button span:hover{
 /* ─── Sidebar Fixa ───────────────────────────────────────────────────── ✣ ─ */
 .sticky-sidebar {
     position: sticky;
+    position: -webkit-sticky; /* Suporte para Safari */
     top: calc(100px + var(--spacing5)); /* Desconto da Header + Margem de respiro */
+    align-self: start; 
 }
+
+.resume-sidebar .card-subtitle {
+    white-space: nowrap; 
+    font-size: clamp(0.65rem, 1.5vw, 0.875rem); /* Ajuste o 0.875rem para o tamanho padrão da sua fonte */
+}
+
+.resume-sidebar svg {
+    flex-shrink: 0;
+}
+
 
 /* ─── Menu de Abas (In-Page) ─────────────────────────────────────────── ✣ ─ */
 .resume-tabs {
