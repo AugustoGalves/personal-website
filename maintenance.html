@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Em manutenção</title>
     
-    <!-- Links Externos -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/43dff1e8fb.js" crossorigin="anonymous"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
     <style>
         :root {
-            --primary: #1d3557; /* Seu azul marinho padrão */
+            --primary: #1d3557; /* Azul marinho padrão */
             --accent: #025bb0;  /* Cor de destaque dos botões */
-            --text: #333;
+            --accent-hover: #02478a; /* Hover do botão principal */
+            --text: #333333;
+            --text-muted: #666666;
             --bg: #f8f9fa;
         }
 
@@ -22,7 +23,10 @@
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg: #0f172a;
-                --text: #e3e3e3;
+                --text: #f1f5f9;
+                --text-muted: #cbd5e1;
+                --accent: #3b82f6; /* Azul mais claro para destacar no escuro */
+                --accent-hover: #60a5fa;
             }
         }
 
@@ -35,16 +39,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
             padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        .container { max-width: 600px; }
+        .container { 
+            max-width: 600px; 
+            padding: 40px 20px;
+        }
 
         /* Animação de Engrenagem (Engineering Coded) */
         .icon-wrapper {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             animation: rotate 8s linear infinite;
             display: inline-block;
         }
@@ -54,42 +62,85 @@
             to { transform: rotate(360deg); }
         }
 
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border: 1.5px solid var(--accent);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
         h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 15px;
-            color: var(--accent);
+            color: var(--text);
         }
 
         p {
             font-size: 1.1rem;
             line-height: 1.6;
-            margin-bottom: 30px;
-            opacity: 0.9;
+            color: var(--text-muted);
+            margin-bottom: 35px;
         }
 
-        .badge {
-            display: inline-block;
-            padding: 8px 16px;
-            border: 1px solid var(--accent);
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--accent);
+        /* Botão de Voltar */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            background-color: var(--accent);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-back:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            color: #ffffff;
         }
 
         .contact-links {
-            margin-top: 40px;
-            font-size: 0.9rem;
+            margin-top: 50px;
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
         .contact-links a {
-            color: var(--accent);
+            color: var(--text-muted);
             text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
+            .btn-back { width: 100%; }
         }
     </style>
 </head>
@@ -106,13 +157,27 @@
         
         <h1>Calibrando Sistemas</h1>
         
-        <p>Estamos realizando uma manutenção no site para atualização do portfólio. Voltamos em breve com novidades.</p>
+        <p>Estamos realizando uma manutenção nesta página para atualização. Voltamos em breve com novidades.</p>
+
+        <a href="#" onclick="goBack()" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Voltar à página anterior
+        </a>
 
         <div class="contact-links">
-            <a href="mailto:AugustoGalves.eng@gmail.com">E-mail</a> | 
-            <a href="https://linkedin.com/in/AugustoGalves">LinkedIn</a>
+            <a href="mailto:augusto@augustogalves.com"><i class="fas fa-envelope"></i> E-mail</a>
+            <a href="https://linkedin.com/in/AugustoGalves" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
     </div>
 
+    <script>
+        function goBack() {
+            // Se o usuário tem histórico de navegação na aba, volta. Se não, joga pra Home (/)
+            if (window.history.length > 1 && document.referrer !== "") {
+                window.history.back();
+            } else {
+                window.location.href = '/'; 
+            }
+        }
+    </script>
 </body>
 </html>
