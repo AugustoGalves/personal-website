@@ -92,7 +92,7 @@
       },
       "indexbar":{
         "path1": "Início",
-        "path2": "Projetos",
+        "path2": "Projetos"
       },
       
       "hero": {
@@ -169,7 +169,7 @@
       },
       "indexbar":{
         "path1": "Início",
-        "path2": "Currículo",
+        "path2": "Currículo"
       },
       "hero": {
         "name": "Currículo",
@@ -207,7 +207,7 @@
       },
       "indexbar":{
         "path1": "Início",
-        "path2": "Blog",
+        "path2": "Blog"
       },
       "hero": {
         "name": "Blog",
@@ -248,7 +248,7 @@
       },
       "indexbar":{
         "path1": "Início",
-        "path2": "Contato",
+        "path2": "Contato"
       },
       "hero": {
         "title": "Vamos conversar?",
