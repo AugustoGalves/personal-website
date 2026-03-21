@@ -50,13 +50,13 @@
     <script src="/assets/js/components/Header.js"></script>
     <script src="/assets/js/components/Hero.js"></script>
     <script src="/assets/js/components/HeroReverse.js"></script>
+    <script src="/assets/js/components/IndexBar.js"></script>
     <script src="/assets/js/components/CardRow.js"></script>
     <script src="/assets/js/components/CardCol.js"></script>
     <script src="/assets/js/components/CardIcon.js"></script>
+    <script src="/assets/js/components/CardCarousel.js"></script>
     <script src="/assets/js/components/CardMedia.js"></script>
     <script src="/assets/js/components/CardHorizontal.js"></script>
-    <script src="/assets/js/components/CardCarousel.js"></script>
-    <script src="/assets/js/components/CardCarouselReduced.js"></script>
     <script src="/assets/js/components/CTA.js"></script>
     <script src="/assets/js/components/Footer.js"></script>
     <script src="/assets/js/i18n.js"></script>
@@ -78,21 +78,19 @@
 ></t-header>
 
 <main>
-    <!-- ─── INDEX BAR ─────────────────────────────────────────────────────────────────────────────── ✣ ─ -->
-    <div class="container">
-        <div class="flex items-center gap2 text-small my-4 subtext">
-            <a href="/" class="subtext">Início</a>
-            <svg class="svgicon-xsmall" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
-            <span class="card-title">Projetos</span>
-        </div>
-    </div>
+    <t-index-bar
+        link-path1 = "/"
+        link-path2 = "/projects/"
+        show-path3 = "false"
+        link-path3 = ""
+    ></t-index-bar>
 
 
     <t-hero-reverse
         link-herobutton1 = "/contact/"
         extraattributes-herobutton1 = ''
         icon-svg1 = '<svg class="svgicon-xsmall mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>'
-        link-herobutton2 = "lab.augustogalves.com"
+        link-herobutton2 = "https://lab.augustogalves.com/"
         extraattributes-herobutton2 = ''
         icon-svg2 = '<svg class="svgicon-xsmall mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Z"/></svg>'
         link-heroimage = "/projects/computersetup.webp"

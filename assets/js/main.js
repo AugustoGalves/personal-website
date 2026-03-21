@@ -51,7 +51,7 @@ function setupCarouselFade() {
         }
     };
 
-    track.addEventListener('scroll', updateFade);
+    track.addEventListener('scroll', updateFade, { passive: true });
     window.addEventListener('resize', updateFade);
     updateFade(); // Chama uma vez para ajustar o estado inicial
 

@@ -90,6 +90,10 @@
         "title": "Projetos | Augusto Galves",
         "description": "Portfólio técnico detalhado: HVAC, Elétrica, Automação, Programação de Software e Gestão Internacional."
       },
+      "indexbar":{
+        "path1": "Início",
+        "path2": "Projetos",
+      },
       
       "hero": {
         "name": "Meus Projetos",
@@ -163,6 +167,10 @@
         "title": "Currículo | Augusto Galves",
         "description": "Currículo do Engenheiro Mecânico e Desenvolvedor Augusto Galves. Especialista em HVAC, Automação e Projetos Internacionais."
       },
+      "indexbar":{
+        "path1": "Início",
+        "path2": "Currículo",
+      },
       "hero": {
         "name": "Currículo",
         "role": "ㅤㅤㅤ",
@@ -197,9 +205,9 @@
         "title": "Blog | Augusto Galves",
         "description": "Artigos sobre Engenharia Mecânica, Desenvolvimento Web, Automação e Produtividade."
       },
-      "breadcrumb": {
-        "home": "Início",
-        "current": "Blog"
+      "indexbar":{
+        "path1": "Início",
+        "path2": "Blog",
       },
       "hero": {
         "name": "Blog",
@@ -237,6 +245,10 @@
       "meta": {
         "title": "Contato | Augusto Galves",
         "description": "Entre em contato com Augusto Galves para projetos de Engenharia Mecânica, Automação e Desenvolvimento Web."
+      },
+      "indexbar":{
+        "path1": "Início",
+        "path2": "Contato",
       },
       "hero": {
         "title": "Vamos conversar?",

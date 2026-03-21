@@ -1,23 +1,32 @@
-<!DOCTYPE html>
+<!-- ──────────────────────────────────────────────────────────────────────────-->
+<!-- ██████████████████████████████  HEAD START  ██████████████████████████████-->
+<!-- ──────────────────────────────────────────────────────────────────────────-->
+
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- CUSTOMIZING -->
     <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
     <meta name="theme-color" content="#222A35">
+    <!-- PRECONNECT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- SEO SETTINGS -->
     <title data-i18n="pages.blog.meta.title">Blog | Augusto Galves</title>
     <meta data-i18n="pages.blog.meta.description" name="description" content="Artigos sobre Engenharia Mecânica, Desenvolvimento Web, Automação e Produtividade."/>
     <meta name="author" content="Augusto Galves"/>
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://augustogalves.com/blog/" />
+    <!-- OG TAGS -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://augustogalves.com/blog/">
     <meta property="og:title" content="Blog | Augusto Galves">
     <meta property="og:description" content="Artigos sobre Engenharia Mecânica, Desenvolvimento Web, Automação e Produtividade.">
     <meta property="og:image" content="https://augustogalves.com/assets/images/logo-light.svg">
+    <!-- SEI LAAAAAAAAAAAA OQ  EH ISSO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -33,19 +42,21 @@
       ]
     }
     </script>    
+    <!-- DOWNLOADS EXTERNOS -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- DOWNLOADS INTERNOS (Cuidado com a ordem de download) -->
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
     <script src="/assets/js/config.js"></script>
     <script src="/assets/js/components/Header.js"></script>
     <script src="/assets/js/components/Hero.js"></script>
     <script src="/assets/js/components/HeroReverse.js"></script>
+    <script src="/assets/js/components/IndexBar.js"></script>
     <script src="/assets/js/components/CardRow.js"></script>
     <script src="/assets/js/components/CardCol.js"></script>
     <script src="/assets/js/components/CardIcon.js"></script>
+    <script src="/assets/js/components/CardCarousel.js"></script>
     <script src="/assets/js/components/CardMedia.js"></script>
     <script src="/assets/js/components/CardHorizontal.js"></script>
-    <script src="/assets/js/components/CardCarousel.js"></script>
-    <script src="/assets/js/components/CardCarouselReduced.js"></script>
     <script src="/assets/js/components/CTA.js"></script>
     <script src="/assets/js/components/Footer.js"></script>
     <script src="/assets/js/i18n.js"></script>
@@ -64,13 +75,12 @@
 ></t-header>
 
 <main>
-    <div class="container">
-        <div class="flex items-center gap2 text-small my-4 subtext">
-            <a href="/" class="subtext" data-i18n="pages.blog.breadcrumb.home">Início</a>
-            <svg class="svgicon-xsmall" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
-            <span class="card-title" data-i18n="pages.blog.breadcrumb.current">Blog</span>
-        </div>
-    </div>
+    <t-index-bar
+        link-path1 = "/"
+        link-path2 = "/projects/"
+        show-path3 = "false"
+        link-path3 = ""
+    ></t-index-bar>
 
     <t-hero-reverse
         link-herobutton1 = "#artigos"

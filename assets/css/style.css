@@ -141,7 +141,9 @@
 /* ────────────────────────────────────────────────────────────────────────── */
 
 t-header,
+t-index-bar,
 t-hero,
+t-hero-reverse,
 t-card-row,
 t-card-carousel,
 t-card-media,
@@ -151,22 +153,28 @@ t-footer{display:block; }
 
 /* ===== MOBILE FIRST ===== */
 t-header{min-height:95px; }
-t-hero{min-height:360px; }
-t-card-row{min-height:240px; }
-t-card-carousel{min-height:365px; }
-t-card-media{min-height:32px; } /* Ajustar esse valor */
+t-index-bar{min-height:24px; }
+t-hero{min-height:450px; }
+t-hero-reverse{min-height:450px; }
+t-card-row{min-height:410px; }
+t-card-carousel{min-height:375px; }
+t-card-carousel-reduced{min-height:365px; }
+t-card-media{min-height:32px; }
 t-cta{min-height:170px; }
 t-footer{min-height:80px; }
 
 /* ===== DESKTOP ===== */
 @media (min-width: 992px){
   t-header{min-height:85px; }
+	t-index-bar{min-height:24px; }
   t-hero{min-height:330px; }
-  t-card-row{min-height:125px; } 
-  t-card-carousel{min-height:385px; }
-  t-card-media{min-height:32px; } /* Ajustar esse valor */
-  t-cta{min-height:155px; }
-  t-footer{min-height:35px; }
+  t-hero-reverse{min-height:330px; }
+  t-card-row{min-height:180px; } 
+  t-card-carousel{min-height:410px; }
+  t-card-carousel-reduced{min-height:375px; }
+  t-card-media{min-height:290px; }
+  t-cta{min-height:185px; }
+  t-footer{min-height:45px; }
 }
 
 
