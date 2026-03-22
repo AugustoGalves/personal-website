@@ -25,6 +25,7 @@ class THeroReverse extends HTMLElement {
             ?.replace(".html", "") || "index";
         const icon_svg1 = this.getAttribute("icon-svg1") || "";
         const icon_svg2 = this.getAttribute("icon-svg2") || "";
+        const alt_text = this.getAttribute("alt-text") || "";
         const extraClasses = {
             heroimage: this.getAttribute("extraclasses-heroimage") || ""
         };
@@ -63,7 +64,7 @@ class THeroReverse extends HTMLElement {
         </div>
         <!-- CODE START OF HERO RIGHT DIV -->
         <div class="flex hero-image ${extraClasses.heroimage}">
-            <img class="hero-image2" decoding="async" fetchpriority="high" src="${links.heroimage}" alt="Augusto Galves Selfie Photo">
+            <img class="hero-image2" decoding="async" fetchpriority="high" src="${links.heroimage}" alt="${alt_text}">
         </div>
     </section>
 </div>

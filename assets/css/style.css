@@ -156,7 +156,7 @@ t-header{min-height:95px; }
 t-index-bar{min-height:24px; }
 t-hero{min-height:450px; }
 t-hero-reverse{min-height:450px; }
-t-card-row{min-height:410px; }
+t-card-row{min-height:425px; }
 t-card-carousel{min-height:375px; }
 t-card-carousel-reduced{min-height:365px; }
 t-card-media{min-height:32px; }
@@ -165,13 +165,13 @@ t-footer{min-height:80px; }
 
 /* ===== DESKTOP ===== */
 @media (min-width: 992px){
-  t-header{min-height:85px; }
+  t-header{min-height:87px; }
 	t-index-bar{min-height:24px; }
   t-hero{min-height:330px; }
   t-hero-reverse{min-height:330px; }
   t-card-row{min-height:180px; } 
-  t-card-carousel{min-height:410px; }
-  t-card-carousel-reduced{min-height:375px; }
+  t-card-carousel{min-height:425px; }
+  t-card-carousel-reduced{min-height:380px; }
   t-card-media{min-height:290px; }
   t-cta{min-height:185px; }
   t-footer{min-height:45px; }

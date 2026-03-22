@@ -44,7 +44,7 @@ class TIndexBar extends HTMLElement {
         <a href="/" class="subtext" data-i18n="pages.${PAGINA_ATUAL}.indexbar.path1">Home</a>
         <svg class="svgicon-xsmall" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
         <a href="${links.path2}" class="subtext" data-i18n="pages.${PAGINA_ATUAL}.indexbar.path2">Path2</a>
-        ${path3Block}
+        ${Blockpath3}
     </div>
 </div>
 <!-- ─── INDEX BAR END ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── ✣ ─ -->

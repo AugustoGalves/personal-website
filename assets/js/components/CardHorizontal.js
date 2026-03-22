@@ -6,12 +6,10 @@ class TCardHorizontal extends HTMLElement {
     // =======================================
     // Função principal main()
     // =======================================
-    //Navegador executa automaticamente a função connectedCallback ao baixar o script
     connectedCallback() {
-        this.renderizador(); //Inicia o script de carimbar o HTML na página
+        this.renderizador(); 
     }
         
-
     // ====================================
     // Função que faz o HTML Stamping
     // ====================================
@@ -37,31 +35,32 @@ class TCardHorizontal extends HTMLElement {
             click: this.getAttribute("link_click") || "#",
         };
 
-        // Evita renderizar a div de badges caso nenhum badge seja passado
+        // Os badges agora são inseridos no HTML dentro do card__media para herdar o position absolute em cima da imagem
         const badgesHtml = (badge.text1 || badge.text2) ? `
-            <div class="card__badges" style="margin-bottom: 0.5rem;">
+            <div class="card__badges">
                 ${badge.text1 ? `<span class="badge ${badge.class1}">${badge.text1}</span>` : ""}
                 ${badge.text2 ? `<span class="badge ${badge.class2}">${badge.text2}</span>` : ""}
             </div>
         ` : "";
         
-        // Template Stamper (So insere o HTML) ────────────────────────────────────────────────────── ✣ ──
+        // Template Stamper (Utilizando as classes responsivas do seu style.css) ─────────────────────────── ✣ ──
         this.innerHTML = `
-<div class="card card--horizontal" style="display: flex; flex-direction: row; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem;"> 
-    <a href="${links.click}" class="card__media card__media--horizontal" style="flex-shrink: 0; width: 250px; text-decoration: none;">
-        <img class="card__image" src="${links.image}" loading="lazy" decoding="async" alt="${alt_text}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+<div class="card flex flex-row flex-col-mobile items-center overflow-hidden w-full mb-4"> 
+    
+    <a href="${links.click}" class="card__media w-40 w-full-mobile" style="flex-shrink: 0; align-self: stretch;">
+        ${badgesHtml}
+        <img class="card__image" src="${links.image}" loading="lazy" decoding="async" alt="${alt_text}" style="height: 100%;">
     </a>    
     
-    <div class="card__content" style="display: flex; flex-direction: column;">
-        ${badgesHtml}
-        <a href="${links.click}" style="text-decoration: none; color: inherit;">
-            <span class="card-title" data-i18n="pages.${PAGINA_ATUAL}.${group_id}.card${card_id}.title" style="display: block; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;"></span>
-            <span class="card-subtitle" data-i18n="pages.${PAGINA_ATUAL}.${group_id}.card${card_id}.desc" style="display: block; font-size: 0.9rem; opacity: 0.8;"></span>
+    <div class="flex flex-col justify-center p-4 w-60 w-full-mobile">
+        <a href="${links.click}" style="text-decoration: none;">
+            <strong class="card-title block mb-2" data-i18n="pages.${PAGINA_ATUAL}.${group_id}.card${card_id}.title"></strong>
+            <span class="card-subtitle block" data-i18n="pages.${PAGINA_ATUAL}.${group_id}.card${card_id}.desc"></span>
         </a>
     </div>
+
 </div>
-<!-- ─── CARD MEDIA HORIZONTAL END ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── ✣ ─ -->
-        `
+`
     }
 }
 

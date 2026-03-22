@@ -26,6 +26,7 @@ class THeader extends HTMLElement {
             .filter(Boolean)
             .pop()
             ?.replace(".html", "") || "index";
+        const alt_text = this.getAttribute("alt-text") || "";
         const links = {
             navbutton1: this.getAttribute("link_navbutton1") || "",
             navbutton2: this.getAttribute("link_navbutton2") || "",
@@ -75,7 +76,7 @@ class THeader extends HTMLElement {
     <div class="flex flex-row justify-spacebetween w-full">
         
         <!-- ─── NAV BAR - LEFT SIDE ──────────────────────────────────────────────────────────────── ✣ ─ -->
-        <a href="${links.navbutton1}"><img class="logo-header" src="${links.headerlogo_darktheme}" alt="Pedro AGA Silva, engenheiro mecânico"></a>
+        <a href="${links.navbutton1}"><img class="logo-header" src="${links.headerlogo_darktheme}" alt="${alt_text}"></a>
             
         <!-- ─── NAV BAR DESKTOP - RIGHT SIDE ──────────────────────────────────────────────────────────────── ✣ ─ -->
         <nav class="navbar navbar--desktop">
