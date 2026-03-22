@@ -76,7 +76,7 @@ class THeader extends HTMLElement {
     <div class="flex flex-row justify-spacebetween w-full">
         
         <!-- ─── NAV BAR - LEFT SIDE ──────────────────────────────────────────────────────────────── ✣ ─ -->
-        <a href="${links.navbutton1}"><img class="logo-header" src="${links.headerlogo_darktheme}" alt="${alt_text}"></a>
+        <a href="${links.navbutton1}"><img class="logo-header" src="${links.headerlogo_darktheme}" alt="${alt_text}" height="80"></a>
             
         <!-- ─── NAV BAR DESKTOP - RIGHT SIDE ──────────────────────────────────────────────────────────────── ✣ ─ -->
         <nav class="navbar navbar--desktop">
