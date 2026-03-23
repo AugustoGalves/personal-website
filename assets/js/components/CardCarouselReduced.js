@@ -39,8 +39,8 @@ class TCardCarouselReduced extends HTMLElement {
     <span class="subtext span-nowrap" data-i18n="pages.${PAGINA_ATUAL}.carousel${carousel_id}.subtitle"></span>
 
     <!-- CARROSSEL -->
-    <div class="carousel-wrapper">
-    <div class="carousel-track">
+    <div class="carousel__wrapper">
+    <div class="carousel__track">
         
         <!-- CARDS VÃO DENTRO DO SLOT -->
         ${Cards_HTML}
