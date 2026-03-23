@@ -162,4 +162,4 @@ class TImageGallery extends HTMLElement {
 }
 
 
-customElements.define('t-gallery', ProjectGallery);
+customElements.define('t-image-gallery', TImageGallery);
