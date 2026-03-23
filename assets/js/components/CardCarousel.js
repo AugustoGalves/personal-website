@@ -43,8 +43,8 @@ class TCardCarousel extends HTMLElement {
     </div>
 
     <!-- CARROSSEL -->
-    <div class="carousel-wrapper">
-    <div class="carousel-track">
+    <div class="carousel__wrapper">
+    <div class="carousel__track">
         
         <!-- CARDS VÃO DENTRO DO SLOT -->
         ${Cards_HTML}
@@ -100,9 +100,7 @@ class TCardCarousel extends HTMLElement {
             slider.scrollLeft = scrollLeft - walk;
         });
         
-        // --- HACK BÔNUS PARA CARROSSEIS ---
-        // Previne o "arrastar" nativo das imagens e links pelo navegador,
-        // que geralmente buga e interrompe o seu drag personalizado.
+        // Previne o "arrastar" nativo das imagens e links pelo navegador
         const imgsAndLinks = this.querySelectorAll('img, a');
         imgsAndLinks.forEach(el => {
             el.addEventListener('dragstart', (e) => e.preventDefault());

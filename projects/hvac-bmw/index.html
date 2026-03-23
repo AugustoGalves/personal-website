@@ -54,6 +54,7 @@
     <script src="/assets/js/components/CardCol.js"></script>
     <script src="/assets/js/components/CardIcon.js"></script>
     <script src="/assets/js/components/CardMedia.js"></script>
+    <script src="/assets/js/components/ImageGallery.js"></script>
     <script src="/assets/js/components/CardCarousel.js"></script>
     <script src="/assets/js/components/CardCarouselReduced.js"></script>
     <script src="/assets/js/components/CTA.js"></script>
@@ -86,20 +87,60 @@
         </p>
     </section>
 
-    <section class="project-gallery mb-6 flex gap3 overflow-x-auto pb-2" style="scrollbar-width: thin;">
-        <img src="/projects/hvac-bmw/cover.webp" alt="Imagem 1 do projeto" class="border-radius-small" style="height: 400px; object-fit: cover; flex-shrink: 0;">
-        <img src="/projects/hvac-bmw/cover.webp" alt="Imagem 2 do projeto" class="border-radius-small" style="height: 400px; object-fit: cover; flex-shrink: 0;">
-        <img src="/projects/hvac-bmw/cover.webp" alt="Imagem 3 do projeto" class="border-radius-small" style="height: 400px; object-fit: cover; flex-shrink: 0;">
-    </section>
+    <t-gallery>
+        <section class="image-gallery image-gallery__main-container">
+            <img 
+                src="/projects/hvac-bmw/cover.webp" 
+                alt="Visão geral do sistema BMW" 
+                class="image-gallery__main-image"
+                loading="lazy"
+            >
+            <img 
+                src="/projects/hvac-bmw/cover.webp" 
+                alt="Detalhes da instalação dos dutos" 
+                class="image-gallery__main-image"
+                loading="lazy"
+            >
+            <img 
+                src="/projects/hvac-bmw/cover.webp" 
+                alt="Painel de controle finalizado" 
+                class="image-gallery__main-image"
+                loading="lazy"
+            >
+        </section>
+        
+        <nav class="image-gallery image-gallery__thumb-container">
+            <img 
+                src="/projects/hvac-bmw/cover.webp" 
+                alt="Miniatura 1" 
+                class="image-gallery__thumb-image"
+                loading="lazy"
+            >
+            <img 
+                src="/projects/hvac-bmw/cover.webp" 
+                alt="Miniatura 2" 
+                class="image-gallery__thumb-image"
+                loading="lazy"
+            >
+            <img 
+                src="/projects/hvac-bmw/cover.webp" 
+                alt="Miniatura 3" 
+                class="image-gallery__thumb-image"
+                loading="lazy"
+            >
+        </nav>
+    </t-gallery>
 
-    <article class="project-prose" style="max-width: 800px; margin: 0 auto;">    
+
+    <article class="container">    
+        
         <h2 class="prose">O Desafio</h2>
         <p class="prose">Descreva aqui o contexto e os problemas que precisavam ser resolvidos. Este texto usa a classe pprose para manter a leitura agradável.</p>
         
-        <h2 class="prose">Solução Desenvolvida</h3>
+        <h2 class="prose">Solução Desenvolvida</h2>
         <p class="prose">Detalhes técnicos da execução do projeto.</p>  
         
-        <h2 class="prose">Resultados</h4>
+        <h2 class="prose">Resultados</h2>
         <p class="prose">Impacto gerado, métricas ou conclusão do projeto.</p>
     </article>
 </main>
