@@ -1,58 +1,33 @@
 
 
+
 //Criando Custom HTML Components ─────────────────────────────────────────────────────────────────────────────── ✣ ──
 
 class TImageGallery extends HTMLElement {
     // =======================================
     // Função principal main()
     // =======================================
-    //Navegador executa automaticamente a função connectedCallback ao baixar o script
     connectedCallback() {
-        setTimeout(() => { // Timeout, esse Callback so vai rodar depois do HTML da pagina ser baixado por inteiro. 
-            const Cards_HTML = this.innerHTML; // Salva os <t-cards> dentro do <t-card-carousel>
-            this.mainSlider = this.querySelector('.gallery-main');
-            this.thumbSlider = this.querySelector('.gallery-thumbs');
-            if (!this.mainSlider || !this.thumbSlider) return;
+        setTimeout(() => { 
+            // 1. Apenas seleciona os elementos que já estão no HTML da página
+            this.mainSlider = this.querySelector('.image-gallery__main-container');
+            this.thumbSlider = this.querySelector('.image-gallery__thumb-container');
+            
+            if (!this.mainSlider || !this.thumbSlider) {
+                console.warn("⚠️ t-image-gallery: Estrutura da galeria não encontrada no HTML.");
+                return;
+            }
 
-            this.renderizador(Cards_HTML); //Inicia o script de carimbar o HTML na página
+            // 2. Inicia as funções diretamente nas tags reais da tela!
             this.initDragToScroll(this.mainSlider);
             this.initThumbnailClickNav();
             this.initScrollSyncObserver();
         }, 0);
     }
-    	
-
-    // ====================================
-    // Função que faz o HTML Stamping
-    // ====================================
-    renderizador(){
-        // Declaração das variáveis capturadas no HTML ────────────────────────────────────────────────────── ✣ ──
-        const PAGINA_ATUAL =
-            window.location.pathname
-            .split("/")
-            .filter(Boolean)
-            .pop()
-            ?.replace(".html", "") || "index";
-        const card_group_id = this.getAttribute("card-group-id");
-        const card_id = this.getAttribute("card-id");
-        const icon_svg = this.getAttribute("icon-svg") || "";
-        const links = {
-        };
         
-        // Template Stamper (So insere o HTML) ────────────────────────────────────────────────────── ✣ ──
-        this.innerHTML = `
-
-<!-- ─── IMAGE GALLERY START ──────────────────────────────────────────────────────────────── ✣ ─ -->
-
-
-
-<!-- ─── IMAGE GALLERY END ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── ✣ ─ -->
-        `
-    }
-
 
     // ====================================
-    // 1. Lógica de Scroll com o Mouse (Seu código original, adaptado)
+    // 1. Lógica de Scroll com o Mouse
     // ====================================
     initDragToScroll(slider) {
         let isDown = false;
@@ -61,7 +36,7 @@ class TImageGallery extends HTMLElement {
 
         slider.addEventListener('mousedown', (e) => {
             isDown = true;
-            slider.classList.add('active'); // CSS desativa o snap e smooth scroll aqui
+            slider.classList.add('active');
             startX = e.pageX - slider.offsetLeft;
             scrollLeft = slider.scrollLeft;
         });
@@ -81,11 +56,10 @@ class TImageGallery extends HTMLElement {
             e.preventDefault(); 
             
             const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 2; // Velocidade do arrasto
+            const walk = (x - startX) * 2; 
             slider.scrollLeft = scrollLeft - walk;
         });
         
-        // Previne o "arrastar" nativo das imagens e links pelo navegador
         const imgs = slider.querySelectorAll('img');
         imgs.forEach(el => {
             el.addEventListener('dragstart', (e) => e.preventDefault());
@@ -96,16 +70,14 @@ class TImageGallery extends HTMLElement {
     // 2. Lógica de Clique nas Miniaturas
     // ====================================
     initThumbnailClickNav() {
-        const thumbs = this.thumbSlider.querySelectorAll('.gallery-thumb');
-        const mainImages = this.mainSlider.querySelectorAll('.gallery-image');
+        const thumbs = this.thumbSlider.querySelectorAll('.image-gallery__thumb-image');
+        const mainImages = this.mainSlider.querySelectorAll('.image-gallery__main-image');
 
         thumbs.forEach((thumb, index) => {
             thumb.addEventListener('click', () => {
                 const targetImage = mainImages[index];
                 if (!targetImage) return;
 
-                // Rola suavemente a galeria principal para a imagem correspondente
-                // O comportamento 'smooth' é crucial aqui.
                 this.mainSlider.scrollTo({
                     left: targetImage.offsetLeft - this.mainSlider.offsetLeft,
                     behavior: 'smooth'
@@ -118,24 +90,19 @@ class TImageGallery extends HTMLElement {
     // 3. Lógica de Sincronização de Rolagem (IntersectionObserver)
     // ====================================
     initScrollSyncObserver() {
-        const thumbs = this.thumbSlider.querySelectorAll('.gallery-thumb');
-        const mainImages = this.mainSlider.querySelectorAll('.gallery-image');
+        const thumbs = this.thumbSlider.querySelectorAll('.image-gallery__thumb-image');
+        const mainImages = this.mainSlider.querySelectorAll('.image-gallery__main-image');
 
-        // Configuração do Observador:
-        // Detecta quando a imagem ocupa pelo menos 60% do centro do slider principal.
         const observerOptions = {
-            root: this.mainSlider, // O elemento que contém o scroll
-            threshold: 0.6 // 60% da imagem precisa estar visível
+            root: this.mainSlider, 
+            threshold: 0.6 
         };
 
         const observerCallback = (entries) => {
             entries.forEach(entry => {
-                // Se a imagem principal entrou na área visível
                 if (entry.isIntersecting) {
-                    // Descobre o índice da imagem visível
                     const index = Array.from(mainImages).indexOf(entry.target);
                     if (index !== -1) {
-                        // Atualiza a classe ativa nas miniaturas
                         this.updateActiveThumbnail(thumbs, index);
                     }
                 }
@@ -143,7 +110,6 @@ class TImageGallery extends HTMLElement {
         };
 
         const observer = new IntersectionObserver(observerCallback, observerOptions);
-        // Começa a observar cada imagem da galeria principal
         mainImages.forEach(img => observer.observe(img));
     }
 
@@ -152,14 +118,11 @@ class TImageGallery extends HTMLElement {
         thumbs.forEach((thumb, index) => {
             if (index === activeIndex) {
                 thumb.classList.add('is-active');
-                // Opcional: Rola o slider de miniaturas para manter a ativa visível
-                // thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
             } else {
                 thumb.classList.remove('is-active');
             }
         });
     }
 }
-
 
 customElements.define('t-image-gallery', TImageGallery);
