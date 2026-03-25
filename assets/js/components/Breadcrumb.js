@@ -2,7 +2,7 @@
 
 //Criando Custom HTML Components ─────────────────────────────────────────────────────────────────────────────── ✣ ──
 
-class TIndexBar extends HTMLElement {
+class TBreadcrumb extends HTMLElement {
     // =======================================
     // Função principal main()
     // =======================================
@@ -52,4 +52,4 @@ class TIndexBar extends HTMLElement {
     }
 }
 
-customElements.define('t-index-bar', TIndexBar);
+customElements.define('t-breadcrumb', TBreadcrumb);
