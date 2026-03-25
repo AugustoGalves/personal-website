@@ -279,15 +279,87 @@
 
 
     "_sectiondivider2_": "███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+    "_pagedivider6_": "—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————",
     "hvac-bmw": {
       "meta": {
-        "title": "Projeto HVAC BMW | Augusto Galves",
+        "title": "HVAC - BMW Project | Augusto Galves",
         "description": "Detalhes técnicos do projeto de exaustão e climatização para a BMW."
       },
-      "title":"BMW - Projeto de climatização e exaustão",
-      "description":"Exaustão de gases veiculares, ventilação de galpão e resfriamento com VRV LG",
-      "category": "HVAC & Engenharia Mecânica",
-      "tech": "AutoCAD, Carrier HAP, Excel, Word"
+      "title": "Projeto Executivo HVAC — BMW",
+      "category": "Climatização · Exaustão Veicular",
+      "tech": "AutoCAD · Carrier HAP · SMACNA",
+      "sections": {
+        "context": {
+          "title": "Contexto do Projeto",
+          "content": "Projeto de climatização e ventilação para concessionária BMW no Rio de Janeiro, contemplando áreas administrativas, atendimento ao cliente e oficina técnica. O sistema foi projetado para garantir conforto térmico, qualidade do ar e eficiência operacional em todos os ambientes."
+        },
+        "desafio": {
+          "title": "Desafio",
+          "content": "O principal desafio foi atender simultaneamente requisitos de conforto térmico, renovação de ar e exaustão de gases em ambientes com diferentes cargas térmicas, incluindo áreas críticas como oficina e salas de atendimento ao cliente.",
+          "card1": {
+            "title": "Controle térmico em clima quente",
+            "desc": "Temperatura externa de até 38 °C no Rio de Janeiro"
+          },
+          "card2": {
+            "title": "Exaustão de gases veiculares",
+            "desc": "Ambiente fechado com circulação de automóveis em operação"
+          },
+          "card3": {
+            "title": "Atendimento às normas vigentes",
+            "desc": "ABNT NBR e ANVISA RDC 09/2003"
+          }
+        },
+        "solucao": {
+          "title": "Solução Desenvolvida",
+          "content": "Foi projetado um sistema híbrido utilizando VRF e Split System, com rede de dutos em aço galvanizado e renovação de ar mecânica, garantindo eficiência energética e conforto em todas as zonas do edifício.",
+          "card1": {
+            "title": "Sistema VRF LG",
+            "desc": "Múltiplas evaporadoras com controle por zona"
+          },
+          "card2": {
+            "title": "Rede de Dutos TDC",
+            "desc": "Aço galvanizado conforme SMACNA"
+          },
+          "card3": {
+            "title": "Exaustão Nederman",
+            "desc": "Braços articulados para gases veiculares"
+          },
+          "list": [
+            "Dimensionamento térmico via software Carrier HAP",
+            "Renovação de ar mecânica com filtragem e difusão controlada",
+            "Insuflamento total de 25.798 m³/h para toda a edificação",
+            "Sistema de exaustão de 2.142 m³/h na área de oficina"
+          ]
+        },
+        "results": {
+          "title": "Resultados",
+          "content": "O sistema garante conforto térmico estável, renovação de ar conforme as normas e remoção eficiente de gases, proporcionando segurança operacional e melhor experiência tanto para clientes quanto para a equipe técnica.",
+          "list": [
+            "Ambientes mantidos entre 22–23 °C independente da carga externa",
+            "Qualidade do ar conforme padrões ANVISA e ABNT",
+            "Redução de riscos operacionais na área de oficina"
+          ]
+        }
+      },
+      "sidebar": {
+        "technical_data": {
+          "title": "Dados Técnicos",
+          "temp_internal": "Temperatura interna projetada",
+          "thermal_load": "Carga térmica total (oficina)",
+          "flow_rate": "Vazão de insuflamento",
+          "total_exhaust": "Exaustão total"
+        },
+        "project_info": {
+          "title": "Ficha do Projeto",
+          "category": "Categoria",
+          "location": "Localização",
+          "client": "Cliente",
+          "norms": "Normas",
+          "software": "Software",
+          "revision": "Revisão",
+          "back_button": "Ver todos os projetos"
+        }
+      }
     }
 
 
