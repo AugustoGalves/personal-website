@@ -34,14 +34,12 @@ class TCardRow extends HTMLElement {
         this.innerHTML = `
 
 <!-- ─── CARDS ROW SECTION ──────────────────────────────────────────────────────────────── ✣ ─ -->
-<div class="container my-2 mx-auto">
 <section class="flex flex-row gap7 justify-spacebetween flex-col-mobile gap3-mobile items-center-mobile">
 
     <!-- CARDS VÃO DENTRO DO SLOT -->
     ${Cards_HTML}
 
 </section>
-</div>
 <!-- ─── CARDS ROW SECTION END ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── ✣ ─ -->
         `
     }
