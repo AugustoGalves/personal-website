@@ -372,6 +372,12 @@
           "revision": "Revisão",
           "back_button": "Ver todos os projetos"
         }
+      },
+
+      "cta": {
+        "title": "Gostou do conteúdo?",
+        "subtitle": "Entre em contato para discutirmos ideias ou oportunidades.",
+        "action": "Enviar Mensagem"
       }
     }
   }
