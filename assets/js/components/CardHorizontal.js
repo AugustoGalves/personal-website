@@ -43,8 +43,7 @@ class TCardHorizontal extends HTMLElement {
         this.innerHTML = `
 <a href="${links.click}" class="card card--horizontal no-underline"> 
     
-    <div class="card__media shrink-0 relative">
-        ${badgesHtml}
+    ${badgesHtml} <div class="card__media shrink-0 relative">
         <img class="card__image object-cover" src="${links.image}" loading="lazy" decoding="async" alt="${alt_text}">
     </div>    
     

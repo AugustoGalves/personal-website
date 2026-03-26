@@ -1687,15 +1687,20 @@ button span:hover{
 /* ─── MODIFICADOR: CARD HORIZONTAL (Estilo Youtube/Lista) ─────────────────────────── ✣ ─ */
 .card--horizontal {
     /* Layout Base */
+    position: relative;
     display: flex;
-    flex-direction: row; /* Força sempre ficar na horizontal */
+    flex-direction: row; 
     align-items: flex-start;
-    gap: var(--spacing4);
-    /* Sizing */
-    padding: var(--spacing3);
+    gap: var(--spacing3);
+    padding: var(--spacing2); 
+    
+    /* Garantir 100% de largura no container pai */
     width: 100%;
-    margin-bottom: var(--spacing4);
-    /* Correção de comportamento de Link */
+    max-width: 100%;
+    box-sizing: border-box;
+    
+    /* Reduzido o gap vertical entre os cards */
+    margin-bottom: var(--spacing2); 
     color: inherit;
 }
 
@@ -1716,10 +1721,12 @@ button span:hover{
 
 /* Reduz o tamanho da badge para caber na thumbnail compacta */
 .card--horizontal .card__badges--compact {
-    top: 6px;
-    right: 6px;
-    transform: scale(0.8);
+    position: absolute;
+    top: var(--spacing2);
+    right: var(--spacing2);
+    transform: scale(0.85); /* Mantém menor para ficar elegante */
     transform-origin: top right;
+    z-index: 10;
 }
 
 /* ─── Conteúdo Textual (À direita) ─── */
@@ -1728,8 +1735,10 @@ button span:hover{
     flex-direction: column;
     justify-content: flex-start;
     gap: var(--spacing1);
-    flex-grow: 1; /* Ocupa o restante do espaço */
-    min-width: 0; /* CRÍTICO: Permite que o texto seja cortado pelos "..." sem quebrar o Flexbox */
+    flex-grow: 1; 
+    min-width: 0; 
+    /* CRÍTICO: Impede que o título entre debaixo da badge no canto superior direito */
+    padding-right: 50px;
 }
 
 /* Remove a margem inferior que a tag strong costuma ter */
@@ -1758,19 +1767,22 @@ button span:hover{
 
 /* ─── RESPONSIVIDADE (MOBILE) ─────────────────────────────────────────────────────────── ✣ ─ */
 @media (max-width: 992px) {
-    .card--horizontal {
-        padding: var(--spacing2); /* Mais colado nas bordas da tela */
-        gap: var(--spacing3);     /* Imagem mais perto do texto */
-    }
-
-    .card--horizontal .card__media {
-        width: 120px; /* Thumbnail bem compacta para telas de celular */
-    }
-
-    /* Ocultamos as badges no celular para focar apenas na miniatura e não poluir */
-    .card--horizontal .card__badges--compact {
-        display: none; 
-    }
+	.card--horizontal {
+		padding: var(--spacing2); 
+		gap: var(--spacing2);     
+	}
+	
+	.card--horizontal .card__media {
+		width: 120px; 
+	}
+	
+	.card--horizontal .card__badges--compact {
+		display: none; 
+	}
+	
+	.card--horizontal .card__content {
+		padding-right: 0; /* Reseta o padding no celular já que a badge sumiu */
+	}
 }
 
 
