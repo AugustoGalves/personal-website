@@ -63,6 +63,8 @@
     <script src="/assets/js/components/CardHorizontal.js" defer></script>
     <script src="/assets/js/components/CTA.js" defer></script>
     <script src="/assets/js/components/Footer.js" defer></script>
+    <script src="/assets/js/components/PostTitle.js" defer></script>
+    <script src="/assets/js/components/SidebarCard.js" defer></script>
     <script src="/assets/js/i18n.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
 </head>
@@ -93,24 +95,9 @@
 
 <div class="container py-8">
     
-    <!-- ── TÍTULO + META ──────────────────────────────────────────── -->
-    <section class="mb-6">
-        <h1 class="prose" data-i18n="pages.hvac-bmw.title">
-            Projeto Executivo HVAC — BMW
-        </h1>
-        <p class="subtext mt-1">
-            <strong data-i18n="pages.hvac-bmw.category">Climatização · Exaustão Veicular</strong>
-            &nbsp;·&nbsp;
-            <span data-i18n="pages.hvac-bmw.tech">AutoCAD · Carrier HAP · Excel · Word</span>
-        </p>
-        <div class="flex gap2 mt-3" style="flex-wrap: wrap;">
-            <span class="badge badge--hvac">HVAC</span>
-            <span class="badge badge--autocad">AutoCAD</span>
-            <span class="badge badge--hap">Carrier HAP</span>
-            <span class="badge badge--engineering">ABNT NBR 16401</span>
-            <span class="badge badge--cleanroom">ANVISA RE 09/2003</span>
-        </div>
-    </section>
+    <t-post-title 
+        badges="hvac:HVAC, autocad:AutoCAD, hap:Carrier HAP, engineering:ABNT NBR 16401, cleanroom:ANVISA RE 09/2003">
+    </t-post-title>
 
 
     <!-- ── GALERIA ─────────────────────────────────────────────────── -->
@@ -121,12 +108,12 @@
     </t-image-gallery>
 
 
-<!-- ── LAYOUT PRINCIPAL: Coluna Esquerda + Sidebar ──────────────────────── -->
+<!-- ── LAYOUT PRINCIPAL: Coluna Esquerda + Coluna Direita ──────────────────────── -->
 <div class="resume-grid mt-8">
     
 
 
-    <!-- ── COLUNA ESQUERDA ─────────────────── -->
+    <!-- ── COLUNA ESQUERDA ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <article class="flex flex-col gap7">
         <!-- CONTEXTO -->
         <section>
@@ -224,105 +211,28 @@
     </article>
 
 
-    <!-- ── COLUNA DIREITA: Sidebar com dados técnicos ──────────── -->
+    <!-- ── COLUNA DIREITA ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <aside class="sticky-sidebar flex flex-col gap5">
+        <t-sidebar-card 
+            title="Ficha do Projeto"
+            items="Categoria: HVAC · Exaustão | Localização: Rio de Janeiro, RJ | Cliente: BMW Concessionária | Normas: ABNT · ANVISA | Software: Carrier HAP · AutoCAD | Revisão: R0 — Entregue">
+        </t-sidebar-card>
 
-        <!-- Dados numéricos -->
-        <div class="card p-5">
-            <h3 class="mb-4">Dados Técnicos</h3>
-            <div class="divider-horizontal100 mb-4"></div>
-            <div class="flex flex-col gap4">
+        <t-sidebar-card 
+            title="Dados Técnicos" 
+            layout="col"
+            items="Temperatura interna projetada: 22–23 °C | Carga térmica total (oficina): 86 kW | Vazão de insuflamento: 25.798 m³/h | Exaustão total: 2.142 m³/h">
+        </t-sidebar-card>
+    
+        <a href="/projects/" class="btn btn--secondary flex items-center justify-center gap2">
+            <svg class="svgicon-xsmall" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+            </svg>
+            Ver todos os projetos
+        </a>
+    </aside>
 
-                <div>
-                    <p class="text-small subtext">Temperatura interna projetada</p>
-                    <p class="card-title mt-1" style="font-size: var(--textsize-7);">22–23 °C</p>
-                </div>
-
-                <div class="divider-horizontal90"></div>
-
-                <div>
-                    <p class="text-small subtext">Carga térmica total (oficina)</p>
-                    <p class="card-title mt-1" style="font-size: var(--textsize-7);">86 kW</p>
-                </div>
-
-                <div class="divider-horizontal90"></div>
-
-                <div>
-                    <p class="text-small subtext">Vazão de insuflamento</p>
-                    <p class="card-title mt-1" style="font-size: var(--textsize-7);">25.798 m³/h</p>
-                </div>
-
-                    <div class="divider-horizontal90"></div>
-
-                    <div>
-                        <p class="text-small subtext">Exaustão total</p>
-                        <p class="card-title mt-1" style="font-size: var(--textsize-7);">2.142 m³/h</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Ficha do projeto -->
-            <div class="card p-5">
-                <h3 class="mb-4">Ficha do Projeto</h3>
-                <div class="divider-horizontal100 mb-4"></div>
-                <div class="flex flex-col gap3">
-
-                    <div class="flex justify-spacebetween items-center">
-                        <p class="card-subtitle">Categoria</p>
-                        <p class="card-content">HVAC · Exaustão</p>
-                    </div>
-
-                    <div class="divider-horizontal90"></div>
-
-                    <div class="flex justify-spacebetween items-center">
-                        <p class="card-subtitle">Localização</p>
-                        <p class="card-content">Rio de Janeiro, RJ</p>
-                    </div>
-
-                    <div class="divider-horizontal90"></div>
-
-                    <div class="flex justify-spacebetween items-center">
-                        <p class="card-subtitle">Cliente</p>
-                        <p class="card-content">BMW Concessionária</p>
-                    </div>
-
-                    <div class="divider-horizontal90"></div>
-
-                    <div class="flex justify-spacebetween items-center">
-                        <p class="card-subtitle">Normas</p>
-                        <p class="card-content">ABNT · ANVISA</p>
-                    </div>
-
-                    <div class="divider-horizontal90"></div>
-
-                    <div class="flex justify-spacebetween items-center">
-                        <p class="card-subtitle">Software</p>
-                        <p class="card-content">Carrier HAP · AutoCAD</p>
-                    </div>
-
-                    <div class="divider-horizontal90"></div>
-
-                    <div class="flex justify-spacebetween items-center">
-                        <p class="card-subtitle">Revisão</p>
-                        <p class="card-content">R0 — Entregue</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Botão voltar ao portfólio -->
-            <a href="/projects/" class="btn btn--secondary flex items-center justify-center gap2">
-                <svg class="svgicon-xsmall" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
-                    <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
-                </svg>
-                Ver todos os projetos
-            </a>
-
-        </aside>
-
-    </div><!-- /.resume-grid -->
-
+</div>
 </div>
 </main>
 

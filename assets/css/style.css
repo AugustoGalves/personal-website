@@ -1792,6 +1792,7 @@ button span:hover{
 
 /* ─── LAYOUT  ──────────────────────────────────────────────────────── ✣ ─ */
 .hidden{display: none; }
+.flex-wrap { flex-wrap: wrap; }
 
 /* ─── SIZINGS  ──────────────────────────────────────────────────────── ✣ ─ */
 .w-full{width: 100%; }

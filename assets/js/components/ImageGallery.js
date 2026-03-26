@@ -1,3 +1,5 @@
+
+
 //Criando Custom HTML Components ─────────────────────────────────────────────────────────────────────────────── ✣ ──
 
 class TImageGallery extends HTMLElement {
