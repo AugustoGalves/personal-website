@@ -149,7 +149,7 @@
         },
         "card3": {
           "title": "Bot de reconhecimento visual (Piano Tiles)",
-          "desc": "Reconhecimento visual e autoclick. Executa até 15 teclas por segundo"
+          "desc": "Reconhecimento visual e autoclick. Executa até 29 teclas por segundo"
         }
       },
       
@@ -375,7 +375,7 @@
       },
 
       "cta": {
-        "title": "Gostou do conteúdo?",
+        "title": "Gostou do projeto?",
         "subtitle": "Entre em contato para discutirmos ideias ou oportunidades.",
         "action": "Enviar Mensagem"
       }
@@ -476,9 +476,9 @@
       },
 
       "cta": {
-        "title": "Buscando soluções eficientes em engenharia?",
-        "subtitle": "Vamos conversar sobre como posso agregar valor técnico ao seu próximo desafio.",
-        "action": "Entrar em Contato"
+        "title": "Gostou do projeto?",
+        "subtitle": "Entre em contato para discutirmos ideias ou oportunidades.",
+        "action": "Enviar Mensagem"
       }
     },
     "_pagedivider8_": "—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————",
@@ -577,15 +577,15 @@
       },
 
       "cta": {
-        "title": "Buscando visão estratégica para seus projetos?",
-        "subtitle": "Vamos conversar sobre otimização de recursos, CAPEX e soluções definitivas de engenharia.",
-        "action": "Agendar Reunião"
+        "title": "Gostou do projeto?",
+        "subtitle": "Entre em contato para discutirmos ideias ou oportunidades.",
+        "action": "Enviar Mensagem"
       }
     },
     "_pagedivider9_": "—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————",
     "mep-res-spa-01": {
       "meta": {
-        "title": "Projeto Executivo MEP - Casa de Praia | Augusto Galves",
+        "title": "Projeto MEP - Casa de Praia | Augusto Galves",
         "description": "Projeto de instalações elétricas (MEP) para residência de alto padrão. Foco em segurança, detalhamento de quadros (QDC) e conformidade com o IECC 2023."
       },
       "indexbar":{
@@ -678,9 +678,9 @@
       },
 
       "cta": {
-        "title": "Procurando excelência técnica para o seu projeto?",
-        "subtitle": "Agende uma conversa para explorarmos como integrar soluções seguras e eficientes à sua arquitetura.",
-        "action": "Vamos Conversar"
+        "title": "Gostou do projeto?",
+        "subtitle": "Entre em contato para discutirmos ideias ou oportunidades.",
+        "action": "Enviar Mensagem"
       }
     },
     "_pagedivider10_": "—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————",
@@ -731,7 +731,7 @@
       "sections": {
         "context": {
           "title": "Visão Estratégica do Projeto",
-          "content": "Desenvolvimento de um script em Python focado em alto desempenho e baixíssima latência[cite: 1]. O objetivo técnico era criar um algoritmo capaz de \"jogar\" Piano Tiles em velocidades sobre-humanas, utilizando processamento matricial de imagens em tempo real e integração direta com o sistema operacional para simulação de cliques mecânicos."
+          "content": "Desenvolvimento de um script em Python focado em alto desempenho e baixíssima latência. O objetivo técnico era criar um algoritmo capaz de \"jogar\" Piano Tiles em velocidades sobre-humanas, utilizando processamento matricial de imagens em tempo real e integração direta com o sistema operacional para simulação de cliques mecânicos."
         },  
         "desafio": {
           "title": "O Desafio",
@@ -739,7 +739,7 @@
         },
         "solucao": {
           "title": "Solução de Engenharia",
-          "content": "A solução arquitetada não focou em aumentar o poder computacional, mas em antecipar o comportamento do sistema. Para compensar o aumento de velocidade (e a inerente latência de processamento), programei uma variação dinâmica no deslocamento vertical (Y-offset)[cite: 1]. Conforme o loop avançava, o bot \"olhava\" mais acima na tela, interceptando o alvo no tempo perfeito.",
+          "content": "A solução arquitetada não focou em aumentar o poder computacional, mas em antecipar o comportamento do sistema. Para compensar o aumento de velocidade (e a inerente latência de processamento), programei uma variação dinâmica no deslocamento vertical (Y-offset). Conforme o loop avançava, o bot \"olhava\" mais acima na tela, interceptando o alvo no tempo perfeito.",
           "list": [
             "Conversão da tela via PIL em arrays estruturados do NumPy para extração otimizada de pixels.",
             "Modulação dos laços de repetição, alterando dinamicamente as coordenadas de varredura conforme a aceleração (\"Modo Super Rápido\").",
@@ -778,9 +778,188 @@
       },
 
       "cta": {
-        "title": "Procurando desenvolvedores focados em performance?",
-        "subtitle": "Bora bater um papo sobre automação, integração de sistemas e resolução de problemas complexos.",
-        "action": "Agendar Reunião"
+        "title": "Procurando um desenvolvedor?",
+        "subtitle": "Entre em contato para discutirmos ideias.",
+        "action": "Agendar reunião"
+      }
+    },
+
+    "_pagedivider11_": "—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————",
+    "dev-belt-system-design": {
+      "meta": {
+        "title": "Ultimate Belt Design & Shigley Review | Augusto Galves",
+        "description": "Software patenteado de engenharia para dimensionamento de correias. Automação de cálculos e revisão técnica de inconsistências na literatura de Shigley."
+      },
+      "indexbar":{
+        "path1": "Início",
+        "path2": "Projetos",
+        "path3": "Ultimate Belt Design & Automação"
+      },
+      "title": "Software Patenteado: Ultimate Belt Design",
+      "category": "Automação em Engenharia · Elementos de Máquinas",
+      "tech": "Cálculo Computacional · Auditoria Técnica",
+      
+      "cardgroupdesafio":{
+        "card1": {
+          "title": "Iterações Manuais",
+          "desc": "O dimensionamento de correias exige múltiplas consultas a catálogos e cálculos de fadiga morosos."
+        },
+        "card2": {
+          "title": "Inconsistência Literária",
+          "desc": "Identificação de falhas de premissa e ausência de travas de segurança em bibliografias padrão."
+        }
+      },
+      
+      "sections": {
+        "context": {
+          "title": "Engenharia de Precisão e Automação",
+          "content": "A engenharia moderna exige velocidade sem abrir mão do rigor técnico. O Ultimate Belt Design and Analysis 2026 é um software patenteado desenvolvido para eliminar o esforço humano repetitivo no projeto de elementos de máquinas."
+        },  
+        "academic_validation": {
+          "title": "Auditoria Técnica: Corrigindo a Literatura",
+          "content": "Para garantir a confiabilidade do algoritmo, realizei uma revisão minuciosa do Capítulo 17 do renomado livro 'Elementos de Máquinas de Shigley'. Identifiquei diversas inconsistências nas resoluções oficiais da literatura.",
+          "list": [
+            "Falhas de Premissa Identificadas: limites de velocidade linear e vibração",
+            "Validação de Precisão e implementação de travas de segurança",
+            "Produção Científica documentando o desenvolvimento e auditoria"
+          ]
+        },
+        "desafio": {
+          "title": "O Desafio de Projeto",
+          "content": "Transformar horas de cálculos iterativos e validações de segurança suscetíveis a erros em uma execução precisa de poucos segundos."
+        },
+        "results": {
+          "title": "Resultados e Entrega",
+          "content": "A ferramenta entrega dimensionamentos normatizados instantaneamente, mitigando erros humanos matemáticos e otimizando os custos industriais."
+        }
+      },
+      
+      "sidebar": {
+        "technical_data": {
+          "title": "Destaques Técnicos",
+          "temp_internal": "Cálculo Computacional",
+          "thermal_load": "Auditoria de Literatura",
+          "flow_rate": "Validação Automática",
+          "total_exhaust": "Documentação"
+        },
+        "project_info": {
+          "title": "Visão Geral",
+          "category": "Atuação",
+          "location": "Autor",
+          "client": "Status",
+          "norms": "Foco",
+          "software": "Versão",
+          "revision": "Revisão",
+          "back_button": "Ver todos os projetos"
+        }
+      },
+
+      "cta": {
+        "title": "Gostou do conteúdo?",
+        "subtitle": "Entre em contato para discutirmos soluções em engenharia e automação.",
+        "action": "Enviar Mensagem"
+      }
+    },
+
+    "_pagedivider12_": "—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————",
+    "dev-portfolio-website": {
+      "meta": {
+        "title": "Personal Portfolio Website - Vanilla Web Dev | Augusto Galves",
+        "description": "Desenvolvimento full-stack do zero do meu site portfólio. Arquitetura em Vanilla HTML/CSS/JS, deploy via GitHub Pages, gerenciamento Cloudflare e otimização SEO extrema."
+      },
+      "indexbar":{
+        "path1": "Início",
+        "path2": "Projetos",
+        "path3": "Portfólio Web"
+      },
+      "title": "Desenvolvimento Web: Plataforma Portfólio",
+      "category": "Software Engineering · Infraestrutura Web",
+      "tech": "Vanilla JS · Cloudflare · GitHub Pages",
+      
+      "cardgroupdesafio":{
+        "card1": {
+          "title": "Zero Frameworks",
+          "desc": "Construir uma aplicação escalável utilizando exclusivamente as bases da web (HTML/CSS/JS puros)."
+        },
+        "card2": {
+          "title": "Modularidade",
+          "desc": "Desenvolver um sistema de templates e Web Components sem bibliotecas externas como React."
+        },
+        "card3": {
+          "title": "Infraestrutura Integrada",
+          "desc": "Configurar do zero domínio, CDN, segurança e e-mail profissional via gerenciadores de DNS."
+        }
+      },
+      
+      "cardgroupsolucao":{
+        "card1": {
+          "title": "Custom JS Components",
+          "desc": "Arquitetura baseada em componentes nativos para máxima performance e reaproveitamento."
+        },
+        "card2": {
+          "title": "Cloudflare & Deploy",
+          "desc": "Integração contínua (CI/CD) com GitHub Pages e roteamento avançado através do Cloudflare."
+        },
+        "card3": {
+          "title": "Otimização Extrema",
+          "desc": "Código minificado, SEO on-page cirúrgico e design de ícones vetorizados sob medida."
+        }
+      },
+      
+      "sections": {
+        "context": {
+          "title": "Engenharia Web do Zero",
+          "content": "Para estabelecer minha presença digital de forma sólida, decidi projetar e desenvolver este site portfólio integralmente do zero. O projeto foi executado entre dezembro de 2025 e abril de 2026, com mais de 200 commits. O foco foi aplicar engenharia de software no front-end: arquitetura de informação limpa, performance de elite e domínio total sobre a infraestrutura da aplicação."
+        },  
+        "desafio": {
+          "title": "O Desafio Técnico",
+          "content": "A decisão mais crítica foi abrir mão de frameworks modernos (como React, Vue ou Tailwind). O desafio era construir um sistema modular, escalável e extremamente rápido, utilizando exclusivamente as tecnologias nativas da web."
+        },
+        "solucao": {
+          "title": "Arquitetura e Implementação",
+          "content": "Desenvolvi uma solução robusta focada nos fundamentos, abrangendo desde a criação de componentes lógicos até o gerenciamento de registros DNS, garantindo uma presença digital profissional e segura.",
+          "list": [
+            "Web Components Customizados: Criação de componentes JS reutilizáveis",
+            "Design de UI/UX Exclusivo com biblioteca de ícones pessoais exclusiva",
+            "SEO & Performance com integração de JSON-LD e Open Graph",
+            "Infraestrutura com Cloudflare e e-mail profissional configurado via redirecionamento de DNS"
+          ]
+        },
+        "results": {
+          "title": "Resultados",
+          "content": "O resultado é uma plataforma de marca pessoal de altíssimo desempenho tecnológico. A ausência de dependências de terceiros garante que o site nunca ficará obsoleto por atualizações de frameworks.",
+          "list": [
+            "Tempo de carregamento e FCP com pontuação máxima no Google Lighthouse",
+            "Comprovação prática de fluência em algoritmos de front-end e gestão de infraestrutura",
+            "Base de código modular pronta para rápida expansão de novos projetos"
+          ]
+        }
+      },
+      
+      "sidebar": {
+        "technical_data": {
+          "title": "Stack Tecnológico",
+          "temp_internal": "Front-End",
+          "thermal_load": "Hospedagem",
+          "flow_rate": "DNS & CDN",
+          "total_exhaust": "Design / E-mail"
+        },
+        "project_info": {
+          "title": "Ficha do Projeto",
+          "category": "Categoria",
+          "location": "Localização",
+          "client": "Duração",
+          "norms": "Commits",
+          "software": "Repositório",
+          "revision": "Revisão",
+          "back_button": "Ver todos os projetos"
+        }
+      },
+
+      "cta": {
+        "title": "Gostou do código?",
+        "subtitle": "Explore o repositório público no GitHub ou entre em contato para discutirmos soluções digitais.",
+        "action": "Enviar Mensagem"
       }
     }
   }
