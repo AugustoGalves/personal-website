@@ -301,6 +301,31 @@ p{
 	color: var(--color-text-primary-muted); /*Muted TextColor*/
 }
 
+.prose ul{
+	/* Sizing */
+	margin-top: calc(var(--textsize-3)*1.0); /*Espaçamento de paragrafo BEFORE*/
+	margin-bottom: calc(var(--textsize-3)*0.5); /*Espaçamento de paragrafo AFTER*/
+}
+.prose ul li{
+	/* Sizing */
+	margin-bottom: var(--spacing2); /* Espaçamento entre itens da lista */
+	/* Typography */
+	font-size: var(--textsize-3);/*16px*/
+	font-weight: normal;
+	line-height: 1.4; /*Espaçamento entre linhas*/
+	/* Visuals */
+	color: var(--color-text-primary-muted); /*Muted TextColor*/
+}
+.prose ul li strong {
+	/* Visuals */
+	color: var(--color-text-primary);
+}
+.prose ul li:last-child{
+	/* Sizing */
+	margin-bottom: var(--spacing0); /* Para não duplicar o espaçamento AFTER */
+}
+
+
 
 .prose .text-small{
 	/* Sizing */
@@ -835,17 +860,6 @@ footer section ul{
 }
 
 /* ─── CARDS GROUPS ───────────────────────────────────────────────────────────────────────────────────────── ✣ ─ */
-t-card-row {
-	/* Layout */
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: var(--spacing4);
-	margin-left: auto; 
-	margin-right: auto;
-	/* Sizing */
-	width: 100%;
-}
 
 t-card-col {
 	/* Layout */
@@ -858,11 +872,17 @@ t-card-col {
 
 t-card-icon {
 	/* Layout */
-	display: flex;
-	flex-direction: column;
-	flex: 1; /* Divide o espaço igualmente com os irmãos */
-	/* Sizing */
-	width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Divide o espaço igualmente com os irmãos */
+    /* Sizing */
+    width: 100%;
+    min-width: 0;
+}
+
+.card--emote > div.flex {
+    flex: 1;
+    min-width: 0; 
 }
 
 
