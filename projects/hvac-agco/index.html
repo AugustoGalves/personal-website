@@ -92,14 +92,13 @@
 <div class="container py-8">
     
     <t-post-title 
-        badges="hvac:HVAC, autocad:AutoCAD, hap:Carrier HAP, engineering:ABNT NBR 16401, cleanroom:ANVISA RE 09/2003">
+        badges="hvac:HVAC, autocad:AutoCAD, hap:Carrier HAP, engineering:ABNT NBR 16401, cleanroom:ANVISA RE 09/2003, excel:Microsoft Excel, word:Microsoft Word">
     </t-post-title>
 
     <!-- ── GALERIA ─────────────────────────────────────────────────── -->
     <t-image-gallery class="mb-8">
-        <img src="/projects/hvac-agco/cover1.webp" alt="Planta baixa de HVAC do projeto AGCO Academy">
-        <img src="/projects/hvac-agco/cover2.webp" alt="Detalhes do zoneamento térmico">
-        <img src="/projects/hvac-agco/cover3.webp" alt="Especificações de vazão de ar">
+        <img src="/projects/hvac-agco/cover1.webp" alt="Imagem de capa do projeto HVAC para a AGCO Academy">
+        <img src="/projects/hvac-agco/cover2.webp" alt="Imagem do projeto executivo de HVAC para o térreo da AGCO Academy">
     </t-image-gallery>
 
 <!-- ── LAYOUT PRINCIPAL: Coluna Esquerda + Coluna Direita ──────────────────────── -->
@@ -111,7 +110,7 @@
         <section>
             <h2 class="prose">Contexto do Projeto</h2>
             <p class="prose">
-                Memorial de cálculo e projeto executivo de climatização e ventilação mecânica para o prédio AGCO Academy, localizado em Jundiaí-SP. Desenvolvido em parceria com a AKMX Arquitetura e Engenharia, o projeto contempla o andar térreo com zonas críticas, incluindo auditórios, diversas salas de reunião, refeitório e uma ampla área de trabalho (Workplace).
+                Desenvolvimento do projeto executivo HVAC do edifício AGCO Academy, em Jundiaí-SP, em parceria com a AKMX Arquitetura e Engenharia. O escopo contempla o prédio administrativo e o galpão 2, com áreas críticas como auditórios, salas de reunião, refeitório e área de trabalho (workplace).
             </p>
         </section>
 
@@ -120,7 +119,7 @@
         <section>
             <h2 class="prose">Desafio</h2>
             <p class="prose">
-                Atender aos rigorosos requisitos de conforto térmico e qualidade do ar interno para uma grande variedade de zonas térmicas com perfis de ocupação distintos. Foi necessário dimensionar sistemas precisos de vazão de ar exterior e exaustão, cumprindo as normas da ANVISA e ABNT NBR 16401.
+                O projeto abrange o galpão 2 e o prédio administrativo, totalizando mais de 3.700 m² com ambientes de perfis de ocupação distintos. As redes de dutos e de tubulação frigorígena são extensas e afastadas da área das condensadoras, exigindo atenção aos limites de comprimento dos equipamentos e às perdas de carga ao longo do sistema, o que aumentou a complexidade do dimensionamento e da distribuição.
             </p>
 
             <div class="flex flex-col gap3 mt-5">
@@ -149,7 +148,9 @@
         <section>
             <h2 class="prose">Solução Desenvolvida</h2>
             <p class="prose">
-                Cálculo de carga térmica aprofundado utilizando o software Hourly Analysis Program (HAP) v4.90 da Carrier. Foi estabelecido um zoneamento térmico que mapeou 23 sistemas de ar-condicionado (AC-01 a AC-23), otimizando a distribuição e eficiência.
+                A solução priorizou eficiência energética e redução do investimento inicial, com a instalação de 23 unidades split system compatíveis com grandes comprimentos de tubulação frigorígena e o reaproveitamento de equipamentos existentes (3 remanejados e 4 mantidos). Para o auditório no mezanino, foi especificado um splitão dedicado com casa de máquinas projetada com ventilação permanente, acesso restrito e porta metálica corta-fogo pressurizada.<br>
+                
+                As redes de dutos foram dimensionadas e otimizadas para minimizar perdas de carga, com divisão dos sistemas de ar exterior e exaustão em redes menores, aumentando a eficiência do sistema.
             </p>
 
             <t-card-row class="my-2" card-group-id="solucao">
@@ -171,8 +172,8 @@
             </t-card-row>
 
             <ul class="prose resume-list mt-5">
-                <li>Dimensionamento térmico via software Carrier HAP v4.90</li>
-                <li>Renovação de ar e exaustão mecânica configuradas por nível de ocupação</li>
+                <li>Dimensionamento térmico via software Carrier HAP</li>
+                <li>Renovação de ar e exaustão mecânica definidas por nível de ocupação</li>
                 <li>Zoneamento completo com 23 sistemas de AC cobrindo 100% da área útil</li>
                 <li>Cálculo de vazão de insuflamento para zonas de alta carga como o Workplace 1 (16.002 m³/h)</li>
             </ul>
@@ -183,12 +184,12 @@
         <section>
             <h2 class="prose">Resultados</h2>
             <p class="prose">
-                O planejamento minucioso assegurou as condições ideais estipuladas pelas regulamentações de saúde e conforto, adequando-se às variações extremas de clima da região.
+                O sistema garante conforto térmico estável e qualidade do ar conforme normas, atendendo às variações de carga e clima da região.
             </p>
             <ul class="prose resume-list mt-3">
-                <li>Ambientes rigorosamente mantidos a <strong>22,0 °C ± 1,0 °C</strong></li>
-                <li>Qualidade do ar e exaustão mapeados (ex: <strong>3.080 m³/h</strong> no refeitório)</li>
-                <li>Conformidade com os mais altos padrões ANVISA, ABNT, SMACNA e ASHRAE</li>
+                <li>Ambientes mantidos no setpoint inicial de <strong>22,0 °C ± 1,0 °C</strong></li>
+                <li>Vazões de renovação e exaustão definidas por ambiente (ex: <strong>3.080 m³/h</strong> no refeitório)</li>
+                <li>Conformidade com normas ANVISA e ABNT</li>
             </ul>
         </section>
     </article>
@@ -197,13 +198,13 @@
     <aside class="flex flex-col gap5">
         <t-sidebar-card 
             title="Ficha do Projeto"
-            items="Categoria: Climatização · Ventilação Mecânica | Localização: Jundiaí, SP | Cliente: AGCO Academy | Parceria: AKMX Arquitetura | Normas: ABNT · ANVISA · ASHRAE | Software: Carrier HAP v4.90 · AutoCAD | Revisão: R00 — Entregue">
+            items="Categoria: HVAC | Localização: Jundiaí, SP | Cliente: AGCO Academy | Parceria: AKMX Arquitetura | Normas: ABNT · ANVISA | Revisão: R00 — Entregue">
         </t-sidebar-card>
 
         <t-sidebar-card 
             title="Dados Técnicos" 
             layout="col"
-            items="Temperatura interna projetada: 22,0 °C ± 1,0 °C | Maior carga por zona (Workplace 1): 21,27 TR | Vazão insuflamento (Workplace 1): 16.002 m³/h | Vazão exaustão (Refeitório): 3.080 m³/h">
+            items="Área de projeto: 3.719 m² | Temperatura interna projetada: 22–23 °C | Sistemas: 23 splits + 1 splitão | Equipamentos reaproveitados: 7 unidades">
         </t-sidebar-card>
     
         <a href="/projects/" class="btn btn--secondary flex items-center justify-center gap2">

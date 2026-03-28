@@ -291,21 +291,21 @@
         "path3": "Projeto HVAC - BMW"
       },
       "title": "Projeto Executivo HVAC — BMW",
-      "category": "Climatização · Exaustão Veicular",
-      "tech": "AutoCAD · Carrier HAP · SMACNA",
+      "category": "HVAC",
+      "tech": "Exaustão Veicular · Ventilação de Oficina",
       
       "cardgroupdesafio":{
         "card1": {
           "title": "Controle térmico em clima quente",
-          "desc": "Temperatura externa de até 38 °C no Rio de Janeiro"
+          "desc": "Temperatura externa de até 42 °C no Rio de Janeiro"
         },
         "card2": {
           "title": "Exaustão de gases veiculares",
-          "desc": "Ambiente fechado com circulação de automóveis em operação"
+          "desc": "Ambiente fechado com automóveis em operação"
         },
         "card3": {
           "title": "Atendimento às normas vigentes",
-          "desc": "ABNT NBR e ANVISA RDC 09/2003"
+          "desc": "ABNT NBR 16401 e ANVISA RDC 09/2003"
         }
       },
       
@@ -315,41 +315,41 @@
           "desc": "Múltiplas evaporadoras com controle por zona"
         },
         "card2": {
-          "title": "Rede de Dutos TDC",
-          "desc": "Aço galvanizado conforme SMACNA"
-        },
-        "card3": {
           "title": "Exaustão Nederman",
           "desc": "Braços articulados para gases veiculares"
+        },
+        "card3": {
+          "title": "Rede de Dutos TDC",
+          "desc": "Dimensionado usando o Método da Velocidade"
         }
       },
       
       "sections": {
         "context": {
           "title": "Contexto do Projeto",
-          "content": "Projeto de climatização e ventilação para concessionária BMW no Rio de Janeiro, contemplando áreas administrativas, atendimento ao cliente e oficina técnica. O sistema foi projetado para garantir conforto térmico, qualidade do ar e eficiência operacional em todos os ambientes."
+          "content": "Projeto HVAC de uma concessionária BMW com áreas distintas, incluindo oficina veicular e espaços de atendimento ao cliente."
         },  
         "desafio": {
           "title": "Desafio",
-          "content": "O principal desafio foi atender simultaneamente requisitos de conforto térmico, renovação de ar e exaustão de gases em ambientes com diferentes cargas térmicas, incluindo áreas críticas como oficina e salas de atendimento ao cliente."
+          "content": "Garantir conforto térmico e qualidade do ar em um galpão de grande volume com alta carga térmica e emissões, sem custos exorbitantes."
         },
         "solucao": {
           "title": "Solução Desenvolvida",
-          "content": "Foi projetado um sistema híbrido utilizando VRF e Split System, com rede de dutos em aço galvanizado e renovação de ar mecânica, garantindo eficiência energética e conforto em todas as zonas do edifício.",
+          "content": "Combinação de sistema VRV, splits e ventilação/exaustão mecânica dedicada para atender de forma eficiente cada ambiente.",
           "list": [
-            "Dimensionamento térmico via software Carrier HAP",
+            "Cálculo de carga térmica feita com software Carrier HAP",
             "Renovação de ar mecânica com filtragem e difusão controlada",
-            "Insuflamento total de 25.798 m³/h para toda a edificação",
-            "Sistema de exaustão de 2.142 m³/h na área de oficina"
+            "Carga térmica (sem oficina): 43,1 TR",
+            "Carga térmica da oficina: 21,6 TR"
           ]
         },
         "results": {
           "title": "Resultados",
           "content": "O sistema garante conforto térmico estável, renovação de ar conforme as normas e remoção eficiente de gases, proporcionando segurança operacional e melhor experiência tanto para clientes quanto para a equipe técnica.",
           "list": [
-            "Ambientes mantidos entre 22–23 °C independente da carga externa",
-            "Qualidade do ar conforme padrões ANVISA e ABNT",
-            "Redução de riscos operacionais na área de oficina"
+            "Ambientes mantidos entre 22–23 °C mesmo sob alta carga externa",
+            "Qualidade do ar em conformidade com ANVISA e ABNT",
+            "Conforto térmico na área da oficina"
           ]
         }
       },
@@ -392,86 +392,66 @@
         "path3": "Projeto HVAC - AGCO"
       },
       "title": "Projeto Executivo HVAC — AGCO Academy",
-      "category": "Climatização Corporativa · Eficiência Energética",
-      "tech": "AutoCAD · Carrier HAP · ASHRAE",
+      "category": "HVAC",
+      "tech": "AutoCAD · Carrier HAP",
       
-      "cardgroupdesafio":{
+      "cardgroupdesafio":{ 
         "card1": {
-          "title": "Múltiplos Perfis de Ocupação",
-          "desc": "Compatibilização térmica entre áreas de alta densidade e salas isoladas."
+          "title": "Enorme Área de projeto",
+          "desc": "Cerca de 3.719 m² climatizados."
         },
         "card2": {
-          "title": "Alta Exigência Normativa",
-          "desc": "Rigoroso controle de Qualidade do Ar Interno (QAI) e salubridade."
+          "title": "Limites de tubulação frigorígena",
+          "desc": "Grandes distâncias de tubulação frigorígena."
         },
         "card3": {
-          "title": "Otimização de Consumo",
-          "desc": "Necessidade de alto desempenho atrelado à eficiência energética."
+          "title": "Perda de Carga em dutos",
+          "desc": "Dutos muito extensos possuem eficiência reduzida."
         }
       },
       
       "cardgroupsolucao":{
         "card1": {
-          "title": "Modelagem Avançada",
-          "desc": "Dimensionamento preciso de carga térmica utilizando Carrier HAP."
+          "title": "Seleção de Equipamentos",
+          "desc": "Splits compatíveis com grandes comprimentos de tubulação frigorígena."
         },
         "card2": {
-          "title": "Zoneamento Inteligente",
-          "desc": "Divisão estratégica em 23 sistemas independentes de climatização."
+          "title": "Reaproveitamento",
+          "desc": "Integração de equipamentos existentes para redução de custo."
         },
         "card3": {
-          "title": "Renovação Integrada",
-          "desc": "Sistemas mecânicos de insuflamento e exaustão 100% adequados à norma."
+          "title": "Otimização de Redes",
+          "desc": "Divisão dos sistemas de ar exterior e exaustão para menor perda de carga."
         }
       },
       
       "sections": {
         "context": {
           "title": "Visão Geral do Projeto",
-          "content": "Projeto Executivo de Climatização (HVAC) para as instalações da AGCO Academy em Jundiaí-SP, desenvolvido em parceria estratégica com a AKMX Arquitetura. O escopo abrangeu o dimensionamento completo do sistema de ar-condicionado e ventilação mecânica para ambientes corporativos críticos, exigindo soluções de engenharia que aliassem alto desempenho e viabilidade executiva."
+          "content": "Projeto executivo de climatização e ventilação mecânica para a AGCO Academy, em Jundiaí-SP, desenvolvido em parceria com a AKMX Arquitetura e Engenharia. O escopo abrange o galpão 2 e o prédio administrativo, com dimensionamento completo dos sistemas HVAC."
         },  
         "desafio": {
           "title": "O Desafio",
-          "content": "O grande obstáculo técnico foi compatibilizar zonas térmicas com perfis de uso extremos no mesmo pavimento — desde auditórios e refeitórios lotados até ilhas de trabalho abertas. Era imperativo garantir a excelência na qualidade do ar interno e o conforto absoluto, mantendo estrita conformidade com as regulamentações da ANVISA, ABNT NBR 16401 e diretrizes ASHRAE."
+          "content": "Atender ambientes com perfis de ocupação distintos em mais de 3.700 m², com redes extensas de dutos e tubulação frigorígena afastadas das condensadoras, respeitando limites de comprimento e controlando perdas de carga."
         },
         "solucao": {
-          "title": "Solução de Engenharia",
-          "content": "Utilizando modelagem computacional avançada, desenvolvi um projeto focado em modularidade e eficiência. A planta foi dividida em um zoneamento térmico inteligente composto por 23 sistemas otimizados, garantindo que o dimensionamento mecânico respondesse dinamicamente às demandas de cada ambiente.",
+          "title": "Solução Desenvolvida",
+          "content": "Sistema baseado em 23 splits para grandes comprimentos de tubulação, com reaproveitamento de equipamentos e ventilação mecânica otimizada.",
           "list": [
-            "Modelagem térmica e simulação de cargas via Carrier HAP",
-            "Zoneamento estratégico para redução de desperdício energético",
-            "Dimensionamento exato da rede de dutos para renovação e exaustão de ar",
-            "Compatibilização arquitetônica para integração visual dos sistemas"
+            "Cálculo de carga térmica via software Carrier HAP",
+            "Reaproveitamento de 7 equipamentos existentes (3 remanejados e 4 mantidos)",
+            "Splitão dedicado para o auditório com casa de máquinas",
+            "Redes de dutos dimensionadas para baixa perda de carga"
           ]
         },
         "results": {
-          "title": "Impacto e Resultados",
-          "content": "Entrega de uma infraestrutura robusta, confiável e pronta para execução. O projeto assegura um ambiente corporativo salubre, mitigando riscos operacionais e entregando ao cliente final um sistema que equilibra perfeitamente conforto térmico, segurança sanitária e eficiência de recursos.",
+          "title": "Resultados",
+          "content": "O sistema garante conforto térmico estável e operação eficiente, atendendo às exigências normativas e limitações físicas do projeto.",
           "list": [
-            "Estabilidade térmica garantida (22°C) independente das flutuações externas",
-            "Aprovação e conformidade total com os padrões ANVISA e ABNT",
-            "Entrega de documentação executiva clara, otimizando o tempo de instalação"
+            "Ambientes mantidos entre 22–23 °C",
+            "Controle de perdas de carga em redes extensas",
+            "Redução de custo com reaproveitamento de equipamentos"
           ]
-        }
-      },
-      
-      "sidebar": {
-        "technical_data": {
-          "title": "Highlights Técnicos",
-          "temp_internal": "Estabilidade Térmica",
-          "thermal_load": "Controle de Alta Carga (Workplaces)",
-          "flow_rate": "Gestão de Vazão e Insuflamento",
-          "total_exhaust": "Exaustão Estratégica"
-        },
-        "project_info": {
-          "title": "Ficha do Projeto",
-          "category": "Categoria",
-          "location": "Localização",
-          "client": "Cliente final",
-          "norms": "Compliance",
-          "software": "Ferramentas",
-          "revision": "Status",
-          "back_button": "Ver todos os projetos"
         }
       },
 
