@@ -34,7 +34,7 @@ class TSidebarCard extends HTMLElement {
                 itemsHtml += `
                     <div>
                         <p class="text-small subtext">${item.chave}</p>
-                        <p class="card-title mt-1" style="font-size: var(--textsize-7);">${item.valor}</p>
+                        <p class="card-title mt-1" style="font-size: var(--textsize-3);">${item.valor}</p>
                     </div>
                 `;
             } else {

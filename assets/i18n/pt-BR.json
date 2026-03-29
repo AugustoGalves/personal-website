@@ -128,8 +128,8 @@
           "desc": "Residência em São Pedro da Aldeia - RJ"
         },
         "card2": {
-          "title": "Projeto de geração fotovoltaica",
-          "desc": "Painel solar em Residência na Ilha do Governador - RJ"
+          "title": "Em breve",
+          "desc": "Projeto em andamento"
         },
         "card3": {
           "title": "Em breve",
@@ -671,11 +671,11 @@
           "desc": "Capturando apenas um retângulo, e análise apenas de 1 pixel na fileira de cada tecla."
         },
         "card2": {
-          "title": "Baixa tolenância de cor",
+          "title": "Reconhecimento consistente",
           "desc": "Intervalos de cor mínimo para disparar o clique. Apenas tons muito próximos do preto."
         },
         "card3": {
-          "title": "Deslocamento Dinâmico (Y-Offset)",
+          "title": "Y-Offset",
           "desc": "Antecipação das coordenadas de leitura com base na velocidade atual do loop."
         }
       },
@@ -732,7 +732,7 @@
     "_pagedivider11_": "—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————",
     "dev-belt-system-design": {
       "meta": {
-        "title": "Ultimate Belt Design & Shigley Review | Augusto Galves",
+        "title": "Ultimate Belt Design | Augusto Galves",
         "description": "Software patenteado de engenharia para dimensionamento de correias. Inclui automação de cálculos e validação completa do sistema."
       },
       "indexbar":{
