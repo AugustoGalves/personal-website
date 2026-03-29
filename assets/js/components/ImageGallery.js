@@ -7,7 +7,6 @@ class TImageGallery extends HTMLElement {
     // Inicialização
     // =======================================
     connectedCallback() {
-        // requestAnimationFrame é mais limpo e seguro que setTimeout para aguardar o parse do DOM
         requestAnimationFrame(() => this.init());
     }
 
@@ -36,7 +35,6 @@ class TImageGallery extends HTMLElement {
     // Renderização e Estrutura HTML
     // ====================================
     render(mediaList) {
-        // Função auxiliar para evitar repetição de if/else no map
         const createMediaHTML = (media, isMain, index = 0) => {
             const isVideo = media.tagName.toLowerCase() === 'video';
             const src = media.getAttribute('src');
@@ -50,19 +48,45 @@ class TImageGallery extends HTMLElement {
                 return `<video src="${src}" class="${baseClass}" ${isMain ? 'controls loop' : ''} muted></video>`;
             }
             
-            // Adiciona cursor de zoom apenas nas imagens principais
-            const cursorStyle = isMain ? 'style="cursor: zoom-in;"' : '';
+            // Cursor alterado para pointer (clique normal) nas imagens principais
+            const cursorStyle = isMain ? 'style="cursor: pointer;"' : '';
             return `<img src="${src}" alt="${alt}" class="${baseClass}" loading="lazy" ${cursorStyle}>`;
         };
 
         const mainMediaHTML = mediaList.map(m => createMediaHTML(m, true)).join('');
         const thumbMediaHTML = mediaList.map((m, i) => createMediaHTML(m, false, i)).join('');
         
-        // Estrutura principal + Modal de Zoom oculto
+        // CSS embutido para as setas (pode ser movido para o seu arquivo CSS se preferir)
+        const styles = `
+            <style>
+                .image-gallery__wrapper { position: relative; }
+                .image-gallery__nav-arrow {
+                    position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+                    background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%;
+                    width: 40px; height: 40px; cursor: pointer; font-size: 18px;
+                    display: flex; align-items: center; justify-content: center;
+                    transition: background 0.2s ease;
+                }
+                .image-gallery__nav-arrow:hover { background: rgba(0,0,0,0.8); }
+                .image-gallery__nav-arrow.prev { left: 10px; }
+                .image-gallery__nav-arrow.next { right: 10px; }
+                
+                /* Oculta as setas em telas menores (mobile/tablets) */
+                @media (max-width: 768px) {
+                    .image-gallery__nav-arrow { display: none; }
+                }
+            </style>
+        `;
+
         this.innerHTML = `
-            <section class="image-gallery image-gallery__main-container mb-2 flex gap3 pb-1">
-                ${mainMediaHTML}
-            </section>
+            ${styles}
+            <div class="image-gallery__wrapper">
+                <button class="image-gallery__nav-arrow prev" aria-label="Anterior">&#10094;</button>
+                <section class="image-gallery image-gallery__main-container mb-2 flex gap3 pb-1" style="overflow-x: auto;">
+                    ${mainMediaHTML}
+                </section>
+                <button class="image-gallery__nav-arrow next" aria-label="Próximo">&#10095;</button>
+            </div>
             
             <nav class="image-gallery image-gallery__thumb-container flex gap2 pb-2">
                 ${thumbMediaHTML}
@@ -75,11 +99,11 @@ class TImageGallery extends HTMLElement {
     }
 
     // ====================================
-    // Centralização de Eventos (Drag, Clicks, Modal)
+    // Centralização de Eventos
     // ====================================
     setupEvents() {
         let isDown = false;
-        let hasDragged = false; // Previne clique acidental ao arrastar
+        let hasDragged = false; 
         let startX, scrollLeft;
 
         // --- Eventos de Drag ---
@@ -91,7 +115,6 @@ class TImageGallery extends HTMLElement {
             scrollLeft = this.mainSlider.scrollLeft;
         });
 
-        // Usar o window para garantir que soltar fora do slider também encerre o drag
         window.addEventListener('mouseup', () => {
             isDown = false;
             if(this.mainSlider) this.mainSlider.classList.remove('active');
@@ -102,74 +125,4 @@ class TImageGallery extends HTMLElement {
             e.preventDefault(); 
             
             const x = e.pageX - this.mainSlider.offsetLeft;
-            const walk = (x - startX) * 2; 
-            
-            if (Math.abs(walk) > 5) hasDragged = true; // Se moveu mais de 5px, é drag, não clique
-            
-            this.mainSlider.scrollLeft = scrollLeft - walk;
-        });
-        
-        this.mainSlider.addEventListener('dragstart', (e) => e.preventDefault());
-
-        // --- Delegação de Eventos (Clicks nas thumbs e imagens principais) ---
-        this.addEventListener('click', (e) => {
-            const target = e.target;
-
-            // 1. Clique em uma miniatura
-            if (target.classList.contains('image-gallery__thumb-image')) {
-                // Descobre o índice da miniatura clicada verificando seus irmãos
-                const index = Array.from(this.thumbSlider.children).indexOf(target);
-                const targetMainMedia = this.mainSlider.children[index];
-                
-                if (targetMainMedia) {
-                    this.mainSlider.scrollTo({
-                        left: targetMainMedia.offsetLeft - this.mainSlider.offsetLeft,
-                        behavior: 'smooth'
-                    });
-                }
-            }
-
-            // 2. Clique na imagem principal para ampliar (Ignora se for vídeo ou se arrastou)
-            if (target.classList.contains('image-gallery__main-image') && target.tagName === 'IMG') {
-                if (hasDragged) return; // Se estava arrastando o carrossel, não abre o modal
-                this.modalImg.src = target.src;
-                this.modal.style.display = 'flex';
-            }
-
-            // 3. Clique no modal para fechar
-            if (target === this.modal || target === this.modalImg) {
-                this.modal.style.display = 'none';
-                this.modalImg.src = ''; // Limpa o src por performance
-            }
-        });
-    }
-
-    // ====================================
-    // Lógica de Sincronização de Rolagem
-    // ====================================
-    initScrollSyncObserver() {
-        const observerOptions = {
-            root: this.mainSlider, 
-            threshold: 0.6 
-        };
-
-        const observerCallback = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const index = Array.from(this.mainSlider.children).indexOf(entry.target);
-                    if (index !== -1) {
-                        // Atualiza as classes das miniaturas de forma direta
-                        Array.from(this.thumbSlider.children).forEach((thumb, i) => {
-                            thumb.classList.toggle('is-active', i === index);
-                        });
-                    }
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-        Array.from(this.mainSlider.children).forEach(media => observer.observe(media));
-    }
-}
-
-customElements.define('t-image-gallery', TImageGallery);
+            const
