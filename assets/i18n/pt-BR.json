@@ -465,7 +465,7 @@
     "hvac-neogas": {
       "meta": {
         "title": "Retrofit HVAC - Sede Corporativa NEOGÁS | Augusto Galves",
-        "description": "Projeto executivo de Retrofit HVAC para a sede da NEOGÁS no Rio de Janeiro. Otimização de CAPEX, eficiência energética e adequação ANVISA."
+        "description": "Projeto executivo de Retrofit HVAC para a sede da NEOGÁS no Rio de Janeiro."
       },
       "indexbar":{
         "path1": "Início",
@@ -473,8 +473,8 @@
         "path3": "Projeto Retrofit HVAC - NEOGÁS"
       },
       "title": "Retrofit HVAC — Sede Corporativa NEOGÁS",
-      "category": "Retrofit Corporativo · Eficiência de CAPEX",
-      "tech": "AutoCAD · Carrier HAP · SMACNA",
+      "category": "HVAC",
+      "tech": "Retrofit",
       
       "cardgroupdesafio":{
         "card1": {
@@ -493,15 +493,15 @@
       
       "cardgroupsolucao":{
         "card1": {
-          "title": "Modelagem Carrier HAP",
-          "desc": "Validação técnica para o reuso seguro dos maquinários existentes."
+          "title": "Cálculo de carga térmica",
+          "desc": "Cálculo de carga térmica utilizando o software Carrier HAP."
         },
         "card2": {
           "title": "Protocolos de T.A.B.",
-          "desc": "Procedimentos de Teste, Ajuste e Balanceamento definidos em projeto."
+          "desc": "Procedimentos de Teste, Ajuste e Balanceamento detalhados em projeto."
         },
         "card3": {
-          "title": "Difusão Inteligente",
+          "title": "Difusão Otimizada",
           "desc": "Distribuição por dutos TDC com dampers de regulagem de precisão."
         }
       },
@@ -537,13 +537,6 @@
       },
       
       "sidebar": {
-        "technical_data": {
-          "title": "Highlights Técnicos",
-          "temp_internal": "Renovação de Ar",
-          "thermal_load": "Gerenciamento de Ativos",
-          "flow_rate": "Estabilidade Térmica",
-          "total_exhaust": "Maior Zona (Staff)"
-        },
         "project_info": {
           "title": "Ficha do Projeto",
           "category": "Categoria",
@@ -573,78 +566,56 @@
         "path2": "Projetos",
         "path3": "Projeto MEP - Casa de Praia"
       },
-      "title": "Projeto Executivo MEP — Residência de Alto Padrão",
+      "title": "Projeto Executivo MEP — Residência litorânea",
       "category": "MEP · Instalações Elétricas",
       "tech": "AutoCAD · IECC 2023",
       
       "cardgroupdesafio":{
         "card1": {
-          "title": "Resiliência Litorânea",
-          "desc": "Proteção elétrica e infraestrutura preparadas para intempéries e maresia."
+          "title": "Orçamento Limitado",
+          "desc": "Maximizar a qualidade sem ultrapassar o custo definido pelo cliente."
         },
         "card2": {
-          "title": "Integração Arquitetônica",
-          "desc": "Compatibilização rigorosa para não interferir nas elevações de design (esquadrias e acabamentos)."
+          "title": "Alvenaria Existente",
+          "desc": "Alvenaria já executada, exigindo adaptação das soluções sem demolições."
         },
         "card3": {
-          "title": "Eficiência e Segurança",
-          "desc": "Atendimento ao código de energia IECC 2023 e proteção de áreas úmidas como piscinas."
-        }
-      },
-      
-      "cardgroupsolucao":{
-        "card1": {
-          "title": "Detalhamento Executivo",
-          "desc": "Diagramas unifilares precisos do QDC, assegurando montagem sem erros."
-        },
-        "card2": {
-          "title": "Proteção Multicamadas",
-          "desc": "Aplicação de DPS e caixas de inspeção de aterramento perfeitamente dimensionadas."
-        },
-        "card3": {
-          "title": "Roteamento Invisível",
-          "desc": "Passagem de eletrodutos (subterrâneos e em entreforro) de forma imperceptível."
+          "title": "Execução em Campo",
+          "desc": "Reduzir erros com detalhamento técnico claro para orientar a obra."
         }
       },
       
       "sections": {
         "context": {
-          "title": "Visão Estratégica do Projeto",
-          "content": "Projeto executivo de instalações elétricas (MEP) para uma residência de alto padrão no litoral (\"Casa de Praia\"). O foco deste desenvolvimento foi conciliar uma estética limpa, exigida por projetos arquitetônicos refinados, com uma infraestrutura elétrica robusta e segura, baseando-se nos mais recentes parâmetros de eficiência energética do código IECC 2023."
+          "title": "Visão do Projeto",
+          "content": "Projeto executivo de instalações MEP para residência em São Pedro da Aldeia–RJ. O foco foi alinhar estética de casa de praia com baixo custo de execução, mantendo segurança e funcionalidade."
         },  
         "desafio": {
           "title": "O Desafio",
-          "content": "Projetar para o litoral exige resiliência. O maior desafio técnico foi desenvolver um sistema de proteção contra surtos e um aterramento impecável, garantindo a segurança de equipamentos sensíveis e áreas úmidas (piscina e áreas de serviço). Simultaneamente, toda a distribuição de circuitos precisou ser rigorosamente compatibilizada com as elevações arquitetônicas e estruturais da residência."
+          "content": "Elevar a qualidade sem ultrapassar o orçamento, com a alvenaria já executada. As soluções precisaram se adaptar à estrutura existente, evitando demolições e limitações de layout."
         },
         "solucao": {
-          "title": "Solução de Engenharia",
-          "content": "Entreguei um detalhamento executivo de alta fidelidade para mitigar qualquer improviso em obra. O projeto conta com diagramas unifilares precisos, detalhamento minucioso do Quadro de Distribuição de Cargas (QDC) e roteamento de eletrodutos pensado para eficiência e ocultação.",
+          "title": "Solução Adotada",
+          "content": "Projeto executivo detalhado para reduzir improviso em obra, com soluções adaptadas à estrutura existente e foco em execução simples.",
           "list": [
-            "Elaboração do Diagrama Unifilar e detalhamento construtivo de quadros elétricos com Dispositivos de Proteção contra Surtos (DPS) e módulos de reserva.",
-            "Padronização de montagem subterrânea e em entreforro, garantindo blindagem contra intempéries litorâneas.",
-            "Caixa de inspeção de aterramento e conexões de haste projetadas para máxima dissipação de descargas.",
-            "Adequação técnica direta aos padrões do International Energy Conservation Code (IECC 2023)."
+            "Detalhamento técnico com orientações por etapa da obra",
+            "Distribuição de pontos e circuitos compatível com a alvenaria existente",
+            "Layout resolvido com uso estratégico do mobiliário",
+            "Padronização para facilitar execução e reduzir erros"
           ]
         },
         "results": {
           "title": "Impacto e Resultados",
-          "content": "A precisão do \"As-Built\" preventivo gerou valor imediato à obra. Ao traduzir normas rigorosas em detalhes executivos claros, o projeto evitou interferências dispendiosas em campo e garantiu um patrimônio seguro e durável.",
+          "content": "O detalhamento do projeto reduziu improvisos em obra e permitiu execução mais controlada, mesmo com limitações de custo e estrutura existente.",
           "list": [
-            "Instalação elétrica livre de interferências com os acabamentos de alto padrão (conforme elevações arquitetônicas).",
-            "Garantia total de segurança em áreas úmidas através do dimensionamento exato do sistema de aterramento e proteção.",
-            "Empreiteiro e cliente com documentação assertiva para execução limpa e rápida."
+            "Menor necessidade de ajustes em campo",
+            "Execução guiada por instruções claras no projeto",
+            "Compatibilidade com a alvenaria existente sem demolições"
           ]
         }
       },
       
       "sidebar": {
-        "technical_data": {
-          "title": "Highlights Técnicos",
-          "temp_internal": "Sistema de Proteção",
-          "thermal_load": "Distribuição Elétrica",
-          "flow_rate": "Roteamento de Infraestrutura",
-          "total_exhaust": "Normatização de Eficiência"
-        },
         "project_info": {
           "title": "Ficha do Projeto",
           "category": "Categoria",
@@ -663,48 +634,50 @@
         "action": "Enviar Mensagem"
       }
     },
+    
     "_pagedivider10_": "—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————",
     "dev-pianotiles": {
       "meta": {
-        "title": "Automação de Alta Performance - Piano Tiles | Augusto Galves",
-        "description": "Desenvolvimento de bot de alta performance em Python utilizando processamento de imagem em tempo real para bater recordes no Piano Tiles."
+        "title": "Autoclick - Piano Tiles | Augusto Galves",
+        "description": "Desenvolvimento de bot autoclick em Python utilizando processamento de imagem em tempo real para bater recordes no Piano Tiles."
       },
       "indexbar":{
         "path1": "Início",
         "path2": "Projetos",
         "path3": "Automação - Piano Tiles"
       },
-      "title": "Automação de Alta Performance — Piano Tiles Bot",
-      "category": "Engenharia de Software · Visão Computacional",
+      "title": "Bot autoclick — Piano Tiles",
+      "category": "Programação",
       "tech": "Python · NumPy · Win32API",
       
       "cardgroupdesafio":{
         "card1": {
-          "title": "Overhead de Processamento",
-          "desc": "Evitar o engasgo computacional ao processar frames visuais ininterruptos."
+          "title": "FPS da captura de tela",
+          "desc": "Capturar e analisar a maior quantidade de frames por segundo."
         },
         "card2": {
-          "title": "Escala de Velocidade",
-          "desc": "Lidar com a aceleração progressiva sem quebrar a lógica de leitura."
+          "title": "Precisão na identificação",
+          "desc": "Zerar o número de falso positivos na identificação devido ao blur das teclas em alta velocidade"
         },
         "card3": {
-          "title": "Precisão Sub-milissegundo",
-          "desc": "Reduzir o tempo entre a identificação do pixel e o disparo físico no SO."
+          "title": "Latência dos cliques",
+          "desc": "Lidar com a aceleração do jogo, latência do clique, latência da game engine e latência do script."
         }
       },
       
       "cardgroupsolucao":{
-        "card1": {
-          "title": "Deslocamento Dinâmico (Y-Offset)",
-          "desc": "Antecipação das coordenadas de leitura com base na velocidade atual do loop."
+        
+        "card2": {
+          "title": "Captura de apenas uma fração da tela",
+          "desc": "Capturando apenas um retângulo, e análise apenas de 1 pixel na fileira de cada tecla."
         },
         "card2": {
-          "title": "Extração Matricial via NumPy",
-          "desc": "Conversão do ImageGrab da PIL em matrizes matemáticas de altíssima eficiência."
+          "title": "Baixa tolenância de cor",
+          "desc": "Intervalos de cor mínimo para disparar o clique. Apenas tons muito próximos do preto."
         },
         "card3": {
-          "title": "Integração a Baixo Nível",
-          "desc": "Simulação de inputs diretos no kernel do Windows via Win32API."
+          "title": "Deslocamento Dinâmico (Y-Offset)",
+          "desc": "Antecipação das coordenadas de leitura com base na velocidade atual do loop."
         }
       },
       
@@ -718,11 +691,11 @@
           "content": "O jogo acelera exponencialmente, tornando as abordagens convencionais de automação obsoletas devido ao overhead de processamento. O algoritmo precisava capturar a tela, transformar os dados visuais em matrizes computacionais, analisar limites de cor (thresholding) e disparar comandos de hardware — tudo na casa dos milissegundos, antes que a tecla do jogo desaparecesse da tela."
         },
         "solucao": {
-          "title": "Solução de Engenharia",
+          "title": "Solução",
           "content": "A solução arquitetada não focou em aumentar o poder computacional, mas em antecipar o comportamento do sistema. Para compensar o aumento de velocidade (e a inerente latência de processamento), programei uma variação dinâmica no deslocamento vertical (Y-offset). Conforme o loop avançava, o bot \"olhava\" mais acima na tela, interceptando o alvo no tempo perfeito.",
           "list": [
             "Conversão da tela via PIL em arrays estruturados do NumPy para extração otimizada de pixels.",
-            "Modulação dos laços de repetição, alterando dinamicamente as coordenadas de varredura conforme a aceleração (\"Modo Super Rápido\").",
+            "Modulação dos laços de repetição, alterando dinamicamente as coordenadas de varredura conforme a aceleração (Modo Lento, Rápido e Super Rápido).",
             "Interação em baixo nível com `win32api` garantindo tempo de resposta de clique (`0.001s`) direto no hardware."
           ]
         },
@@ -738,13 +711,6 @@
       },
       
       "sidebar": {
-        "technical_data": {
-          "title": "Highlights Técnicos",
-          "temp_internal": "Throughput Excepcional",
-          "thermal_load": "Gestão de Latência",
-          "flow_rate": "Manipulação de Memória",
-          "total_exhaust": "Heurística Espacial"
-        },
         "project_info": {
           "title": "Ficha do Projeto",
           "category": "Categoria",
@@ -776,17 +742,17 @@
         "path3": "Ultimate Belt Design & Automação"
       },
       "title": "Software Patenteado: Ultimate Belt Design",
-      "category": "Automação em Engenharia · Elementos de Máquinas",
-      "tech": "Cálculo Computacional · Auditoria Técnica",
+      "category": "Engenharia · Programação",
+      "tech": "Dimensionamento automático de correias",
       
       "cardgroupdesafio":{
         "card1": {
           "title": "Iterações Manuais",
-          "desc": "O dimensionamento de correias exige múltiplas consultas a catálogos e cálculos de fadiga morosos."
+          "desc": "O dimensionamento de correias exige múltiplas consultas a catálogos e dezenas de cálculos."
         },
         "card2": {
           "title": "Inconsistência Literária",
-          "desc": "Identificação de falhas de premissa e ausência de travas de segurança em bibliografias padrão."
+          "desc": "Identificação de falhas na bibliografia padrão, além de tópicos confusos."
         }
       },
       
@@ -852,14 +818,14 @@
         "path2": "Projetos",
         "path3": "Portfólio Web"
       },
-      "title": "Desenvolvimento Web: Plataforma Portfólio",
-      "category": "Software Engineering · Infraestrutura Web",
-      "tech": "Vanilla JS · Cloudflare · GitHub Pages",
+      "title": "Desenvolvimento Web - Portfólio Pessoal",
+      "category": "Programação · Web Developer",
+      "tech": "Vanilla JS · GitHub Pages · Cloudflare Domains",
       
       "cardgroupdesafio":{
         "card1": {
           "title": "Zero Frameworks",
-          "desc": "Construir uma aplicação escalável utilizando exclusivamente as bases da web (HTML/CSS/JS puros)."
+          "desc": "Construir uma aplicação escalável utilizando exclusivamente HTML/CSS/JS vanilla."
         },
         "card2": {
           "title": "Modularidade",
@@ -882,14 +848,14 @@
         },
         "card3": {
           "title": "Otimização Extrema",
-          "desc": "Código minificado, SEO on-page cirúrgico e design de ícones vetorizados sob medida."
+          "desc": "Código sem redundancias, page-speed máxima e métricas de SEO altas."
         }
       },
       
       "sections": {
         "context": {
           "title": "Engenharia Web do Zero",
-          "content": "Para estabelecer minha presença digital de forma sólida, decidi projetar e desenvolver este site portfólio integralmente do zero. O projeto foi executado entre dezembro de 2025 e abril de 2026, com mais de 200 commits. O foco foi aplicar engenharia de software no front-end: arquitetura de informação limpa, performance de elite e domínio total sobre a infraestrutura da aplicação."
+          "content": "Para estabelecer minha presença digital de forma sólida, decidi projetar e desenvolver este site portfólio programando do zero, sem ajuda de nenhum framework. O projeto foi executado entre dezembro de 2025 e abril de 2026, com mais de 200 commits no GitHub. O foco foi ter domínio total da infraestrutura e garantir que está totalmente otimizada."
         },  
         "desafio": {
           "title": "O Desafio Técnico",
