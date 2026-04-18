@@ -1,6 +1,58 @@
 
 
 /* ────────────────────────────────────────────────────────────────────────── */
+/* ██████████████████████ 🔽 IMPORTS  ██████████████████████████████████████▊ */
+/* ────────────────────────────────────────────────────────────────────────── */
+/* ─── FONTES ───────────────────────────────────────────────────────────────────────────────────────── ✣ ─ */
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-var.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-italic-var.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/assets/fonts/plusjakartasans-var.woff2') format('woff2');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/assets/fonts/plusjakartasans-italic-var.woff2') format('woff2');
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/assets/fonts/jetbrainsmono-var.woff2') format('woff2');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/assets/fonts/jetbrainsmono-italic-var.woff2') format('woff2');
+  font-weight: 100 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ────────────────────────────────────────────────────────────────────────── */
 /* ██████████████████████ ♻️ DESIGN TOKENS  █████████████████████████████████ */
 /* ────────────────────────────────────────────────────────────────────────── */
 
